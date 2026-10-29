@@ -1,0 +1,2037 @@
+* Extracted by KLayout with SKY130 LVS runset on : 26/10/2026 10:28
+
+* cell BGR_V3
+.SUBCKT BGR_V3
+* cell instance $1 r0 *1 0.42,42.12
+X$1 \$6 \$4 \$3 \$6 \$2 \$34 \$1 sky130_gnd Dmux1to4_2select_bit
+* cell instance $2 m90 *1 90.125,0.3
+X$2 \$6 \$4 \$3 \$33 \$32 OUTPUT\x20Pin \$2 \$1 sky130_gnd BGR_coreAndVrefBranch
+* cell instance $3 r270 *1 28.99,63.11
+X$3 \$1 vias_gen$27
+* cell instance $4 r270 *1 28.99,78.35
+X$4 \$1 vias_gen$27
+* cell instance $5 r270 *1 28.99,91.235
+X$5 \$1 vias_gen$27
+* cell instance $6 r270 *1 29.99,54.78
+X$6 \$2 vias_gen$27
+* cell instance $7 r270 *1 29.99,61.555
+X$7 \$2 vias_gen$27
+* cell instance $8 r270 *1 29.99,74.44
+X$8 \$2 vias_gen$27
+* cell instance $9 r270 *1 30.99,52.28
+X$9 \$3 vias_gen$27
+* cell instance $10 r270 *1 30.99,57.535
+X$10 \$3 vias_gen$27
+* cell instance $11 r270 *1 31.99,43.95
+X$11 \$4 vias_gen$27
+* cell instance $12 r270 *1 31.99,40.755
+X$12 \$4 vias_gen$27
+* cell instance $13 r270 *1 31.99,12.165
+X$13 \$4 vias_gen$27
+* cell instance $14 r270 *1 31.99,26.46
+X$14 \$4 vias_gen$27
+* cell instance $15 r0 *1 87.625,0.3
+X$15 \$6 vias_gen$31
+* cell instance $16 r0 *1 87.205,91.43
+X$16 \$6 vias_gen$33
+* cell instance $17 r0 *1 32.57,91.43
+X$17 \$6 vias_gen$33
+* cell instance $18 r0 *1 25.57,91.43
+X$18 \$6 vias_gen$33
+* cell instance $19 r0 *1 0,91.43
+X$19 \$6 vias_gen$33
+* cell instance $20 r0 *1 22.3,91.43
+X$20 \$6 vias_gen$33
+* cell instance $21 r0 *1 6.68,91.43
+X$21 \$6 vias_gen$33
+* cell instance $22 r0 *1 32.99,0.3
+X$22 \$6 vias_gen$31
+* cell instance $23 r0 *1 5.18,75.245
+X$23 \$6 \$33 \$32 sky130_gnd StartupCircuit
+* cell instance $24 r0 *1 6.68,75.25
+X$24 \$6 vias_gen$28
+* cell instance $25 r0 *1 22.3,75.25
+X$25 \$6 vias_gen$28
+* cell instance $26 r0 *1 0.42,42.26
+X$26 \$6 vias_gen$30
+* cell instance $27 r0 *1 0.42,55.62
+X$27 \$6 vias_gen$27
+* cell instance $28 r0 *1 25.99,42.26
+X$28 \$6 vias_gen$30
+* cell instance $29 r270 *1 50.84,90.505
+X$29 \$32 vias_gen$27
+* cell instance $30 r180 *1 50.34,89.205
+X$30 \$33 vias_gen$27
+* cell instance $31 r0 *1 20.38,0.05
+X$31 sky130_gnd vias_gen$33
+* cell instance $32 r0 *1 4.76,0.05
+X$32 sky130_gnd vias_gen$33
+* cell instance $33 r0 *1 1.92,0.05
+X$33 sky130_gnd vias_gen$33
+* cell instance $34 r0 *1 27.49,0.05
+X$34 sky130_gnd vias_gen$33
+* cell instance $35 r0 *1 34.49,0.05
+X$35 sky130_gnd vias_gen$33
+* cell instance $36 r0 *1 89.125,0.05
+X$36 sky130_gnd vias_gen$33
+* cell instance $37 r0 *1 89.125,0.3
+X$37 sky130_gnd vias_gen$31
+* cell instance $38 r0 *1 34.49,0.3
+X$38 sky130_gnd vias_gen$31
+* cell instance $39 r0 *1 5.18,75.25
+X$39 sky130_gnd vias_gen$28
+* cell instance $40 r0 *1 20.8,75.25
+X$40 sky130_gnd vias_gen$28
+* cell instance $41 r0 *1 27.49,42.26
+X$41 sky130_gnd vias_gen$30
+* cell instance $42 r0 *1 1.92,42.26
+X$42 sky130_gnd vias_gen$30
+.ENDS BGR_V3
+
+* cell BGR_coreAndVrefBranch
+* pin 
+* pin 
+* pin 
+* pin 
+* pin 
+* pin 
+* pin 
+* pin 
+* pin sky130_gnd
+.SUBCKT BGR_coreAndVrefBranch \$2 \$37 \$53 \$104 \$126 \$198 \$202 \$239
++ sky130_gnd
+* cell instance $1 r90 *1 11.265,70.995
+X$1 \$2 vias_gen$32
+* cell instance $2 r90 *1 24.565,90.015
+X$2 \$2 vias_gen$32
+* cell instance $3 r90 *1 24.565,70.995
+X$3 \$2 vias_gen$32
+* cell instance $4 r90 *1 32.545,90.015
+X$4 \$2 vias_gen$32
+* cell instance $5 r90 *1 11.265,90.015
+X$5 \$2 vias_gen$32
+* cell instance $6 r90 *1 29.885,70.995
+X$6 \$2 vias_gen$32
+* cell instance $7 r90 *1 32.545,70.995
+X$7 \$2 vias_gen$32
+* cell instance $8 r90 *1 29.885,90.015
+X$8 \$2 vias_gen$32
+* cell instance $9 r90 *1 19.245,90.015
+X$9 \$2 vias_gen$32
+* cell instance $10 r90 *1 13.925,70.995
+X$10 \$2 vias_gen$32
+* cell instance $11 r90 *1 13.925,90.015
+X$11 \$2 vias_gen$32
+* cell instance $12 r90 *1 19.245,70.995
+X$12 \$2 vias_gen$32
+* cell instance $13 r180 *1 51.365,4.17
+X$13 \$2 vias_gen$7$2
+* cell instance $14 r0 *1 56.135,2.745
+X$14 \$2 vias_gen$9$2
+* cell instance $15 r0 *1 56.135,3.67
+X$15 \$2 vias_gen$9$2
+* cell instance $16 r0 *1 56.135,75.91
+X$16 \$2 vias_gen$9$2
+* cell instance $17 r0 *1 56.135,74.77
+X$17 \$2 vias_gen$9$2
+* cell instance $18 r0 *1 56.135,57.865
+X$18 \$2 vias_gen$9$2
+* cell instance $19 r0 *1 56.135,42.22
+X$19 \$2 vias_gen$9$2
+* cell instance $20 r0 *1 56.135,59.125
+X$20 \$2 vias_gen$9$2
+* cell instance $21 r0 *1 56.135,40.88
+X$21 \$2 vias_gen$9$2
+* cell instance $22 r0 *1 1.5,60.435
+X$22 \$2 vias_gen$13$2
+* cell instance $23 r0 *1 1.5,91.315
+X$23 \$2 vias_gen$13$2
+* cell instance $24 r0 *1 1.5,70.995
+X$24 \$2 vias_gen$13$2
+* cell instance $25 r0 *1 56.135,70.995
+X$25 \$2 vias_gen$13$2
+* cell instance $26 r0 *1 56.135,91.315
+X$26 \$2 vias_gen$13$2
+* cell instance $27 r0 *1 1.5,90.015
+X$27 \$2 vias_gen$13$2
+* cell instance $28 m0 *1 10.64,70.615
+X$28 \$2 \$2 \$2 \$2 pfet$1$2
+* cell instance $29 m0 *1 10.64,89.635
+X$29 \$2 \$2 \$2 \$2 pfet$1$2
+* cell instance $30 m0 *1 29.26,70.615
+X$30 \$2 \$2 \$2 \$2 pfet$1$2
+* cell instance $31 m0 *1 29.26,89.635
+X$31 \$2 \$2 \$2 \$2 pfet$1$2
+* cell instance $32 r0 *1 10.64,72.375
+X$32 \$2 \$2 \$2 \$2 pfet$1$2
+* cell instance $33 r0 *1 29.26,72.375
+X$33 \$2 \$2 \$2 \$2 pfet$1$2
+* cell instance $34 m0 *1 21.28,70.615
+X$34 \$126 \$2 \$126 \$2 pfet$1$2
+* cell instance $35 m0 *1 15.96,70.615
+X$35 \$104 \$2 \$126 \$2 pfet$1$2
+* cell instance $36 m0 *1 21.28,89.635
+X$36 \$126 \$2 \$126 \$2 pfet$1$2
+* cell instance $37 m0 *1 15.96,89.635
+X$37 \$104 \$2 \$126 \$2 pfet$1$2
+* cell instance $38 m0 *1 26.6,70.615
+X$38 \$198 \$2 \$126 \$2 pfet$1$2
+* cell instance $39 m0 *1 26.6,89.635
+X$39 \$198 \$2 \$126 \$2 pfet$1$2
+* cell instance $40 r0 *1 26.6,72.375
+X$40 \$104 \$2 \$126 \$2 pfet$1$2
+* cell instance $41 r0 *1 21.28,72.375
+X$41 \$126 \$2 \$126 \$2 pfet$1$2
+* cell instance $42 r0 *1 15.96,72.375
+X$42 \$198 \$2 \$126 \$2 pfet$1$2
+* cell instance $43 m0 *1 23.94,70.615
+X$43 \$2 \$198 \$126 \$2 pfet$1$2
+* cell instance $44 m0 *1 13.3,89.635
+X$44 \$2 \$104 \$126 \$2 pfet$1$2
+* cell instance $45 m0 *1 18.62,70.615
+X$45 \$2 \$126 \$126 \$2 pfet$1$2
+* cell instance $46 m0 *1 18.62,89.635
+X$46 \$2 \$126 \$126 \$2 pfet$1$2
+* cell instance $47 m0 *1 23.94,89.635
+X$47 \$2 \$198 \$126 \$2 pfet$1$2
+* cell instance $48 m0 *1 13.3,70.615
+X$48 \$2 \$104 \$126 \$2 pfet$1$2
+* cell instance $49 r0 *1 23.94,72.375
+X$49 \$2 \$104 \$126 \$2 pfet$1$2
+* cell instance $50 r0 *1 18.62,72.375
+X$50 \$2 \$126 \$126 \$2 pfet$1$2
+* cell instance $51 r0 *1 13.3,72.375
+X$51 \$2 \$198 \$126 \$2 pfet$1$2
+* cell instance $52 r0 *1 9.635,60.685
+X$52 \$2 vias_gen$12$2
+* cell instance $53 r0 *1 9.91,61.185
+X$53 \$2 guard_ring_gen$7$2
+* cell instance $54 r0 *1 9.635,91.565
+X$54 \$2 vias_gen$12$2
+* cell instance $55 r0 *1 46.47,76.42
+X$55 \$2 guard_ring_gen$4$2
+* cell instance $56 r0 *1 46.47,59.625
+X$56 \$2 guard_ring_gen$4$2
+* cell instance $57 r0 *1 48.86,5.645
+X$57 \$16 \$2 \$2 \$2 pfet$4
+* cell instance $58 r0 *1 47.2,5.645
+X$58 \$15 \$16 \$37 \$2 pfet$4
+* cell instance $59 m90 *1 51.18,51.62
+X$59 \$116 \$16 \$53 \$2 pfet$4
+* cell instance $60 m90 *1 49.52,51.62
+X$60 \$16 \$116 \$53 \$2 pfet$4
+* cell instance $61 m90 *1 49.52,85.32
+X$61 \$16 \$198 \$239 \$2 pfet$4
+* cell instance $62 m90 *1 49.52,34.235
+X$62 \$16 \$15 \$37 \$2 pfet$4
+* cell instance $63 m90 *1 51.18,68.525
+X$63 \$238 \$16 \$202 \$2 pfet$4
+* cell instance $64 m90 *1 49.52,19.94
+X$64 \$16 \$15 \$37 \$2 pfet$4
+* cell instance $65 m90 *1 51.18,85.32
+X$65 \$198 \$16 \$239 \$2 pfet$4
+* cell instance $66 m90 *1 51.18,19.94
+X$66 \$15 \$16 \$37 \$2 pfet$4
+* cell instance $67 m90 *1 49.52,68.525
+X$67 \$16 \$238 \$202 \$2 pfet$4
+* cell instance $68 m90 *1 51.18,34.235
+X$68 \$15 \$16 \$37 \$2 pfet$4
+* cell instance $69 r180 *1 49.52,82.665
+X$69 \$16 \$198 \$239 \$2 pfet$4
+* cell instance $70 r180 *1 51.18,31.88
+X$70 \$15 \$16 \$37 \$2 pfet$4
+* cell instance $71 r180 *1 51.18,82.665
+X$71 \$198 \$16 \$239 \$2 pfet$4
+* cell instance $72 r180 *1 49.52,48.965
+X$72 \$16 \$116 \$53 \$2 pfet$4
+* cell instance $73 r180 *1 51.18,48.965
+X$73 \$116 \$16 \$53 \$2 pfet$4
+* cell instance $74 r180 *1 51.18,17.585
+X$74 \$15 \$16 \$37 \$2 pfet$4
+* cell instance $75 r180 *1 51.18,65.87
+X$75 \$238 \$16 \$202 \$2 pfet$4
+* cell instance $76 r180 *1 49.52,31.88
+X$76 \$16 \$15 \$37 \$2 pfet$4
+* cell instance $77 r180 *1 49.52,65.87
+X$77 \$16 \$238 \$202 \$2 pfet$4
+* cell instance $78 r180 *1 49.52,17.585
+X$78 \$16 \$15 \$37 \$2 pfet$4
+* cell instance $79 r0 *1 46.165,2.745
+X$79 \$2 vias_gen$14$2
+* cell instance $80 r0 *1 46.47,3.245
+X$80 \$2 guard_ring_gen$5$2
+* cell instance $81 r0 *1 46.165,74.77
+X$81 \$2 vias_gen$14$2
+* cell instance $82 r0 *1 46.165,42.22
+X$82 \$2 vias_gen$14$2
+* cell instance $83 r0 *1 46.47,42.72
+X$83 \$2 guard_ring_gen$4$2
+* cell instance $84 r0 *1 46.165,40.88
+X$84 \$2 vias_gen$14$2
+* cell instance $85 r0 *1 46.165,75.91
+X$85 \$2 vias_gen$14$2
+* cell instance $86 r0 *1 46.165,59.125
+X$86 \$2 vias_gen$14$2
+* cell instance $87 r0 *1 46.165,57.865
+X$87 \$2 vias_gen$14$2
+* cell instance $88 r0 *1 46.165,91.565
+X$88 \$2 vias_gen$14$2
+* cell instance $89 m0 *1 43.265,24.56
+X$89 \$16 \$12 sky130_gnd res_poly$5$2
+* cell instance $90 r180 *1 43.515,4.97
+X$90 \$12 vias_gen$7$2
+* cell instance $91 r0 *1 5.87,4.475
+X$91 \$12 vias_gen$9$2
+* cell instance $92 r0 *1 36.275,32.875
+X$92 \$12 vias_gen$9$2
+* cell instance $93 m45 *1 14.975,32.575
+X$93 \$12 vias_gen$6$2
+* cell instance $94 m45 *1 14.975,25.475
+X$94 \$12 vias_gen$6$2
+* cell instance $95 m45 *1 14.975,18.375
+X$95 \$12 vias_gen$6$2
+* cell instance $96 m45 *1 14.975,11.275
+X$96 \$12 vias_gen$6$2
+* cell instance $97 m45 *1 14.975,4.475
+X$97 \$12 vias_gen$6$2
+* cell instance $98 r0 *1 36.275,11.575
+X$98 \$12 vias_gen$8$2
+* cell instance $99 r0 *1 36.275,25.775
+X$99 \$12 vias_gen$8$2
+* cell instance $100 r0 *1 36.275,18.675
+X$100 \$12 vias_gen$8$2
+* cell instance $101 r0 *1 5.875,32.875
+X$101 \$12 vias_gen$8$2
+* cell instance $102 r0 *1 5.87,18.675
+X$102 \$12 vias_gen$8$2
+* cell instance $103 r0 *1 5.875,25.775
+X$103 \$12 vias_gen$8$2
+* cell instance $104 r0 *1 5.875,11.575
+X$104 \$12 vias_gen$8$2
+* cell instance $105 r0 *1 4.06,8.475
+X$105 sky130_gnd sky130_gnd \$12 sky130_gnd pnp_bjt$2
+* cell instance $106 r0 *1 32.46,8.475
+X$106 sky130_gnd sky130_gnd \$12 sky130_gnd pnp_bjt$2
+* cell instance $107 r0 *1 4.06,15.575
+X$107 sky130_gnd sky130_gnd \$12 sky130_gnd pnp_bjt$2
+* cell instance $108 r0 *1 32.46,22.675
+X$108 sky130_gnd sky130_gnd \$12 sky130_gnd pnp_bjt$2
+* cell instance $109 r0 *1 32.46,15.575
+X$109 sky130_gnd sky130_gnd \$12 sky130_gnd pnp_bjt$2
+* cell instance $110 r0 *1 32.46,1.375
+X$110 sky130_gnd sky130_gnd \$12 sky130_gnd pnp_bjt$2
+* cell instance $111 r0 *1 36.275,4.475
+X$111 \$12 vias_gen$8$2
+* cell instance $112 r0 *1 4.06,29.775
+X$112 sky130_gnd sky130_gnd \$12 sky130_gnd pnp_bjt$2
+* cell instance $113 r0 *1 4.06,22.675
+X$113 sky130_gnd sky130_gnd \$12 sky130_gnd pnp_bjt$2
+* cell instance $114 r180 *1 48.035,4.17
+X$114 \$15 vias_gen$7$2
+* cell instance $115 r180 *1 47.825,32.76
+X$115 \$15 vias_gen$7$2
+* cell instance $116 r180 *1 51.145,32.76
+X$116 \$15 vias_gen$7$2
+* cell instance $117 r180 *1 51.145,18.465
+X$117 \$15 vias_gen$7$2
+* cell instance $118 r180 *1 47.825,18.465
+X$118 \$15 vias_gen$7$2
+* cell instance $119 m45 *1 40.785,31.96
+X$119 \$15 vias_gen$6$2
+* cell instance $120 m45 *1 40.785,17.665
+X$120 \$15 vias_gen$6$2
+* cell instance $121 m0 *1 40.785,4.17
+X$121 \$15 vias_gen$6$2
+* cell instance $122 r270 *1 40.785,52.21
+X$122 \$15 vias_gen$6$2
+* cell instance $123 r180 *1 43.92,52.21
+X$123 \$15 vias_gen$1$2
+* cell instance $124 r0 *1 43.265,54.19
+X$124 \$15 \$116 sky130_gnd res_poly$1$2
+* cell instance $125 r180 *1 49.535,84.64
+X$125 \$16 vias_gen$3$3
+* cell instance $126 r180 *1 49.695,50.94
+X$126 \$16 vias_gen$7$2
+* cell instance $127 r180 *1 49.695,67.845
+X$127 \$16 vias_gen$7$2
+* cell instance $128 r180 *1 49.695,4.97
+X$128 \$16 vias_gen$7$2
+* cell instance $129 r180 *1 49.695,33.56
+X$129 \$16 vias_gen$7$2
+* cell instance $130 r180 *1 49.695,19.265
+X$130 \$16 vias_gen$7$2
+* cell instance $131 r90 *1 53.335,47.69
+X$131 \$16 vias_gen$6$2
+* cell instance $132 r90 *1 53.335,18.765
+X$132 \$16 vias_gen$6$2
+* cell instance $133 r90 *1 53.335,4.47
+X$133 \$16 vias_gen$6$2
+* cell instance $134 r90 *1 53.335,50.44
+X$134 \$16 vias_gen$6$2
+* cell instance $135 r90 *1 53.335,33.06
+X$135 \$16 vias_gen$6$2
+* cell instance $136 r90 *1 53.335,67.045
+X$136 \$16 vias_gen$6$2
+* cell instance $137 r0 *1 52.535,84.14
+X$137 \$16 vias_gen$6$2
+* cell instance $138 r180 *1 43.61,48.19
+X$138 \$16 vias_gen$1$2
+* cell instance $139 m0 *1 2.94,40.08
+X$139 \$25 vias_gen$6$2
+* cell instance $140 r0 *1 2.935,26.99
+X$140 \$25 vias_gen$6$2
+* cell instance $141 r0 *1 2.935,19.89
+X$141 \$25 vias_gen$6$2
+* cell instance $142 r0 *1 2.935,12.79
+X$142 \$25 vias_gen$6$2
+* cell instance $143 r180 *1 13.62,40.08
+X$143 \$25 vias_gen$11$2
+* cell instance $144 r90 *1 21.6,39.83
+X$144 \$51 \$25 sky130_gnd res_poly$13$2
+* cell instance $145 r0 *1 20.085,26.99
+X$145 \$25 vias_gen$8$2
+* cell instance $146 r0 *1 12.985,12.85
+X$146 \$25 vias_gen$8$2
+* cell instance $147 r0 *1 27.185,12.79
+X$147 \$25 vias_gen$8$2
+* cell instance $148 r0 *1 12.985,19.89
+X$148 \$25 vias_gen$8$2
+* cell instance $149 r0 *1 27.175,26.99
+X$149 \$25 vias_gen$8$2
+* cell instance $150 r0 *1 12.985,26.99
+X$150 \$25 vias_gen$8$2
+* cell instance $151 r0 *1 20.085,12.79
+X$151 \$25 vias_gen$8$2
+* cell instance $152 r0 *1 27.185,19.89
+X$152 \$25 vias_gen$8$2
+* cell instance $153 r0 *1 25.36,15.575
+X$153 sky130_gnd sky130_gnd \$25 sky130_gnd pnp_bjt$2
+* cell instance $154 r0 *1 25.36,8.475
+X$154 sky130_gnd sky130_gnd \$25 sky130_gnd pnp_bjt$2
+* cell instance $155 r0 *1 25.36,22.675
+X$155 sky130_gnd sky130_gnd \$25 sky130_gnd pnp_bjt$2
+* cell instance $156 r0 *1 18.26,8.475
+X$156 sky130_gnd sky130_gnd \$25 sky130_gnd pnp_bjt$2
+* cell instance $157 r0 *1 11.16,8.475
+X$157 sky130_gnd sky130_gnd \$25 sky130_gnd pnp_bjt$2
+* cell instance $158 r0 *1 11.16,22.675
+X$158 sky130_gnd sky130_gnd \$25 sky130_gnd pnp_bjt$2
+* cell instance $159 r0 *1 11.16,15.575
+X$159 sky130_gnd sky130_gnd \$25 sky130_gnd pnp_bjt$2
+* cell instance $160 r0 *1 18.26,22.675
+X$160 sky130_gnd sky130_gnd \$25 sky130_gnd pnp_bjt$2
+* cell instance $161 r90 *1 54.135,11.365
+X$161 \$37 vias_gen$6$2
+* cell instance $162 r90 *1 54.135,39.655
+X$162 \$37 vias_gen$6$2
+* cell instance $163 r90 *1 54.135,25.66
+X$163 \$37 vias_gen$6$2
+* cell instance $164 r180 *1 48.865,40.455
+X$164 \$37 vias_gen$1$2
+* cell instance $165 r180 *1 50.525,40.455
+X$165 \$37 vias_gen$1$2
+* cell instance $166 r180 *1 48.855,26.16
+X$166 \$37 vias_gen$1$2
+* cell instance $167 r180 *1 50.515,26.16
+X$167 \$37 vias_gen$1$2
+* cell instance $168 r180 *1 48.855,11.865
+X$168 \$37 vias_gen$1$2
+* cell instance $169 r180 *1 50.515,11.865
+X$169 \$37 vias_gen$1$2
+* cell instance $170 r180 *1 28.545,54.12
+X$170 \$49 vias_gen$3$3
+* cell instance $171 r180 *1 15.315,54.125
+X$171 \$49 vias_gen$3$3
+* cell instance $172 m90 *1 5.89,53.625
+X$172 \$49 vias_gen$6$2
+* cell instance $173 m0 *1 5.09,43.64
+X$173 \$49 vias_gen$6$2
+* cell instance $174 m0 *1 26.26,56.325
+X$174 \$104 \$49 \$104 nfet$5
+* cell instance $175 m0 *1 12.98,56.325
+X$175 \$104 \$49 \$104 nfet$5
+* cell instance $176 r0 *1 12.98,49.03
+X$176 \$104 \$49 \$104 nfet$5
+* cell instance $177 r0 *1 26.26,49.03
+X$177 \$104 \$49 \$104 nfet$5
+* cell instance $178 m0 *1 14.64,56.325
+X$178 \$49 \$104 \$104 nfet$5
+* cell instance $179 m0 *1 27.92,56.325
+X$179 \$49 \$104 \$104 nfet$5
+* cell instance $180 r0 *1 27.92,49.03
+X$180 \$49 \$104 \$104 nfet$5
+* cell instance $181 r0 *1 14.64,49.03
+X$181 \$49 \$104 \$104 nfet$5
+* cell instance $182 r180 *1 17.85,43.64
+X$182 \$49 vias_gen$11$2
+* cell instance $183 r90 *1 21.73,43.39
+X$183 \$52 \$49 sky130_gnd res_poly$7$2
+* cell instance $184 r180 *1 8.675,51.73
+X$184 \$51 vias_gen$3$3
+* cell instance $185 r180 *1 35.235,51.73
+X$185 \$51 vias_gen$3$3
+* cell instance $186 r180 *1 21.955,51.73
+X$186 \$51 vias_gen$3$3
+* cell instance $187 m135 *1 38.13,51.73
+X$187 \$51 vias_gen$6$2
+* cell instance $188 m45 *1 37.63,39.58
+X$188 \$51 vias_gen$6$2
+* cell instance $189 m0 *1 32.9,56.325
+X$189 \$126 \$51 \$104 nfet$5
+* cell instance $190 m0 *1 19.62,56.325
+X$190 \$126 \$51 \$104 nfet$5
+* cell instance $191 r0 *1 32.9,49.03
+X$191 \$126 \$51 \$104 nfet$5
+* cell instance $192 r0 *1 19.62,49.03
+X$192 \$126 \$51 \$104 nfet$5
+* cell instance $193 m0 *1 34.56,51.03
+X$193 \$51 sky130_gnd sky130_gnd nfet$3$2
+* cell instance $194 r0 *1 34.56,54.325
+X$194 \$51 sky130_gnd sky130_gnd nfet$3$2
+* cell instance $195 r0 *1 8,49.03
+X$195 \$51 \$126 \$104 nfet$5
+* cell instance $196 m0 *1 6.34,51.03
+X$196 sky130_gnd \$51 sky130_gnd nfet$3$2
+* cell instance $197 r0 *1 6.34,54.325
+X$197 sky130_gnd \$51 sky130_gnd nfet$3$2
+* cell instance $198 m0 *1 21.28,56.325
+X$198 \$51 \$126 \$104 nfet$5
+* cell instance $199 m0 *1 8,56.325
+X$199 \$51 \$126 \$104 nfet$5
+* cell instance $200 r0 *1 21.28,49.03
+X$200 \$51 \$126 \$104 nfet$5
+* cell instance $201 r180 *1 31.58,40.08
+X$201 \$51 vias_gen$11$2
+* cell instance $202 m45 *1 39.785,42.84
+X$202 \$52 vias_gen$6$2
+* cell instance $203 m45 *1 39.785,17.39
+X$203 \$52 vias_gen$6$2
+* cell instance $204 r180 *1 27.61,43.64
+X$204 \$52 vias_gen$11$2
+* cell instance $205 r0 *1 18.26,15.575
+X$205 sky130_gnd sky130_gnd \$52 sky130_gnd pnp_bjt$2
+* cell instance $206 r0 *1 22.135,17.39
+X$206 \$52 vias_gen$1$2
+* cell instance $207 r90 *1 54.135,56.435
+X$207 \$53 vias_gen$6$2
+* cell instance $208 r90 *1 54.135,43.35
+X$208 \$53 vias_gen$6$2
+* cell instance $209 r180 *1 50.515,43.85
+X$209 \$53 vias_gen$1$2
+* cell instance $210 r180 *1 48.855,43.85
+X$210 \$53 vias_gen$1$2
+* cell instance $211 r180 *1 50.52,57.235
+X$211 \$53 vias_gen$1$2
+* cell instance $212 r180 *1 48.855,57.235
+X$212 \$53 vias_gen$1$2
+* cell instance $213 r180 *1 16.635,82.855
+X$213 \$104 vias_gen$3$3
+* cell instance $214 r180 *1 30.205,52.525
+X$214 \$104 vias_gen$3$3
+* cell instance $215 r180 *1 27.225,80.455
+X$215 \$104 vias_gen$3$3
+* cell instance $216 r180 *1 13.605,52.525
+X$216 \$104 vias_gen$3$3
+* cell instance $217 r180 *1 16.925,52.525
+X$217 \$104 vias_gen$3$3
+* cell instance $218 r180 *1 26.885,52.525
+X$218 \$104 vias_gen$3$3
+* cell instance $219 r180 *1 16.585,62.235
+X$219 \$104 vias_gen$3$3
+* cell instance $220 m135 *1 40.285,52.825
+X$220 \$104 vias_gen$6$2
+* cell instance $221 m135 *1 40.285,57.435
+X$221 \$104 vias_gen$6$2
+* cell instance $222 m135 *1 4.5,80.455
+X$222 \$104 vias_gen$6$2
+* cell instance $223 m135 *1 4.5,83.155
+X$223 \$104 vias_gen$6$2
+* cell instance $224 m90 *1 40.285,47.97
+X$224 \$104 vias_gen$6$2
+* cell instance $225 m90 *1 4.8,56.935
+X$225 \$104 vias_gen$6$2
+* cell instance $226 m45 *1 4,47.97
+X$226 \$104 vias_gen$6$2
+* cell instance $227 m45 *1 4,51.725
+X$227 \$104 vias_gen$6$2
+* cell instance $228 m0 *1 4,62.235
+X$228 \$104 vias_gen$6$2
+* cell instance $229 r270 *1 39.785,62.535
+X$229 \$104 vias_gen$6$2
+* cell instance $230 r270 *1 39.785,83.155
+X$230 \$104 vias_gen$6$2
+* cell instance $231 r270 *1 39.785,80.455
+X$231 \$104 vias_gen$6$2
+* cell instance $232 m0 *1 29.58,51.03
+X$232 \$104 sky130_gnd sky130_gnd nfet$3$2
+* cell instance $233 m0 *1 16.3,51.03
+X$233 \$104 sky130_gnd sky130_gnd nfet$3$2
+* cell instance $234 r0 *1 29.58,54.325
+X$234 \$104 sky130_gnd sky130_gnd nfet$3$2
+* cell instance $235 r0 *1 16.3,54.325
+X$235 \$104 sky130_gnd sky130_gnd nfet$3$2
+* cell instance $236 m0 *1 24.6,51.03
+X$236 sky130_gnd \$104 sky130_gnd nfet$3$2
+* cell instance $237 m0 *1 11.32,51.03
+X$237 sky130_gnd \$104 sky130_gnd nfet$3$2
+* cell instance $238 r0 *1 11.32,54.325
+X$238 sky130_gnd \$104 sky130_gnd nfet$3$2
+* cell instance $239 r0 *1 24.6,54.325
+X$239 sky130_gnd \$104 sky130_gnd nfet$3$2
+* cell instance $240 r180 *1 34.565,57.435
+X$240 \$104 vias_gen$1$2
+* cell instance $241 r180 *1 34.555,48.47
+X$241 \$104 vias_gen$1$2
+* cell instance $242 r180 *1 29.575,48.47
+X$242 \$104 vias_gen$1$2
+* cell instance $243 r180 *1 29.585,57.435
+X$243 \$104 vias_gen$1$2
+* cell instance $244 r180 *1 16.305,48.47
+X$244 \$104 vias_gen$1$2
+* cell instance $245 r180 *1 27.915,57.435
+X$245 \$104 vias_gen$1$2
+* cell instance $246 r180 *1 21.275,48.47
+X$246 \$104 vias_gen$1$2
+* cell instance $247 r180 *1 16.295,57.435
+X$247 \$104 vias_gen$1$2
+* cell instance $248 r180 *1 22.935,57.435
+X$248 \$104 vias_gen$1$2
+* cell instance $249 r180 *1 21.275,57.435
+X$249 \$104 vias_gen$1$2
+* cell instance $250 r180 *1 9.655,57.435
+X$250 \$104 vias_gen$1$2
+* cell instance $251 r180 *1 9.655,48.47
+X$251 \$104 vias_gen$1$2
+* cell instance $252 r180 *1 27.925,48.47
+X$252 \$104 vias_gen$1$2
+* cell instance $253 r180 *1 14.635,48.47
+X$253 \$104 vias_gen$1$2
+* cell instance $254 r180 *1 14.645,57.435
+X$254 \$104 vias_gen$1$2
+* cell instance $255 r180 *1 22.945,48.47
+X$255 \$104 vias_gen$1$2
+* cell instance $256 r180 *1 47.825,50.145
+X$256 \$116 vias_gen$7$2
+* cell instance $257 r180 *1 51.145,50.145
+X$257 \$116 vias_gen$7$2
+* cell instance $258 r270 *1 45.065,61.565
+X$258 \$116 vias_gen$6$2
+* cell instance $259 r270 *1 45.065,56.965
+X$259 \$116 vias_gen$6$2
+* cell instance $260 r270 *1 45.065,68.68
+X$260 \$116 vias_gen$6$2
+* cell instance $261 r270 *1 45.065,50.445
+X$261 \$116 vias_gen$6$2
+* cell instance $262 r0 *1 43.265,70.81
+X$262 \$116 \$238 sky130_gnd res_poly$4
+* cell instance $263 r180 *1 43.61,68.68
+X$263 \$116 vias_gen$1$2
+* cell instance $264 r180 *1 43.61,56.665
+X$264 \$116 vias_gen$1$2
+* cell instance $265 r180 *1 43.61,61.265
+X$265 \$116 vias_gen$1$2
+* cell instance $266 r0 *1 43.265,63.385
+X$266 \$116 \$238 sky130_gnd res_poly$4
+* cell instance $267 r180 *1 21.955,81.255
+X$267 \$126 vias_gen$3$3
+* cell instance $268 r180 *1 10.335,53.325
+X$268 \$126 vias_gen$3$3
+* cell instance $269 r180 *1 33.525,53.325
+X$269 \$126 vias_gen$3$3
+* cell instance $270 r180 *1 20.245,53.325
+X$270 \$126 vias_gen$3$3
+* cell instance $271 r180 *1 23.565,53.325
+X$271 \$126 vias_gen$3$3
+* cell instance $272 r180 *1 21.955,63.035
+X$272 \$126 vias_gen$3$3
+* cell instance $273 m135 *1 3.5,53.625
+X$273 \$126 vias_gen$6$2
+* cell instance $274 m135 *1 39.285,53.625
+X$274 \$126 vias_gen$6$2
+* cell instance $275 m135 *1 3.5,63.035
+X$275 \$126 vias_gen$6$2
+* cell instance $276 r180 *1 39.285,63.035
+X$276 \$126 vias_gen$6$2
+* cell instance $277 r90 *1 3.5,80.455
+X$277 \$126 vias_gen$6$2
+* cell instance $278 r90 *1 39.285,80.755
+X$278 \$126 vias_gen$6$2
+* cell instance $279 m0 *1 9.66,51.03
+X$279 \$126 sky130_gnd sky130_gnd nfet$3$2
+* cell instance $280 m0 *1 22.94,51.03
+X$280 \$126 sky130_gnd sky130_gnd nfet$3$2
+* cell instance $281 r0 *1 22.94,54.325
+X$281 \$126 sky130_gnd sky130_gnd nfet$3$2
+* cell instance $282 r0 *1 9.66,54.325
+X$282 \$126 sky130_gnd sky130_gnd nfet$3$2
+* cell instance $283 m0 *1 31.24,51.03
+X$283 sky130_gnd \$126 sky130_gnd nfet$3$2
+* cell instance $284 m0 *1 17.96,51.03
+X$284 sky130_gnd \$126 sky130_gnd nfet$3$2
+* cell instance $285 r0 *1 17.96,54.325
+X$285 sky130_gnd \$126 sky130_gnd nfet$3$2
+* cell instance $286 r0 *1 31.24,54.325
+X$286 sky130_gnd \$126 sky130_gnd nfet$3$2
+* cell instance $287 r180 *1 15.46,81.255
+X$287 \$126 vias_gen$1$2
+* cell instance $288 r180 *1 18.115,81.255
+X$288 \$126 vias_gen$1$2
+* cell instance $289 r180 *1 20.775,81.255
+X$289 \$126 vias_gen$1$2
+* cell instance $290 r180 *1 26.06,63.035
+X$290 \$126 vias_gen$1$2
+* cell instance $291 r180 *1 26.09,81.255
+X$291 \$126 vias_gen$1$2
+* cell instance $292 r180 *1 23.4,63.035
+X$292 \$126 vias_gen$1$2
+* cell instance $293 r180 *1 20.74,63.035
+X$293 \$126 vias_gen$1$2
+* cell instance $294 r180 *1 18.085,63.035
+X$294 \$126 vias_gen$1$2
+* cell instance $295 r180 *1 15.46,63.035
+X$295 \$126 vias_gen$1$2
+* cell instance $296 r180 *1 23.455,81.255
+X$296 \$126 vias_gen$1$2
+* cell instance $297 r180 *1 28.73,63.035
+X$297 \$126 vias_gen$1$2
+* cell instance $298 r180 *1 28.755,81.255
+X$298 \$126 vias_gen$1$2
+* cell instance $299 r180 *1 27.225,82.055
+X$299 \$198 vias_gen$3$3
+* cell instance $300 r180 *1 47.825,83.845
+X$300 \$198 vias_gen$3$3
+* cell instance $301 r180 *1 51.145,83.845
+X$301 \$198 vias_gen$3$3
+* cell instance $302 r180 *1 16.635,79.655
+X$302 \$198 vias_gen$3$3
+* cell instance $303 r180 *1 27.215,63.835
+X$303 \$198 vias_gen$3$3
+* cell instance $304 m0 *1 5,63.835
+X$304 \$198 vias_gen$6$2
+* cell instance $305 m0 *1 37.485,63.835
+X$305 \$198 vias_gen$6$2
+* cell instance $306 m0 *1 5,79.655
+X$306 \$198 vias_gen$6$2
+* cell instance $307 m0 *1 5,82.055
+X$307 \$198 vias_gen$6$2
+* cell instance $308 r90 *1 38.285,83.345
+X$308 \$198 vias_gen$6$2
+* cell instance $309 r0 *1 37.485,81.555
+X$309 \$198 vias_gen$6$2
+* cell instance $310 r0 *1 37.485,79.155
+X$310 \$198 vias_gen$6$2
+* cell instance $311 r180 *1 43.61,83.845
+X$311 \$198 vias_gen$1$2
+* cell instance $312 r0 *1 43.265,80.78
+X$312 \$238 \$198 sky130_gnd res_poly$3$2
+* cell instance $313 r90 *1 54.135,60.255
+X$313 \$202 vias_gen$6$2
+* cell instance $314 r90 *1 54.135,73.34
+X$314 \$202 vias_gen$6$2
+* cell instance $315 r180 *1 48.855,74.14
+X$315 \$202 vias_gen$1$2
+* cell instance $316 r180 *1 50.515,74.14
+X$316 \$202 vias_gen$1$2
+* cell instance $317 r180 *1 50.52,60.755
+X$317 \$202 vias_gen$1$2
+* cell instance $318 r180 *1 48.86,60.755
+X$318 \$202 vias_gen$1$2
+* cell instance $319 r180 *1 47.825,67.05
+X$319 \$238 vias_gen$7$2
+* cell instance $320 r180 *1 51.145,67.05
+X$320 \$238 vias_gen$7$2
+* cell instance $321 r270 *1 40.785,66.315
+X$321 \$238 vias_gen$6$2
+* cell instance $322 r270 *1 40.785,78.15
+X$322 \$238 vias_gen$6$2
+* cell instance $323 r270 *1 40.785,67.35
+X$323 \$238 vias_gen$6$2
+* cell instance $324 r270 *1 40.785,73.44
+X$324 \$238 vias_gen$6$2
+* cell instance $325 r180 *1 43.92,78.15
+X$325 \$238 vias_gen$1$2
+* cell instance $326 r180 *1 43.92,73.44
+X$326 \$238 vias_gen$1$2
+* cell instance $327 r180 *1 43.92,66.015
+X$327 \$238 vias_gen$1$2
+* cell instance $328 r90 *1 54.135,90.135
+X$328 \$239 vias_gen$6$2
+* cell instance $329 r90 *1 54.135,77.05
+X$329 \$239 vias_gen$6$2
+* cell instance $330 r180 *1 50.515,77.55
+X$330 \$239 vias_gen$1$2
+* cell instance $331 r180 *1 50.515,90.935
+X$331 \$239 vias_gen$1$2
+* cell instance $332 r180 *1 48.855,77.55
+X$332 \$239 vias_gen$1$2
+* cell instance $333 r180 *1 48.855,90.935
+X$333 \$239 vias_gen$1$2
+* cell instance $334 r0 *1 0,0
+X$334 sky130_gnd vias_gen$13$2
+* cell instance $335 m45 *1 4.195,1.5
+X$335 sky130_gnd vias_gen$6$2
+* cell instance $336 r0 *1 54.635,1.5
+X$336 sky130_gnd vias_gen$9$2
+* cell instance $337 m90 *1 7.995,46.67
+X$337 sky130_gnd vias_gen$2$2
+* cell instance $338 m90 *1 12.145,46.67
+X$338 sky130_gnd vias_gen$2$2
+* cell instance $339 m90 *1 32.07,46.67
+X$339 sky130_gnd vias_gen$2$2
+* cell instance $340 m90 *1 36.225,46.67
+X$340 sky130_gnd vias_gen$2$2
+* cell instance $341 m90 *1 18.78,46.67
+X$341 sky130_gnd vias_gen$2$2
+* cell instance $342 m90 *1 25.415,46.67
+X$342 sky130_gnd vias_gen$2$2
+* cell instance $343 r180 *1 25.415,58.735
+X$343 sky130_gnd vias_gen$2$2
+* cell instance $344 r180 *1 7.995,58.735
+X$344 sky130_gnd vias_gen$2$2
+* cell instance $345 r180 *1 18.78,58.735
+X$345 sky130_gnd vias_gen$2$2
+* cell instance $346 r180 *1 12.145,58.735
+X$346 sky130_gnd vias_gen$2$2
+* cell instance $347 r180 *1 32.07,58.735
+X$347 sky130_gnd vias_gen$2$2
+* cell instance $348 r180 *1 36.225,58.735
+X$348 sky130_gnd vias_gen$2$2
+* cell instance $349 r0 *1 54.635,8.6
+X$349 sky130_gnd vias_gen$9$2
+* cell instance $350 r0 *1 0,38.31
+X$350 sky130_gnd vias_gen$9$2
+* cell instance $351 r0 *1 0,44.41
+X$351 sky130_gnd vias_gen$9$2
+* cell instance $352 r0 *1 54.635,22.8
+X$352 sky130_gnd vias_gen$9$2
+* cell instance $353 r0 *1 0,34.09
+X$353 sky130_gnd vias_gen$9$2
+* cell instance $354 r0 *1 0,28
+X$354 sky130_gnd vias_gen$9$2
+* cell instance $355 r0 *1 0,35.1
+X$355 sky130_gnd vias_gen$9$2
+* cell instance $356 r0 *1 0,3.19
+X$356 sky130_gnd vias_gen$9$2
+* cell instance $357 r0 *1 0,6.7
+X$357 sky130_gnd vias_gen$9$2
+* cell instance $358 r0 *1 0,13.8
+X$358 sky130_gnd vias_gen$9$2
+* cell instance $359 r0 *1 0,20.9
+X$359 sky130_gnd vias_gen$9$2
+* cell instance $360 r0 *1 54.635,44.41
+X$360 sky130_gnd vias_gen$9$2
+* cell instance $361 r0 *1 54.635,38.31
+X$361 sky130_gnd vias_gen$9$2
+* cell instance $362 r0 *1 54.635,15.7
+X$362 sky130_gnd vias_gen$9$2
+* cell instance $363 r0 *1 54.635,29.9
+X$363 sky130_gnd vias_gen$9$2
+* cell instance $364 m45 *1 18.395,29.9
+X$364 sky130_gnd vias_gen$6$2
+* cell instance $365 m45 *1 11.295,29.9
+X$365 sky130_gnd vias_gen$6$2
+* cell instance $366 m45 *1 25.495,29.9
+X$366 sky130_gnd vias_gen$6$2
+* cell instance $367 m45 *1 11.295,15.7
+X$367 sky130_gnd vias_gen$6$2
+* cell instance $368 m45 *1 16.485,34.8
+X$368 sky130_gnd vias_gen$6$2
+* cell instance $369 m45 *1 11.295,8.6
+X$369 sky130_gnd vias_gen$6$2
+* cell instance $370 m45 *1 11.295,22.8
+X$370 sky130_gnd vias_gen$6$2
+* cell instance $371 m45 *1 18.395,22.8
+X$371 sky130_gnd vias_gen$6$2
+* cell instance $372 m45 *1 16.485,27.7
+X$372 sky130_gnd vias_gen$6$2
+* cell instance $373 m45 *1 25.495,22.8
+X$373 sky130_gnd vias_gen$6$2
+* cell instance $374 m45 *1 9.385,27.7
+X$374 sky130_gnd vias_gen$6$2
+* cell instance $375 m45 *1 9.385,34.8
+X$375 sky130_gnd vias_gen$6$2
+* cell instance $376 m45 *1 4.195,29.9
+X$376 sky130_gnd vias_gen$6$2
+* cell instance $377 m45 *1 23.585,27.7
+X$377 sky130_gnd vias_gen$6$2
+* cell instance $378 m45 *1 23.585,34.8
+X$378 sky130_gnd vias_gen$6$2
+* cell instance $379 m45 *1 4.195,22.8
+X$379 sky130_gnd vias_gen$6$2
+* cell instance $380 m45 *1 18.395,15.7
+X$380 sky130_gnd vias_gen$6$2
+* cell instance $381 m45 *1 25.495,1.5
+X$381 sky130_gnd vias_gen$6$2
+* cell instance $382 m45 *1 25.495,8.6
+X$382 sky130_gnd vias_gen$6$2
+* cell instance $383 m45 *1 25.495,15.7
+X$383 sky130_gnd vias_gen$6$2
+* cell instance $384 m45 *1 30.685,34.8
+X$384 sky130_gnd vias_gen$6$2
+* cell instance $385 m45 *1 32.595,29.9
+X$385 sky130_gnd vias_gen$6$2
+* cell instance $386 m45 *1 37.785,27.7
+X$386 sky130_gnd vias_gen$6$2
+* cell instance $387 m45 *1 37.785,34.8
+X$387 sky130_gnd vias_gen$6$2
+* cell instance $388 m45 *1 16.485,20.6
+X$388 sky130_gnd vias_gen$6$2
+* cell instance $389 m45 *1 30.685,20.6
+X$389 sky130_gnd vias_gen$6$2
+* cell instance $390 m45 *1 37.785,6.4
+X$390 sky130_gnd vias_gen$6$2
+* cell instance $391 m45 *1 30.685,6.4
+X$391 sky130_gnd vias_gen$6$2
+* cell instance $392 m45 *1 32.595,1.5
+X$392 sky130_gnd vias_gen$6$2
+* cell instance $393 m45 *1 32.595,8.6
+X$393 sky130_gnd vias_gen$6$2
+* cell instance $394 m45 *1 32.595,15.7
+X$394 sky130_gnd vias_gen$6$2
+* cell instance $395 m45 *1 30.685,13.5
+X$395 sky130_gnd vias_gen$6$2
+* cell instance $396 m45 *1 37.785,13.5
+X$396 sky130_gnd vias_gen$6$2
+* cell instance $397 m45 *1 37.785,20.6
+X$397 sky130_gnd vias_gen$6$2
+* cell instance $398 m45 *1 32.595,22.8
+X$398 sky130_gnd vias_gen$6$2
+* cell instance $399 m45 *1 30.685,27.7
+X$399 sky130_gnd vias_gen$6$2
+* cell instance $400 m45 *1 18.395,1.5
+X$400 sky130_gnd vias_gen$6$2
+* cell instance $401 m45 *1 18.395,8.6
+X$401 sky130_gnd vias_gen$6$2
+* cell instance $402 m45 *1 9.385,20.6
+X$402 sky130_gnd vias_gen$6$2
+* cell instance $403 m45 *1 9.385,13.5
+X$403 sky130_gnd vias_gen$6$2
+* cell instance $404 m45 *1 4.195,15.7
+X$404 sky130_gnd vias_gen$6$2
+* cell instance $405 m45 *1 9.385,6.4
+X$405 sky130_gnd vias_gen$6$2
+* cell instance $406 m45 *1 23.585,6.4
+X$406 sky130_gnd vias_gen$6$2
+* cell instance $407 m45 *1 23.585,13.5
+X$407 sky130_gnd vias_gen$6$2
+* cell instance $408 m45 *1 16.485,13.5
+X$408 sky130_gnd vias_gen$6$2
+* cell instance $409 m45 *1 11.295,1.5
+X$409 sky130_gnd vias_gen$6$2
+* cell instance $410 m45 *1 4.195,8.6
+X$410 sky130_gnd vias_gen$6$2
+* cell instance $411 m45 *1 16.485,6.4
+X$411 sky130_gnd vias_gen$6$2
+* cell instance $412 m45 *1 23.585,20.6
+X$412 sky130_gnd vias_gen$6$2
+* cell instance $413 r0 *1 0,57.735
+X$413 sky130_gnd vias_gen$13$2
+* cell instance $414 r0 *1 0,46.67
+X$414 sky130_gnd vias_gen$13$2
+* cell instance $415 r0 *1 0,59.035
+X$415 sky130_gnd vias_gen$13$2
+* cell instance $416 r0 *1 54.635,0
+X$416 sky130_gnd vias_gen$13$2
+* cell instance $417 r0 *1 54.635,36.85
+X$417 sky130_gnd vias_gen$13$2
+* cell instance $418 r0 *1 0,36.85
+X$418 sky130_gnd vias_gen$13$2
+* cell instance $419 r0 *1 0,45.37
+X$419 sky130_gnd vias_gen$13$2
+* cell instance $420 r0 *1 54.635,45.37
+X$420 sky130_gnd vias_gen$13$2
+* cell instance $421 r0 *1 16.235,44.41
+X$421 sky130_gnd vias_gen$16$2
+* cell instance $422 r0 *1 10.09,38.31
+X$422 sky130_gnd vias_gen$17$2
+* cell instance $423 r0 *1 25.36,29.775
+X$423 sky130_gnd sky130_gnd sky130_gnd sky130_gnd pnp_bjt$2
+* cell instance $424 r0 *1 25.36,1.375
+X$424 sky130_gnd sky130_gnd sky130_gnd sky130_gnd pnp_bjt$2
+* cell instance $425 r0 *1 18.26,1.375
+X$425 sky130_gnd sky130_gnd sky130_gnd sky130_gnd pnp_bjt$2
+* cell instance $426 r0 *1 11.16,29.775
+X$426 sky130_gnd sky130_gnd sky130_gnd sky130_gnd pnp_bjt$2
+* cell instance $427 r0 *1 18.26,29.775
+X$427 sky130_gnd sky130_gnd sky130_gnd sky130_gnd pnp_bjt$2
+* cell instance $428 r0 *1 11.16,1.375
+X$428 sky130_gnd sky130_gnd sky130_gnd sky130_gnd pnp_bjt$2
+* cell instance $429 r0 *1 32.46,29.775
+X$429 sky130_gnd sky130_gnd sky130_gnd sky130_gnd pnp_bjt$2
+* cell instance $430 r0 *1 5.92,1.5
+X$430 sky130_gnd vias_gen$10$2
+* cell instance $431 r0 *1 4.06,1.375
+X$431 sky130_gnd sky130_gnd sky130_gnd sky130_gnd pnp_bjt$2
+* cell instance $432 r0 *1 34.525,1.5
+X$432 sky130_gnd vias_gen$10$2
+* cell instance $433 r0 *1 34.3,6.7
+X$433 sky130_gnd vias_gen$10$2
+* cell instance $434 r0 *1 13.095,20.9
+X$434 sky130_gnd vias_gen$10$2
+* cell instance $435 r0 *1 13.095,6.7
+X$435 sky130_gnd vias_gen$10$2
+* cell instance $436 r0 *1 5.92,22.8
+X$436 sky130_gnd vias_gen$10$2
+* cell instance $437 r0 *1 34.525,22.8
+X$437 sky130_gnd vias_gen$10$2
+* cell instance $438 r0 *1 34.525,8.6
+X$438 sky130_gnd vias_gen$10$2
+* cell instance $439 r0 *1 12.955,15.7
+X$439 sky130_gnd vias_gen$10$2
+* cell instance $440 r0 *1 12.955,8.6
+X$440 sky130_gnd vias_gen$10$2
+* cell instance $441 r0 *1 12.955,1.5
+X$441 sky130_gnd vias_gen$10$2
+* cell instance $442 r0 *1 27.185,8.6
+X$442 sky130_gnd vias_gen$10$2
+* cell instance $443 r0 *1 27.19,13.8
+X$443 sky130_gnd vias_gen$10$2
+* cell instance $444 r0 *1 27.19,6.7
+X$444 sky130_gnd vias_gen$10$2
+* cell instance $445 r0 *1 27.185,1.5
+X$445 sky130_gnd vias_gen$10$2
+* cell instance $446 r0 *1 27.185,22.8
+X$446 sky130_gnd vias_gen$10$2
+* cell instance $447 r0 *1 27.19,20.9
+X$447 sky130_gnd vias_gen$10$2
+* cell instance $448 r0 *1 27.185,15.7
+X$448 sky130_gnd vias_gen$10$2
+* cell instance $449 r0 *1 34.3,13.8
+X$449 sky130_gnd vias_gen$10$2
+* cell instance $450 r0 *1 27.185,29.9
+X$450 sky130_gnd vias_gen$10$2
+* cell instance $451 r0 *1 27.19,35.1
+X$451 sky130_gnd vias_gen$10$2
+* cell instance $452 r0 *1 27.19,28
+X$452 sky130_gnd vias_gen$10$2
+* cell instance $453 r0 *1 13.095,13.8
+X$453 sky130_gnd vias_gen$10$2
+* cell instance $454 r0 *1 5.92,29.9
+X$454 sky130_gnd vias_gen$10$2
+* cell instance $455 r0 *1 5.92,35.1
+X$455 sky130_gnd vias_gen$10$2
+* cell instance $456 r0 *1 5.92,28
+X$456 sky130_gnd vias_gen$10$2
+* cell instance $457 r0 *1 34.525,29.9
+X$457 sky130_gnd vias_gen$10$2
+* cell instance $458 r0 *1 34.3,28
+X$458 sky130_gnd vias_gen$10$2
+* cell instance $459 r0 *1 5.92,13.8
+X$459 sky130_gnd vias_gen$10$2
+* cell instance $460 r0 *1 5.92,6.7
+X$460 sky130_gnd vias_gen$10$2
+* cell instance $461 r0 *1 5.92,8.6
+X$461 sky130_gnd vias_gen$10$2
+* cell instance $462 r0 *1 20.1,35.1
+X$462 sky130_gnd vias_gen$10$2
+* cell instance $463 r0 *1 5.92,20.9
+X$463 sky130_gnd vias_gen$10$2
+* cell instance $464 r0 *1 5.92,15.7
+X$464 sky130_gnd vias_gen$10$2
+* cell instance $465 r0 *1 20.1,20.9
+X$465 sky130_gnd vias_gen$10$2
+* cell instance $466 r0 *1 20.1,6.7
+X$466 sky130_gnd vias_gen$10$2
+* cell instance $467 r0 *1 20.165,1.5
+X$467 sky130_gnd vias_gen$10$2
+* cell instance $468 r0 *1 20.1,13.8
+X$468 sky130_gnd vias_gen$10$2
+* cell instance $469 r0 *1 20.165,8.6
+X$469 sky130_gnd vias_gen$10$2
+* cell instance $470 r0 *1 34.3,35.1
+X$470 sky130_gnd vias_gen$10$2
+* cell instance $471 r0 *1 34.3,20.9
+X$471 sky130_gnd vias_gen$10$2
+* cell instance $472 r0 *1 20.165,15.7
+X$472 sky130_gnd vias_gen$10$2
+* cell instance $473 r0 *1 12.955,22.8
+X$473 sky130_gnd vias_gen$10$2
+* cell instance $474 r0 *1 20.165,22.8
+X$474 sky130_gnd vias_gen$10$2
+* cell instance $475 r0 *1 12.955,29.9
+X$475 sky130_gnd vias_gen$10$2
+* cell instance $476 r0 *1 13.095,35.1
+X$476 sky130_gnd vias_gen$10$2
+* cell instance $477 r0 *1 13.095,28
+X$477 sky130_gnd vias_gen$10$2
+* cell instance $478 r0 *1 34.525,15.7
+X$478 sky130_gnd vias_gen$10$2
+* cell instance $479 r0 *1 20.1,28
+X$479 sky130_gnd vias_gen$10$2
+* cell instance $480 r0 *1 20.165,29.9
+X$480 sky130_gnd vias_gen$10$2
+* cell instance $481 r180 *1 6.89,3.69
+X$481 sky130_gnd vias_gen$1$2
+* cell instance $482 r180 *1 21.085,3.69
+X$482 sky130_gnd vias_gen$1$2
+* cell instance $483 r180 *1 13.985,3.69
+X$483 sky130_gnd vias_gen$1$2
+* cell instance $484 r180 *1 28.185,3.69
+X$484 sky130_gnd vias_gen$1$2
+* cell instance $485 r0 *1 29.235,34.09
+X$485 sky130_gnd vias_gen$1$2
+* cell instance $486 r0 *1 36.33,34.09
+X$486 sky130_gnd vias_gen$1$2
+* cell instance $487 r0 *1 22.135,34.09
+X$487 sky130_gnd vias_gen$1$2
+* cell instance $488 r0 *1 15.035,34.09
+X$488 sky130_gnd vias_gen$1$2
+* cell instance $489 r180 *1 44.715,0.585
+X$489 sky130_gnd vias_gen$19$2
+* cell instance $490 r270 *1 44.285,82.16
+X$490 sky130_gnd vias_gen$19$2
+* cell instance $491 r180 *1 44.715,67.835
+X$491 sky130_gnd vias_gen$19$2
+* cell instance $492 r180 *1 44.715,49.035
+X$492 sky130_gnd vias_gen$19$2
+* cell instance $493 r180 *1 44.715,60.41
+X$493 sky130_gnd vias_gen$19$2
+* cell instance $494 r180 *1 44.715,51.425
+X$494 sky130_gnd vias_gen$19$2
+* cell instance $495 r180 *1 44.715,74.285
+X$495 sky130_gnd vias_gen$19$2
+* cell instance $496 r180 *1 44.715,84.755
+X$496 sky130_gnd vias_gen$19$2
+* cell instance $497 r180 *1 44.715,57.455
+X$497 sky130_gnd vias_gen$19$2
+* cell instance $498 r0 *1 6.64,0.25
+X$498 sky130_gnd vias_gen$15$2
+* cell instance $499 r0 *1 3.435,0.75
+X$499 sky130_gnd guard_ring_gen$10
+* cell instance $500 r0 *1 6.64,45.62
+X$500 sky130_gnd vias_gen$15$2
+* cell instance $501 r0 *1 5.59,46.12
+X$501 sky130_gnd guard_ring_gen$13$2
+* cell instance $502 r0 *1 6.64,37.1
+X$502 sky130_gnd vias_gen$15$2
+* cell instance $503 r0 *1 6.64,59.285
+X$503 sky130_gnd vias_gen$15$2
+* device instance $1 r0 *1 48.36,8.145 sky130_fd_pr__pfet_01v8_lvt
+XM$1 \$15 \$37 \$16 \$2 sky130_fd_pr__pfet_01v8_lvt L=1000000 W=5000000
++ AS=3.3e+12 AD=1.65e+12 PS=11320000 PD=5660000
+* device instance $2 r0 *1 50.02,8.145 sky130_fd_pr__pfet_01v8_lvt
+XM$2 \$16 \$2 \$2 \$2 sky130_fd_pr__pfet_01v8_lvt L=1000000 W=5000000
++ AS=1.65e+12 AD=3.3e+12 PS=5660000 PD=11320000
+* device instance $3 r0 *1 48.36,15.085 sky130_fd_pr__pfet_01v8_lvt
+XM$3 \$15 \$37 \$16 \$2 sky130_fd_pr__pfet_01v8_lvt L=1000000 W=5000000
++ AS=3.3e+12 AD=1.65e+12 PS=11320000 PD=5660000
+* device instance $4 r0 *1 50.02,15.085 sky130_fd_pr__pfet_01v8_lvt
+XM$4 \$16 \$37 \$15 \$2 sky130_fd_pr__pfet_01v8_lvt L=1000000 W=5000000
++ AS=1.65e+12 AD=3.3e+12 PS=5660000 PD=11320000
+* device instance $5 r0 *1 48.36,22.44 sky130_fd_pr__pfet_01v8_lvt
+XM$5 \$15 \$37 \$16 \$2 sky130_fd_pr__pfet_01v8_lvt L=1000000 W=5000000
++ AS=3.3e+12 AD=1.65e+12 PS=11320000 PD=5660000
+* device instance $6 r0 *1 50.02,22.44 sky130_fd_pr__pfet_01v8_lvt
+XM$6 \$16 \$37 \$15 \$2 sky130_fd_pr__pfet_01v8_lvt L=1000000 W=5000000
++ AS=1.65e+12 AD=3.3e+12 PS=5660000 PD=11320000
+* device instance $7 r0 *1 48.36,29.38 sky130_fd_pr__pfet_01v8_lvt
+XM$7 \$15 \$37 \$16 \$2 sky130_fd_pr__pfet_01v8_lvt L=1000000 W=5000000
++ AS=3.3e+12 AD=1.65e+12 PS=11320000 PD=5660000
+* device instance $8 r0 *1 50.02,29.38 sky130_fd_pr__pfet_01v8_lvt
+XM$8 \$16 \$37 \$15 \$2 sky130_fd_pr__pfet_01v8_lvt L=1000000 W=5000000
++ AS=1.65e+12 AD=3.3e+12 PS=5660000 PD=11320000
+* device instance $9 r0 *1 48.36,36.735 sky130_fd_pr__pfet_01v8_lvt
+XM$9 \$15 \$37 \$16 \$2 sky130_fd_pr__pfet_01v8_lvt L=1000000 W=5000000
++ AS=3.3e+12 AD=1.65e+12 PS=11320000 PD=5660000
+* device instance $10 r0 *1 50.02,36.735 sky130_fd_pr__pfet_01v8_lvt
+XM$10 \$16 \$37 \$15 \$2 sky130_fd_pr__pfet_01v8_lvt L=1000000 W=5000000
++ AS=1.65e+12 AD=3.3e+12 PS=5660000 PD=11320000
+* device instance $11 r0 *1 48.36,46.465 sky130_fd_pr__pfet_01v8_lvt
+XM$11 \$116 \$53 \$16 \$2 sky130_fd_pr__pfet_01v8_lvt L=1000000 W=5000000
++ AS=3.3e+12 AD=1.65e+12 PS=11320000 PD=5660000
+* device instance $12 r0 *1 50.02,46.465 sky130_fd_pr__pfet_01v8_lvt
+XM$12 \$16 \$53 \$116 \$2 sky130_fd_pr__pfet_01v8_lvt L=1000000 W=5000000
++ AS=1.65e+12 AD=3.3e+12 PS=5660000 PD=11320000
+* device instance $13 r0 *1 48.36,54.12 sky130_fd_pr__pfet_01v8_lvt
+XM$13 \$116 \$53 \$16 \$2 sky130_fd_pr__pfet_01v8_lvt L=1000000 W=5000000
++ AS=3.3e+12 AD=1.65e+12 PS=11320000 PD=5660000
+* device instance $14 r0 *1 50.02,54.12 sky130_fd_pr__pfet_01v8_lvt
+XM$14 \$16 \$53 \$116 \$2 sky130_fd_pr__pfet_01v8_lvt L=1000000 W=5000000
++ AS=1.65e+12 AD=3.3e+12 PS=5660000 PD=11320000
+* device instance $15 r0 *1 48.36,63.37 sky130_fd_pr__pfet_01v8_lvt
+XM$15 \$238 \$202 \$16 \$2 sky130_fd_pr__pfet_01v8_lvt L=1000000 W=5000000
++ AS=3.3e+12 AD=1.65e+12 PS=11320000 PD=5660000
+* device instance $16 r0 *1 50.02,63.37 sky130_fd_pr__pfet_01v8_lvt
+XM$16 \$16 \$202 \$238 \$2 sky130_fd_pr__pfet_01v8_lvt L=1000000 W=5000000
++ AS=1.65e+12 AD=3.3e+12 PS=5660000 PD=11320000
+* device instance $17 r0 *1 12.3,67.615 sky130_fd_pr__pfet_01v8_lvt
+XM$17 \$2 \$2 \$2 \$2 sky130_fd_pr__pfet_01v8_lvt L=2000000 W=6000000
++ AS=3.96e+12 AD=1.98e+12 PS=13320000 PD=6660000
+* device instance $18 r0 *1 14.96,67.615 sky130_fd_pr__pfet_01v8_lvt
+XM$18 \$2 \$126 \$104 \$2 sky130_fd_pr__pfet_01v8_lvt L=2000000 W=6000000
++ AS=1.98e+12 AD=1.98e+12 PS=6660000 PD=6660000
+* device instance $19 r0 *1 17.62,67.615 sky130_fd_pr__pfet_01v8_lvt
+XM$19 \$104 \$126 \$2 \$2 sky130_fd_pr__pfet_01v8_lvt L=2000000 W=6000000
++ AS=1.98e+12 AD=1.98e+12 PS=6660000 PD=6660000
+* device instance $20 r0 *1 20.28,67.615 sky130_fd_pr__pfet_01v8_lvt
+XM$20 \$2 \$126 \$126 \$2 sky130_fd_pr__pfet_01v8_lvt L=2000000 W=6000000
++ AS=1.98e+12 AD=1.98e+12 PS=6660000 PD=6660000
+* device instance $21 r0 *1 22.94,67.615 sky130_fd_pr__pfet_01v8_lvt
+XM$21 \$126 \$126 \$2 \$2 sky130_fd_pr__pfet_01v8_lvt L=2000000 W=6000000
++ AS=1.98e+12 AD=1.98e+12 PS=6660000 PD=6660000
+* device instance $22 r0 *1 25.6,67.615 sky130_fd_pr__pfet_01v8_lvt
+XM$22 \$2 \$126 \$198 \$2 sky130_fd_pr__pfet_01v8_lvt L=2000000 W=6000000
++ AS=1.98e+12 AD=1.98e+12 PS=6660000 PD=6660000
+* device instance $23 r0 *1 28.26,67.615 sky130_fd_pr__pfet_01v8_lvt
+XM$23 \$198 \$126 \$2 \$2 sky130_fd_pr__pfet_01v8_lvt L=2000000 W=6000000
++ AS=1.98e+12 AD=1.98e+12 PS=6660000 PD=6660000
+* device instance $24 r0 *1 30.92,67.615 sky130_fd_pr__pfet_01v8_lvt
+XM$24 \$2 \$2 \$2 \$2 sky130_fd_pr__pfet_01v8_lvt L=2000000 W=6000000
++ AS=1.98e+12 AD=3.96e+12 PS=6660000 PD=13320000
+* device instance $25 r0 *1 12.3,75.375 sky130_fd_pr__pfet_01v8_lvt
+XM$25 \$2 \$2 \$2 \$2 sky130_fd_pr__pfet_01v8_lvt L=2000000 W=6000000
++ AS=3.96e+12 AD=1.98e+12 PS=13320000 PD=6660000
+* device instance $26 r0 *1 14.96,75.375 sky130_fd_pr__pfet_01v8_lvt
+XM$26 \$2 \$126 \$198 \$2 sky130_fd_pr__pfet_01v8_lvt L=2000000 W=6000000
++ AS=1.98e+12 AD=1.98e+12 PS=6660000 PD=6660000
+* device instance $27 r0 *1 17.62,75.375 sky130_fd_pr__pfet_01v8_lvt
+XM$27 \$198 \$126 \$2 \$2 sky130_fd_pr__pfet_01v8_lvt L=2000000 W=6000000
++ AS=1.98e+12 AD=1.98e+12 PS=6660000 PD=6660000
+* device instance $28 r0 *1 20.28,75.375 sky130_fd_pr__pfet_01v8_lvt
+XM$28 \$2 \$126 \$126 \$2 sky130_fd_pr__pfet_01v8_lvt L=2000000 W=6000000
++ AS=1.98e+12 AD=1.98e+12 PS=6660000 PD=6660000
+* device instance $29 r0 *1 22.94,75.375 sky130_fd_pr__pfet_01v8_lvt
+XM$29 \$126 \$126 \$2 \$2 sky130_fd_pr__pfet_01v8_lvt L=2000000 W=6000000
++ AS=1.98e+12 AD=1.98e+12 PS=6660000 PD=6660000
+* device instance $30 r0 *1 25.6,75.375 sky130_fd_pr__pfet_01v8_lvt
+XM$30 \$2 \$126 \$104 \$2 sky130_fd_pr__pfet_01v8_lvt L=2000000 W=6000000
++ AS=1.98e+12 AD=1.98e+12 PS=6660000 PD=6660000
+* device instance $31 r0 *1 28.26,75.375 sky130_fd_pr__pfet_01v8_lvt
+XM$31 \$104 \$126 \$2 \$2 sky130_fd_pr__pfet_01v8_lvt L=2000000 W=6000000
++ AS=1.98e+12 AD=1.98e+12 PS=6660000 PD=6660000
+* device instance $32 r0 *1 30.92,75.375 sky130_fd_pr__pfet_01v8_lvt
+XM$32 \$2 \$2 \$2 \$2 sky130_fd_pr__pfet_01v8_lvt L=2000000 W=6000000
++ AS=1.98e+12 AD=3.96e+12 PS=6660000 PD=13320000
+* device instance $33 r0 *1 48.36,71.025 sky130_fd_pr__pfet_01v8_lvt
+XM$33 \$238 \$202 \$16 \$2 sky130_fd_pr__pfet_01v8_lvt L=1000000 W=5000000
++ AS=3.3e+12 AD=1.65e+12 PS=11320000 PD=5660000
+* device instance $34 r0 *1 50.02,71.025 sky130_fd_pr__pfet_01v8_lvt
+XM$34 \$16 \$202 \$238 \$2 sky130_fd_pr__pfet_01v8_lvt L=1000000 W=5000000
++ AS=1.65e+12 AD=3.3e+12 PS=5660000 PD=11320000
+* device instance $35 r0 *1 12.3,86.635 sky130_fd_pr__pfet_01v8_lvt
+XM$35 \$2 \$2 \$2 \$2 sky130_fd_pr__pfet_01v8_lvt L=2000000 W=6000000
++ AS=3.96e+12 AD=1.98e+12 PS=13320000 PD=6660000
+* device instance $36 r0 *1 14.96,86.635 sky130_fd_pr__pfet_01v8_lvt
+XM$36 \$2 \$126 \$104 \$2 sky130_fd_pr__pfet_01v8_lvt L=2000000 W=6000000
++ AS=1.98e+12 AD=1.98e+12 PS=6660000 PD=6660000
+* device instance $37 r0 *1 17.62,86.635 sky130_fd_pr__pfet_01v8_lvt
+XM$37 \$104 \$126 \$2 \$2 sky130_fd_pr__pfet_01v8_lvt L=2000000 W=6000000
++ AS=1.98e+12 AD=1.98e+12 PS=6660000 PD=6660000
+* device instance $38 r0 *1 20.28,86.635 sky130_fd_pr__pfet_01v8_lvt
+XM$38 \$2 \$126 \$126 \$2 sky130_fd_pr__pfet_01v8_lvt L=2000000 W=6000000
++ AS=1.98e+12 AD=1.98e+12 PS=6660000 PD=6660000
+* device instance $39 r0 *1 22.94,86.635 sky130_fd_pr__pfet_01v8_lvt
+XM$39 \$126 \$126 \$2 \$2 sky130_fd_pr__pfet_01v8_lvt L=2000000 W=6000000
++ AS=1.98e+12 AD=1.98e+12 PS=6660000 PD=6660000
+* device instance $40 r0 *1 25.6,86.635 sky130_fd_pr__pfet_01v8_lvt
+XM$40 \$2 \$126 \$198 \$2 sky130_fd_pr__pfet_01v8_lvt L=2000000 W=6000000
++ AS=1.98e+12 AD=1.98e+12 PS=6660000 PD=6660000
+* device instance $41 r0 *1 28.26,86.635 sky130_fd_pr__pfet_01v8_lvt
+XM$41 \$198 \$126 \$2 \$2 sky130_fd_pr__pfet_01v8_lvt L=2000000 W=6000000
++ AS=1.98e+12 AD=1.98e+12 PS=6660000 PD=6660000
+* device instance $42 r0 *1 30.92,86.635 sky130_fd_pr__pfet_01v8_lvt
+XM$42 \$2 \$2 \$2 \$2 sky130_fd_pr__pfet_01v8_lvt L=2000000 W=6000000
++ AS=1.98e+12 AD=3.96e+12 PS=6660000 PD=13320000
+* device instance $43 r0 *1 48.36,80.165 sky130_fd_pr__pfet_01v8_lvt
+XM$43 \$198 \$239 \$16 \$2 sky130_fd_pr__pfet_01v8_lvt L=1000000 W=5000000
++ AS=3.3e+12 AD=1.65e+12 PS=11320000 PD=5660000
+* device instance $44 r0 *1 50.02,80.165 sky130_fd_pr__pfet_01v8_lvt
+XM$44 \$16 \$239 \$198 \$2 sky130_fd_pr__pfet_01v8_lvt L=1000000 W=5000000
++ AS=1.65e+12 AD=3.3e+12 PS=5660000 PD=11320000
+* device instance $45 r0 *1 48.36,87.82 sky130_fd_pr__pfet_01v8_lvt
+XM$45 \$198 \$239 \$16 \$2 sky130_fd_pr__pfet_01v8_lvt L=1000000 W=5000000
++ AS=3.3e+12 AD=1.65e+12 PS=11320000 PD=5660000
+* device instance $46 r0 *1 50.02,87.82 sky130_fd_pr__pfet_01v8_lvt
+XM$46 \$16 \$239 \$198 \$2 sky130_fd_pr__pfet_01v8_lvt L=1000000 W=5000000
++ AS=1.65e+12 AD=3.3e+12 PS=5660000 PD=11320000
+* device instance $47 r0 *1 7.5,55.325 sky130_fd_pr__nfet_01v8_lvt
+XM$47 sky130_gnd sky130_gnd \$51 sky130_gnd sky130_fd_pr__nfet_01v8_lvt
++ L=1000000 W=2000000 AS=1.32e+12 AD=660000000000 PS=5320000 PD=2660000
+* device instance $48 r0 *1 9.16,55.325 sky130_fd_pr__nfet_01v8_lvt
+XM$48 \$51 \$104 \$126 sky130_gnd sky130_fd_pr__nfet_01v8_lvt L=1000000
++ W=2000000 AS=660000000000 AD=660000000000 PS=2660000 PD=2660000
+* device instance $49 r0 *1 10.82,55.325 sky130_fd_pr__nfet_01v8_lvt
+XM$49 \$126 sky130_gnd sky130_gnd sky130_gnd sky130_fd_pr__nfet_01v8_lvt
++ L=1000000 W=2000000 AS=660000000000 AD=660000000000 PS=2660000 PD=2660000
+* device instance $50 r0 *1 12.48,55.325 sky130_fd_pr__nfet_01v8_lvt
+XM$50 sky130_gnd sky130_gnd \$104 sky130_gnd sky130_fd_pr__nfet_01v8_lvt
++ L=1000000 W=2000000 AS=660000000000 AD=660000000000 PS=2660000 PD=2660000
+* device instance $51 r0 *1 14.14,55.325 sky130_fd_pr__nfet_01v8_lvt
+XM$51 \$104 \$104 \$49 sky130_gnd sky130_fd_pr__nfet_01v8_lvt L=1000000
++ W=2000000 AS=660000000000 AD=660000000000 PS=2660000 PD=2660000
+* device instance $52 r0 *1 15.8,55.325 sky130_fd_pr__nfet_01v8_lvt
+XM$52 \$49 \$104 \$104 sky130_gnd sky130_fd_pr__nfet_01v8_lvt L=1000000
++ W=2000000 AS=660000000000 AD=660000000000 PS=2660000 PD=2660000
+* device instance $53 r0 *1 17.46,55.325 sky130_fd_pr__nfet_01v8_lvt
+XM$53 \$104 sky130_gnd sky130_gnd sky130_gnd sky130_fd_pr__nfet_01v8_lvt
++ L=1000000 W=2000000 AS=660000000000 AD=660000000000 PS=2660000 PD=2660000
+* device instance $54 r0 *1 19.12,55.325 sky130_fd_pr__nfet_01v8_lvt
+XM$54 sky130_gnd sky130_gnd \$126 sky130_gnd sky130_fd_pr__nfet_01v8_lvt
++ L=1000000 W=2000000 AS=660000000000 AD=660000000000 PS=2660000 PD=2660000
+* device instance $55 r0 *1 20.78,55.325 sky130_fd_pr__nfet_01v8_lvt
+XM$55 \$126 \$104 \$51 sky130_gnd sky130_fd_pr__nfet_01v8_lvt L=1000000
++ W=2000000 AS=660000000000 AD=660000000000 PS=2660000 PD=2660000
+* device instance $56 r0 *1 22.44,55.325 sky130_fd_pr__nfet_01v8_lvt
+XM$56 \$51 \$104 \$126 sky130_gnd sky130_fd_pr__nfet_01v8_lvt L=1000000
++ W=2000000 AS=660000000000 AD=660000000000 PS=2660000 PD=2660000
+* device instance $57 r0 *1 24.1,55.325 sky130_fd_pr__nfet_01v8_lvt
+XM$57 \$126 sky130_gnd sky130_gnd sky130_gnd sky130_fd_pr__nfet_01v8_lvt
++ L=1000000 W=2000000 AS=660000000000 AD=660000000000 PS=2660000 PD=2660000
+* device instance $58 r0 *1 25.76,55.325 sky130_fd_pr__nfet_01v8_lvt
+XM$58 sky130_gnd sky130_gnd \$104 sky130_gnd sky130_fd_pr__nfet_01v8_lvt
++ L=1000000 W=2000000 AS=660000000000 AD=660000000000 PS=2660000 PD=2660000
+* device instance $59 r0 *1 27.42,55.325 sky130_fd_pr__nfet_01v8_lvt
+XM$59 \$104 \$104 \$49 sky130_gnd sky130_fd_pr__nfet_01v8_lvt L=1000000
++ W=2000000 AS=660000000000 AD=660000000000 PS=2660000 PD=2660000
+* device instance $60 r0 *1 29.08,55.325 sky130_fd_pr__nfet_01v8_lvt
+XM$60 \$49 \$104 \$104 sky130_gnd sky130_fd_pr__nfet_01v8_lvt L=1000000
++ W=2000000 AS=660000000000 AD=660000000000 PS=2660000 PD=2660000
+* device instance $61 r0 *1 30.74,55.325 sky130_fd_pr__nfet_01v8_lvt
+XM$61 \$104 sky130_gnd sky130_gnd sky130_gnd sky130_fd_pr__nfet_01v8_lvt
++ L=1000000 W=2000000 AS=660000000000 AD=660000000000 PS=2660000 PD=2660000
+* device instance $62 r0 *1 32.4,55.325 sky130_fd_pr__nfet_01v8_lvt
+XM$62 sky130_gnd sky130_gnd \$126 sky130_gnd sky130_fd_pr__nfet_01v8_lvt
++ L=1000000 W=2000000 AS=660000000000 AD=660000000000 PS=2660000 PD=2660000
+* device instance $63 r0 *1 34.06,55.325 sky130_fd_pr__nfet_01v8_lvt
+XM$63 \$126 \$104 \$51 sky130_gnd sky130_fd_pr__nfet_01v8_lvt L=1000000
++ W=2000000 AS=660000000000 AD=660000000000 PS=2660000 PD=2660000
+* device instance $64 r0 *1 35.72,55.325 sky130_fd_pr__nfet_01v8_lvt
+XM$64 \$51 sky130_gnd sky130_gnd sky130_gnd sky130_fd_pr__nfet_01v8_lvt
++ L=1000000 W=2000000 AS=660000000000 AD=1.32e+12 PS=2660000 PD=5320000
+* device instance $65 r0 *1 7.5,50.03 sky130_fd_pr__nfet_01v8_lvt
+XM$65 sky130_gnd sky130_gnd \$51 sky130_gnd sky130_fd_pr__nfet_01v8_lvt
++ L=1000000 W=2000000 AS=1.32e+12 AD=660000000000 PS=5320000 PD=2660000
+* device instance $66 r0 *1 9.16,50.03 sky130_fd_pr__nfet_01v8_lvt
+XM$66 \$51 \$104 \$126 sky130_gnd sky130_fd_pr__nfet_01v8_lvt L=1000000
++ W=2000000 AS=660000000000 AD=660000000000 PS=2660000 PD=2660000
+* device instance $67 r0 *1 10.82,50.03 sky130_fd_pr__nfet_01v8_lvt
+XM$67 \$126 sky130_gnd sky130_gnd sky130_gnd sky130_fd_pr__nfet_01v8_lvt
++ L=1000000 W=2000000 AS=660000000000 AD=660000000000 PS=2660000 PD=2660000
+* device instance $68 r0 *1 12.48,50.03 sky130_fd_pr__nfet_01v8_lvt
+XM$68 sky130_gnd sky130_gnd \$104 sky130_gnd sky130_fd_pr__nfet_01v8_lvt
++ L=1000000 W=2000000 AS=660000000000 AD=660000000000 PS=2660000 PD=2660000
+* device instance $69 r0 *1 14.14,50.03 sky130_fd_pr__nfet_01v8_lvt
+XM$69 \$104 \$104 \$49 sky130_gnd sky130_fd_pr__nfet_01v8_lvt L=1000000
++ W=2000000 AS=660000000000 AD=660000000000 PS=2660000 PD=2660000
+* device instance $70 r0 *1 15.8,50.03 sky130_fd_pr__nfet_01v8_lvt
+XM$70 \$49 \$104 \$104 sky130_gnd sky130_fd_pr__nfet_01v8_lvt L=1000000
++ W=2000000 AS=660000000000 AD=660000000000 PS=2660000 PD=2660000
+* device instance $71 r0 *1 17.46,50.03 sky130_fd_pr__nfet_01v8_lvt
+XM$71 \$104 sky130_gnd sky130_gnd sky130_gnd sky130_fd_pr__nfet_01v8_lvt
++ L=1000000 W=2000000 AS=660000000000 AD=660000000000 PS=2660000 PD=2660000
+* device instance $72 r0 *1 19.12,50.03 sky130_fd_pr__nfet_01v8_lvt
+XM$72 sky130_gnd sky130_gnd \$126 sky130_gnd sky130_fd_pr__nfet_01v8_lvt
++ L=1000000 W=2000000 AS=660000000000 AD=660000000000 PS=2660000 PD=2660000
+* device instance $73 r0 *1 20.78,50.03 sky130_fd_pr__nfet_01v8_lvt
+XM$73 \$126 \$104 \$51 sky130_gnd sky130_fd_pr__nfet_01v8_lvt L=1000000
++ W=2000000 AS=660000000000 AD=660000000000 PS=2660000 PD=2660000
+* device instance $74 r0 *1 22.44,50.03 sky130_fd_pr__nfet_01v8_lvt
+XM$74 \$51 \$104 \$126 sky130_gnd sky130_fd_pr__nfet_01v8_lvt L=1000000
++ W=2000000 AS=660000000000 AD=660000000000 PS=2660000 PD=2660000
+* device instance $75 r0 *1 24.1,50.03 sky130_fd_pr__nfet_01v8_lvt
+XM$75 \$126 sky130_gnd sky130_gnd sky130_gnd sky130_fd_pr__nfet_01v8_lvt
++ L=1000000 W=2000000 AS=660000000000 AD=660000000000 PS=2660000 PD=2660000
+* device instance $76 r0 *1 25.76,50.03 sky130_fd_pr__nfet_01v8_lvt
+XM$76 sky130_gnd sky130_gnd \$104 sky130_gnd sky130_fd_pr__nfet_01v8_lvt
++ L=1000000 W=2000000 AS=660000000000 AD=660000000000 PS=2660000 PD=2660000
+* device instance $77 r0 *1 27.42,50.03 sky130_fd_pr__nfet_01v8_lvt
+XM$77 \$104 \$104 \$49 sky130_gnd sky130_fd_pr__nfet_01v8_lvt L=1000000
++ W=2000000 AS=660000000000 AD=660000000000 PS=2660000 PD=2660000
+* device instance $78 r0 *1 29.08,50.03 sky130_fd_pr__nfet_01v8_lvt
+XM$78 \$49 \$104 \$104 sky130_gnd sky130_fd_pr__nfet_01v8_lvt L=1000000
++ W=2000000 AS=660000000000 AD=660000000000 PS=2660000 PD=2660000
+* device instance $79 r0 *1 30.74,50.03 sky130_fd_pr__nfet_01v8_lvt
+XM$79 \$104 sky130_gnd sky130_gnd sky130_gnd sky130_fd_pr__nfet_01v8_lvt
++ L=1000000 W=2000000 AS=660000000000 AD=660000000000 PS=2660000 PD=2660000
+* device instance $80 r0 *1 32.4,50.03 sky130_fd_pr__nfet_01v8_lvt
+XM$80 sky130_gnd sky130_gnd \$126 sky130_gnd sky130_fd_pr__nfet_01v8_lvt
++ L=1000000 W=2000000 AS=660000000000 AD=660000000000 PS=2660000 PD=2660000
+* device instance $81 r0 *1 34.06,50.03 sky130_fd_pr__nfet_01v8_lvt
+XM$81 \$126 \$104 \$51 sky130_gnd sky130_fd_pr__nfet_01v8_lvt L=1000000
++ W=2000000 AS=660000000000 AD=660000000000 PS=2660000 PD=2660000
+* device instance $82 r0 *1 35.72,50.03 sky130_fd_pr__nfet_01v8_lvt
+XM$82 \$51 sky130_gnd sky130_gnd sky130_gnd sky130_fd_pr__nfet_01v8_lvt
++ L=1000000 W=2000000 AS=660000000000 AD=1.32e+12 PS=2660000 PD=5320000
+.ENDS BGR_coreAndVrefBranch
+
+* cell vias_gen$33
+* pin 
+.SUBCKT vias_gen$33 \$1
+.ENDS vias_gen$33
+
+* cell vias_gen$28
+* pin 
+.SUBCKT vias_gen$28 \$1
+.ENDS vias_gen$28
+
+* cell vias_gen$31
+* pin 
+.SUBCKT vias_gen$31 \$1
+.ENDS vias_gen$31
+
+* cell vias_gen$30
+* pin 
+.SUBCKT vias_gen$30 \$1
+.ENDS vias_gen$30
+
+* cell StartupCircuit
+* pin 
+* pin 
+* pin 
+* pin sky130_gnd
+.SUBCKT StartupCircuit \$1 \$10 \$11 sky130_gnd
+* cell instance $1 r270 *1 1.5,16.07
+X$1 \$1 vias_gen$23
+* cell instance $2 r270 *1 1.5,17.435
+X$2 \$1 vias_gen$23
+* cell instance $3 r270 *1 17.12,17.435
+X$3 \$1 vias_gen$23
+* cell instance $4 r270 *1 1.5,9.025
+X$4 \$1 vias_gen$23
+* cell instance $5 r270 *1 17.12,9.025
+X$5 \$1 vias_gen$23
+* cell instance $6 r270 *1 17.12,16.07
+X$6 \$1 vias_gen$23
+* cell instance $7 r270 *1 4.59,16.07
+X$7 \$1 vias_gen$20
+* cell instance $8 r0 *1 3.675,8.775
+X$8 \$1 guard_ring_gen$8
+* cell instance $9 r0 *1 3.05,16.685
+X$9 \$1 vias_gen$22
+* cell instance $10 r0 *1 3.05,8.275
+X$10 \$1 vias_gen$22
+* cell instance $11 m0 *1 9.585,12.68
+X$11 \$11 \$10 \$3 \$1 pfet$2
+* cell instance $12 m0 *1 11.245,12.68
+X$12 \$10 \$11 \$3 \$1 pfet$2
+* cell instance $13 r0 *1 6.265,10.68
+X$13 \$9 \$3 \$11 \$1 pfet$2
+* cell instance $14 r0 *1 4.605,10.68
+X$14 \$1 \$9 \$11 \$1 pfet$2
+* cell instance $15 m0 *1 7.095,4.3
+X$15 sky130_gnd \$2 \$2 nfet$4
+* cell instance $16 r0 *1 8.755,3.3
+X$16 \$2 \$3 \$3 nfet$4
+* cell instance $17 r180 *1 10.41,5.58
+X$17 \$3 vias_gen$20
+* cell instance $18 r180 *1 14.27,5.58
+X$18 \$3 vias_gen$21
+* cell instance $19 r180 *1 14.27,9.9
+X$19 \$3 vias_gen$21
+* cell instance $20 r0 *1 7.975,9.4
+X$20 \$3 vias_gen$20
+* cell instance $21 r0 *1 11.87,9.4
+X$21 \$3 vias_gen$20
+* cell instance $22 r0 *1 10.25,9.4
+X$22 \$3 vias_gen$20
+* cell instance $23 r0 *1 11.28,13.46
+X$23 \$10 vias_gen$20
+* cell instance $24 r0 *1 5.26,14.26
+X$24 \$11 vias_gen$20
+* cell instance $25 r0 *1 6.92,14.26
+X$25 \$11 vias_gen$20
+* cell instance $26 r0 *1 9.62,14.26
+X$26 \$11 vias_gen$20
+* cell instance $27 r0 *1 12.53,14.26
+X$27 \$11 vias_gen$20
+* cell instance $28 r270 *1 0,1
+X$28 sky130_gnd vias_gen$23
+* cell instance $29 r270 *1 0,2.38
+X$29 sky130_gnd vias_gen$23
+* cell instance $30 r270 *1 15.62,1.005
+X$30 sky130_gnd vias_gen$23
+* cell instance $31 r270 *1 15.62,2.385
+X$31 sky130_gnd vias_gen$23
+* cell instance $32 r270 *1 0,6.955
+X$32 sky130_gnd vias_gen$23
+* cell instance $33 r270 *1 15.62,6.955
+X$33 sky130_gnd vias_gen$23
+* cell instance $34 r270 *1 7.08,2.38
+X$34 sky130_gnd vias_gen$20
+* cell instance $35 r0 *1 6.345,0.755
+X$35 sky130_gnd guard_ring_gen$9
+* cell instance $36 r180 *1 12.45,6.705
+X$36 sky130_gnd vias_gen$24
+* cell instance $37 r180 *1 12.45,0.755
+X$37 sky130_gnd vias_gen$24
+* device instance $1 r0 *1 5.765,11.68 sky130_fd_pr__pfet_01v8_lvt
+XM$1 \$1 \$11 \$9 \$1 sky130_fd_pr__pfet_01v8_lvt L=1000000 W=2000000
++ AS=1.32e+12 AD=660000000000 PS=5320000 PD=2660000
+* device instance $2 r0 *1 7.425,11.68 sky130_fd_pr__pfet_01v8_lvt
+XM$2 \$9 \$11 \$3 \$1 sky130_fd_pr__pfet_01v8_lvt L=1000000 W=2000000
++ AS=660000000000 AD=1.32e+12 PS=2660000 PD=5320000
+* device instance $3 r0 *1 10.745,11.68 sky130_fd_pr__pfet_01v8_lvt
+XM$3 \$11 \$3 \$10 \$1 sky130_fd_pr__pfet_01v8_lvt L=1000000 W=2000000
++ AS=1.32e+12 AD=660000000000 PS=5320000 PD=2660000
+* device instance $4 r0 *1 12.405,11.68 sky130_fd_pr__pfet_01v8_lvt
+XM$4 \$10 \$3 \$11 \$1 sky130_fd_pr__pfet_01v8_lvt L=1000000 W=2000000
++ AS=660000000000 AD=1.32e+12 PS=2660000 PD=5320000
+* device instance $5 r0 *1 8.255,3.8 sky130_fd_pr__nfet_01v8_lvt
+XM$5 sky130_gnd \$2 \$2 sky130_gnd sky130_fd_pr__nfet_01v8_lvt L=1000000
++ W=1000000 AS=660000000000 AD=330000000000 PS=3320000 PD=1660000
+* device instance $6 r0 *1 9.915,3.8 sky130_fd_pr__nfet_01v8_lvt
+XM$6 \$2 \$3 \$3 sky130_gnd sky130_fd_pr__nfet_01v8_lvt L=1000000 W=1000000
++ AS=330000000000 AD=660000000000 PS=1660000 PD=3320000
+.ENDS StartupCircuit
+
+* cell Dmux1to4_2select_bit
+* pin 
+* pin 
+* pin 
+* pin 
+* pin 
+* pin 
+* pin 
+* pin sky130_gnd
+.SUBCKT Dmux1to4_2select_bit \$1 \$8 \$16 \$20 \$24 \$25 \$31 sky130_gnd
+* cell instance $1 r0 *1 0,0.08
+X$1 \$1 vias_gen$3$4
+* cell instance $2 r0 *1 25.57,10.41
+X$2 \$1 vias_gen$3$4
+* cell instance $3 r0 *1 0,20.74
+X$3 \$1 vias_gen$3$4
+* cell instance $4 r0 *1 25.57,20.74
+X$4 \$1 vias_gen$3$4
+* cell instance $5 r0 *1 0,10.41
+X$5 \$1 vias_gen$3$4
+* cell instance $6 r0 *1 25.57,0.08
+X$6 \$1 vias_gen$3$4
+* cell instance $7 r270 *1 21.04,14.46
+X$7 \$25 vias_gen$34
+* cell instance $8 r0 *1 23.4,19.11
+X$8 \$25 vias_gen$34
+* cell instance $9 r0 *1 21.04,19.11
+X$9 \$25 vias_gen$34
+* cell instance $10 r0 *1 23.4,13.46
+X$10 \$25 vias_gen$34
+* cell instance $11 r0 *1 1.5,5.5
+X$11 sky130_gnd vias_gen$34
+* cell instance $12 r0 *1 27.07,15.825
+X$12 sky130_gnd vias_gen$34
+* cell instance $13 r0 *1 1.5,15.82
+X$13 sky130_gnd vias_gen$34
+* cell instance $14 r0 *1 27.07,5.5
+X$14 sky130_gnd vias_gen$34
+* device instance $1 r0 *1 7.815,1.89 sky130_fd_pr__pfet_01v8_lvt
+XM$1 \$1 \$1 \$8 \$1 sky130_fd_pr__pfet_01v8_lvt L=1000000 W=1000000
++ AS=300000000000 AD=250000000000 PS=2600000 PD=1500000
+* device instance $2 r0 *1 9.315,1.89 sky130_fd_pr__pfet_01v8_lvt
+XM$2 \$8 \$1 \$1 \$1 sky130_fd_pr__pfet_01v8_lvt L=1000000 W=1000000
++ AS=250000000000 AD=250000000000 PS=1500000 PD=1500000
+* device instance $3 r0 *1 10.815,1.89 sky130_fd_pr__pfet_01v8_lvt
+XM$3 \$1 \$1 \$8 \$1 sky130_fd_pr__pfet_01v8_lvt L=1000000 W=1000000
++ AS=250000000000 AD=250000000000 PS=1500000 PD=1500000
+* device instance $4 r0 *1 12.315,1.89 sky130_fd_pr__pfet_01v8_lvt
+XM$4 \$8 \$1 \$1 \$1 sky130_fd_pr__pfet_01v8_lvt L=1000000 W=1000000
++ AS=250000000000 AD=150000000000 PS=1500000 PD=1300000
+* device instance $5 r0 *1 13.615,1.89 sky130_fd_pr__pfet_01v8_lvt
+XM$5 \$1 \$10 \$8 \$1 sky130_fd_pr__pfet_01v8_lvt L=1000000 W=1000000
++ AS=150000000000 AD=250000000000 PS=1300000 PD=1500000
+* device instance $6 r0 *1 15.115,1.89 sky130_fd_pr__pfet_01v8_lvt
+XM$6 \$8 \$10 \$1 \$1 sky130_fd_pr__pfet_01v8_lvt L=1000000 W=1000000
++ AS=250000000000 AD=250000000000 PS=1500000 PD=1500000
+* device instance $7 r0 *1 16.615,1.89 sky130_fd_pr__pfet_01v8_lvt
+XM$7 \$1 \$10 \$8 \$1 sky130_fd_pr__pfet_01v8_lvt L=1000000 W=1000000
++ AS=250000000000 AD=250000000000 PS=1500000 PD=1500000
+* device instance $8 r0 *1 18.115,1.89 sky130_fd_pr__pfet_01v8_lvt
+XM$8 \$8 \$10 \$1 \$1 sky130_fd_pr__pfet_01v8_lvt L=1000000 W=1000000
++ AS=250000000000 AD=150000000000 PS=1500000 PD=1300000
+* device instance $9 r0 *1 19.415,1.89 sky130_fd_pr__pfet_01v8_lvt
+XM$9 \$1 \$11 \$8 \$1 sky130_fd_pr__pfet_01v8_lvt L=1000000 W=1000000
++ AS=150000000000 AD=250000000000 PS=1300000 PD=1500000
+* device instance $10 r0 *1 20.915,1.89 sky130_fd_pr__pfet_01v8_lvt
+XM$10 \$8 \$11 \$1 \$1 sky130_fd_pr__pfet_01v8_lvt L=1000000 W=1000000
++ AS=250000000000 AD=250000000000 PS=1500000 PD=1500000
+* device instance $11 r0 *1 22.415,1.89 sky130_fd_pr__pfet_01v8_lvt
+XM$11 \$1 \$11 \$8 \$1 sky130_fd_pr__pfet_01v8_lvt L=1000000 W=1000000
++ AS=250000000000 AD=250000000000 PS=1500000 PD=1500000
+* device instance $12 r0 *1 23.915,1.89 sky130_fd_pr__pfet_01v8_lvt
+XM$12 \$8 \$11 \$1 \$1 sky130_fd_pr__pfet_01v8_lvt L=1000000 W=1000000
++ AS=250000000000 AD=300000000000 PS=1500000 PD=2600000
+* device instance $13 r0 *1 4.105,9.6 sky130_fd_pr__pfet_01v8_lvt
+XM$13 \$1 \$25 \$11 \$1 sky130_fd_pr__pfet_01v8_lvt L=1000000 W=1000000
++ AS=300000000000 AD=250000000000 PS=2600000 PD=1500000
+* device instance $14 r0 *1 5.605,9.6 sky130_fd_pr__pfet_01v8_lvt
+XM$14 \$11 \$25 \$1 \$1 sky130_fd_pr__pfet_01v8_lvt L=1000000 W=1000000
++ AS=250000000000 AD=300000000000 PS=1500000 PD=2600000
+* device instance $15 r0 *1 7.815,9.6 sky130_fd_pr__pfet_01v8_lvt
+XM$15 \$1 \$1 \$16 \$1 sky130_fd_pr__pfet_01v8_lvt L=1000000 W=1000000
++ AS=300000000000 AD=250000000000 PS=2600000 PD=1500000
+* device instance $16 r0 *1 9.315,9.6 sky130_fd_pr__pfet_01v8_lvt
+XM$16 \$16 \$1 \$1 \$1 sky130_fd_pr__pfet_01v8_lvt L=1000000 W=1000000
++ AS=250000000000 AD=250000000000 PS=1500000 PD=1500000
+* device instance $17 r0 *1 10.815,9.6 sky130_fd_pr__pfet_01v8_lvt
+XM$17 \$1 \$1 \$16 \$1 sky130_fd_pr__pfet_01v8_lvt L=1000000 W=1000000
++ AS=250000000000 AD=250000000000 PS=1500000 PD=1500000
+* device instance $18 r0 *1 12.315,9.6 sky130_fd_pr__pfet_01v8_lvt
+XM$18 \$16 \$1 \$1 \$1 sky130_fd_pr__pfet_01v8_lvt L=1000000 W=1000000
++ AS=250000000000 AD=150000000000 PS=1500000 PD=1300000
+* device instance $19 r0 *1 13.615,9.6 sky130_fd_pr__pfet_01v8_lvt
+XM$19 \$1 \$20 \$16 \$1 sky130_fd_pr__pfet_01v8_lvt L=1000000 W=1000000
++ AS=150000000000 AD=250000000000 PS=1300000 PD=1500000
+* device instance $20 r0 *1 15.115,9.6 sky130_fd_pr__pfet_01v8_lvt
+XM$20 \$16 \$20 \$1 \$1 sky130_fd_pr__pfet_01v8_lvt L=1000000 W=1000000
++ AS=250000000000 AD=250000000000 PS=1500000 PD=1500000
+* device instance $21 r0 *1 16.615,9.6 sky130_fd_pr__pfet_01v8_lvt
+XM$21 \$1 \$20 \$16 \$1 sky130_fd_pr__pfet_01v8_lvt L=1000000 W=1000000
++ AS=250000000000 AD=250000000000 PS=1500000 PD=1500000
+* device instance $22 r0 *1 18.115,9.6 sky130_fd_pr__pfet_01v8_lvt
+XM$22 \$16 \$20 \$1 \$1 sky130_fd_pr__pfet_01v8_lvt L=1000000 W=1000000
++ AS=250000000000 AD=150000000000 PS=1500000 PD=1300000
+* device instance $23 r0 *1 19.415,9.6 sky130_fd_pr__pfet_01v8_lvt
+XM$23 \$1 \$11 \$16 \$1 sky130_fd_pr__pfet_01v8_lvt L=1000000 W=1000000
++ AS=150000000000 AD=250000000000 PS=1300000 PD=1500000
+* device instance $24 r0 *1 20.915,9.6 sky130_fd_pr__pfet_01v8_lvt
+XM$24 \$16 \$11 \$1 \$1 sky130_fd_pr__pfet_01v8_lvt L=1000000 W=1000000
++ AS=250000000000 AD=250000000000 PS=1500000 PD=1500000
+* device instance $25 r0 *1 22.415,9.6 sky130_fd_pr__pfet_01v8_lvt
+XM$25 \$1 \$11 \$16 \$1 sky130_fd_pr__pfet_01v8_lvt L=1000000 W=1000000
++ AS=250000000000 AD=250000000000 PS=1500000 PD=1500000
+* device instance $26 r0 *1 23.915,9.6 sky130_fd_pr__pfet_01v8_lvt
+XM$26 \$16 \$11 \$1 \$1 sky130_fd_pr__pfet_01v8_lvt L=1000000 W=1000000
++ AS=250000000000 AD=300000000000 PS=1500000 PD=2600000
+* device instance $27 r0 *1 4.105,12.22 sky130_fd_pr__pfet_01v8_lvt
+XM$27 \$1 \$20 \$10 \$1 sky130_fd_pr__pfet_01v8_lvt L=1000000 W=1000000
++ AS=300000000000 AD=250000000000 PS=2600000 PD=1500000
+* device instance $28 r0 *1 5.605,12.22 sky130_fd_pr__pfet_01v8_lvt
+XM$28 \$10 \$20 \$1 \$1 sky130_fd_pr__pfet_01v8_lvt L=1000000 W=1000000
++ AS=250000000000 AD=300000000000 PS=1500000 PD=2600000
+* device instance $29 r0 *1 7.815,12.22 sky130_fd_pr__pfet_01v8_lvt
+XM$29 \$1 \$1 \$24 \$1 sky130_fd_pr__pfet_01v8_lvt L=1000000 W=1000000
++ AS=300000000000 AD=250000000000 PS=2600000 PD=1500000
+* device instance $30 r0 *1 9.315,12.22 sky130_fd_pr__pfet_01v8_lvt
+XM$30 \$24 \$1 \$1 \$1 sky130_fd_pr__pfet_01v8_lvt L=1000000 W=1000000
++ AS=250000000000 AD=250000000000 PS=1500000 PD=1500000
+* device instance $31 r0 *1 10.815,12.22 sky130_fd_pr__pfet_01v8_lvt
+XM$31 \$1 \$1 \$24 \$1 sky130_fd_pr__pfet_01v8_lvt L=1000000 W=1000000
++ AS=250000000000 AD=250000000000 PS=1500000 PD=1500000
+* device instance $32 r0 *1 12.315,12.22 sky130_fd_pr__pfet_01v8_lvt
+XM$32 \$24 \$1 \$1 \$1 sky130_fd_pr__pfet_01v8_lvt L=1000000 W=1000000
++ AS=250000000000 AD=150000000000 PS=1500000 PD=1300000
+* device instance $33 r0 *1 13.615,12.22 sky130_fd_pr__pfet_01v8_lvt
+XM$33 \$1 \$10 \$24 \$1 sky130_fd_pr__pfet_01v8_lvt L=1000000 W=1000000
++ AS=150000000000 AD=250000000000 PS=1300000 PD=1500000
+* device instance $34 r0 *1 15.115,12.22 sky130_fd_pr__pfet_01v8_lvt
+XM$34 \$24 \$10 \$1 \$1 sky130_fd_pr__pfet_01v8_lvt L=1000000 W=1000000
++ AS=250000000000 AD=250000000000 PS=1500000 PD=1500000
+* device instance $35 r0 *1 16.615,12.22 sky130_fd_pr__pfet_01v8_lvt
+XM$35 \$1 \$10 \$24 \$1 sky130_fd_pr__pfet_01v8_lvt L=1000000 W=1000000
++ AS=250000000000 AD=250000000000 PS=1500000 PD=1500000
+* device instance $36 r0 *1 18.115,12.22 sky130_fd_pr__pfet_01v8_lvt
+XM$36 \$24 \$10 \$1 \$1 sky130_fd_pr__pfet_01v8_lvt L=1000000 W=1000000
++ AS=250000000000 AD=150000000000 PS=1500000 PD=1300000
+* device instance $37 r0 *1 19.415,12.22 sky130_fd_pr__pfet_01v8_lvt
+XM$37 \$1 \$25 \$24 \$1 sky130_fd_pr__pfet_01v8_lvt L=1000000 W=1000000
++ AS=150000000000 AD=250000000000 PS=1300000 PD=1500000
+* device instance $38 r0 *1 20.915,12.22 sky130_fd_pr__pfet_01v8_lvt
+XM$38 \$24 \$25 \$1 \$1 sky130_fd_pr__pfet_01v8_lvt L=1000000 W=1000000
++ AS=250000000000 AD=250000000000 PS=1500000 PD=1500000
+* device instance $39 r0 *1 22.415,12.22 sky130_fd_pr__pfet_01v8_lvt
+XM$39 \$1 \$25 \$24 \$1 sky130_fd_pr__pfet_01v8_lvt L=1000000 W=1000000
++ AS=250000000000 AD=250000000000 PS=1500000 PD=1500000
+* device instance $40 r0 *1 23.915,12.22 sky130_fd_pr__pfet_01v8_lvt
+XM$40 \$24 \$25 \$1 \$1 sky130_fd_pr__pfet_01v8_lvt L=1000000 W=1000000
++ AS=250000000000 AD=300000000000 PS=1500000 PD=2600000
+* device instance $41 r0 *1 7.815,19.93 sky130_fd_pr__pfet_01v8_lvt
+XM$41 \$1 \$1 \$31 \$1 sky130_fd_pr__pfet_01v8_lvt L=1000000 W=1000000
++ AS=300000000000 AD=250000000000 PS=2600000 PD=1500000
+* device instance $42 r0 *1 9.315,19.93 sky130_fd_pr__pfet_01v8_lvt
+XM$42 \$31 \$1 \$1 \$1 sky130_fd_pr__pfet_01v8_lvt L=1000000 W=1000000
++ AS=250000000000 AD=250000000000 PS=1500000 PD=1500000
+* device instance $43 r0 *1 10.815,19.93 sky130_fd_pr__pfet_01v8_lvt
+XM$43 \$1 \$1 \$31 \$1 sky130_fd_pr__pfet_01v8_lvt L=1000000 W=1000000
++ AS=250000000000 AD=250000000000 PS=1500000 PD=1500000
+* device instance $44 r0 *1 12.315,19.93 sky130_fd_pr__pfet_01v8_lvt
+XM$44 \$31 \$1 \$1 \$1 sky130_fd_pr__pfet_01v8_lvt L=1000000 W=1000000
++ AS=250000000000 AD=150000000000 PS=1500000 PD=1300000
+* device instance $45 r0 *1 13.615,19.93 sky130_fd_pr__pfet_01v8_lvt
+XM$45 \$1 \$20 \$31 \$1 sky130_fd_pr__pfet_01v8_lvt L=1000000 W=1000000
++ AS=150000000000 AD=250000000000 PS=1300000 PD=1500000
+* device instance $46 r0 *1 15.115,19.93 sky130_fd_pr__pfet_01v8_lvt
+XM$46 \$31 \$20 \$1 \$1 sky130_fd_pr__pfet_01v8_lvt L=1000000 W=1000000
++ AS=250000000000 AD=250000000000 PS=1500000 PD=1500000
+* device instance $47 r0 *1 16.615,19.93 sky130_fd_pr__pfet_01v8_lvt
+XM$47 \$1 \$20 \$31 \$1 sky130_fd_pr__pfet_01v8_lvt L=1000000 W=1000000
++ AS=250000000000 AD=250000000000 PS=1500000 PD=1500000
+* device instance $48 r0 *1 18.115,19.93 sky130_fd_pr__pfet_01v8_lvt
+XM$48 \$31 \$20 \$1 \$1 sky130_fd_pr__pfet_01v8_lvt L=1000000 W=1000000
++ AS=250000000000 AD=150000000000 PS=1500000 PD=1300000
+* device instance $49 r0 *1 19.415,19.93 sky130_fd_pr__pfet_01v8_lvt
+XM$49 \$1 \$25 \$31 \$1 sky130_fd_pr__pfet_01v8_lvt L=1000000 W=1000000
++ AS=150000000000 AD=250000000000 PS=1300000 PD=1500000
+* device instance $50 r0 *1 20.915,19.93 sky130_fd_pr__pfet_01v8_lvt
+XM$50 \$31 \$25 \$1 \$1 sky130_fd_pr__pfet_01v8_lvt L=1000000 W=1000000
++ AS=250000000000 AD=250000000000 PS=1500000 PD=1500000
+* device instance $51 r0 *1 22.415,19.93 sky130_fd_pr__pfet_01v8_lvt
+XM$51 \$1 \$25 \$31 \$1 sky130_fd_pr__pfet_01v8_lvt L=1000000 W=1000000
++ AS=250000000000 AD=250000000000 PS=1500000 PD=1500000
+* device instance $52 r0 *1 23.915,19.93 sky130_fd_pr__pfet_01v8_lvt
+XM$52 \$31 \$25 \$1 \$1 sky130_fd_pr__pfet_01v8_lvt L=1000000 W=1000000
++ AS=250000000000 AD=300000000000 PS=1500000 PD=2600000
+* device instance $53 r0 *1 11.71,4.34 sky130_fd_pr__nfet_01v8_lvt
+XM$53 \$12 \$1 \$8 sky130_gnd sky130_fd_pr__nfet_01v8_lvt L=1000000 W=1000000
++ AS=300000000000 AD=250000000000 PS=2600000 PD=1500000
+* device instance $54 r0 *1 13.21,4.34 sky130_fd_pr__nfet_01v8_lvt
+XM$54 \$8 \$1 \$12 sky130_gnd sky130_fd_pr__nfet_01v8_lvt L=1000000 W=1000000
++ AS=250000000000 AD=150000000000 PS=1500000 PD=1300000
+* device instance $55 r0 *1 14.51,4.34 sky130_fd_pr__nfet_01v8_lvt
+XM$55 \$12 \$10 \$13 sky130_gnd sky130_fd_pr__nfet_01v8_lvt L=1000000 W=1000000
++ AS=150000000000 AD=250000000000 PS=1300000 PD=1500000
+* device instance $56 r0 *1 16.01,4.34 sky130_fd_pr__nfet_01v8_lvt
+XM$56 \$13 \$10 \$12 sky130_gnd sky130_fd_pr__nfet_01v8_lvt L=1000000 W=1000000
++ AS=250000000000 AD=150000000000 PS=1500000 PD=1300000
+* device instance $57 r0 *1 17.31,4.34 sky130_fd_pr__nfet_01v8_lvt
+XM$57 \$12 sky130_gnd sky130_gnd sky130_gnd sky130_fd_pr__nfet_01v8_lvt
++ L=1000000 W=1000000 AS=150000000000 AD=150000000000 PS=1300000 PD=1300000
+* device instance $58 r0 *1 18.61,4.34 sky130_fd_pr__nfet_01v8_lvt
+XM$58 sky130_gnd \$11 \$13 sky130_gnd sky130_fd_pr__nfet_01v8_lvt L=1000000
++ W=1000000 AS=150000000000 AD=250000000000 PS=1300000 PD=1500000
+* device instance $59 r0 *1 20.11,4.34 sky130_fd_pr__nfet_01v8_lvt
+XM$59 \$13 \$11 sky130_gnd sky130_gnd sky130_fd_pr__nfet_01v8_lvt L=1000000
++ W=1000000 AS=250000000000 AD=300000000000 PS=1500000 PD=2600000
+* device instance $60 r0 *1 11.71,17.48 sky130_fd_pr__nfet_01v8_lvt
+XM$60 \$32 \$1 \$31 sky130_gnd sky130_fd_pr__nfet_01v8_lvt L=1000000 W=1000000
++ AS=300000000000 AD=250000000000 PS=2600000 PD=1500000
+* device instance $61 r0 *1 13.21,17.48 sky130_fd_pr__nfet_01v8_lvt
+XM$61 \$31 \$1 \$32 sky130_gnd sky130_fd_pr__nfet_01v8_lvt L=1000000 W=1000000
++ AS=250000000000 AD=150000000000 PS=1500000 PD=1300000
+* device instance $62 r0 *1 14.51,17.48 sky130_fd_pr__nfet_01v8_lvt
+XM$62 \$32 \$20 \$33 sky130_gnd sky130_fd_pr__nfet_01v8_lvt L=1000000 W=1000000
++ AS=150000000000 AD=250000000000 PS=1300000 PD=1500000
+* device instance $63 r0 *1 16.01,17.48 sky130_fd_pr__nfet_01v8_lvt
+XM$63 \$33 \$20 \$32 sky130_gnd sky130_fd_pr__nfet_01v8_lvt L=1000000 W=1000000
++ AS=250000000000 AD=150000000000 PS=1500000 PD=1300000
+* device instance $64 r0 *1 17.31,17.48 sky130_fd_pr__nfet_01v8_lvt
+XM$64 \$32 sky130_gnd sky130_gnd sky130_gnd sky130_fd_pr__nfet_01v8_lvt
++ L=1000000 W=1000000 AS=150000000000 AD=150000000000 PS=1300000 PD=1300000
+* device instance $65 r0 *1 18.61,17.48 sky130_fd_pr__nfet_01v8_lvt
+XM$65 sky130_gnd \$25 \$33 sky130_gnd sky130_fd_pr__nfet_01v8_lvt L=1000000
++ W=1000000 AS=150000000000 AD=250000000000 PS=1300000 PD=1500000
+* device instance $66 r0 *1 20.11,17.48 sky130_fd_pr__nfet_01v8_lvt
+XM$66 \$33 \$25 sky130_gnd sky130_gnd sky130_fd_pr__nfet_01v8_lvt L=1000000
++ W=1000000 AS=250000000000 AD=300000000000 PS=1500000 PD=2600000
+* device instance $67 r0 *1 4.845,7.15 sky130_fd_pr__nfet_01v8_lvt
+XM$67 sky130_gnd \$25 \$11 sky130_gnd sky130_fd_pr__nfet_01v8_lvt L=1000000
++ W=1000000 AS=300000000000 AD=300000000000 PS=2600000 PD=2600000
+* device instance $68 r0 *1 11.71,7.15 sky130_fd_pr__nfet_01v8_lvt
+XM$68 \$17 \$1 \$16 sky130_gnd sky130_fd_pr__nfet_01v8_lvt L=1000000 W=1000000
++ AS=300000000000 AD=250000000000 PS=2600000 PD=1500000
+* device instance $69 r0 *1 13.21,7.15 sky130_fd_pr__nfet_01v8_lvt
+XM$69 \$16 \$1 \$17 sky130_gnd sky130_fd_pr__nfet_01v8_lvt L=1000000 W=1000000
++ AS=250000000000 AD=150000000000 PS=1500000 PD=1300000
+* device instance $70 r0 *1 14.51,7.15 sky130_fd_pr__nfet_01v8_lvt
+XM$70 \$17 \$20 \$18 sky130_gnd sky130_fd_pr__nfet_01v8_lvt L=1000000 W=1000000
++ AS=150000000000 AD=250000000000 PS=1300000 PD=1500000
+* device instance $71 r0 *1 16.01,7.15 sky130_fd_pr__nfet_01v8_lvt
+XM$71 \$18 \$20 \$17 sky130_gnd sky130_fd_pr__nfet_01v8_lvt L=1000000 W=1000000
++ AS=250000000000 AD=150000000000 PS=1500000 PD=1300000
+* device instance $72 r0 *1 17.31,7.15 sky130_fd_pr__nfet_01v8_lvt
+XM$72 \$17 sky130_gnd sky130_gnd sky130_gnd sky130_fd_pr__nfet_01v8_lvt
++ L=1000000 W=1000000 AS=150000000000 AD=150000000000 PS=1300000 PD=1300000
+* device instance $73 r0 *1 18.61,7.15 sky130_fd_pr__nfet_01v8_lvt
+XM$73 sky130_gnd \$11 \$18 sky130_gnd sky130_fd_pr__nfet_01v8_lvt L=1000000
++ W=1000000 AS=150000000000 AD=250000000000 PS=1300000 PD=1500000
+* device instance $74 r0 *1 20.11,7.15 sky130_fd_pr__nfet_01v8_lvt
+XM$74 \$18 \$11 sky130_gnd sky130_gnd sky130_fd_pr__nfet_01v8_lvt L=1000000
++ W=1000000 AS=250000000000 AD=300000000000 PS=1500000 PD=2600000
+* device instance $75 r0 *1 4.845,14.67 sky130_fd_pr__nfet_01v8_lvt
+XM$75 sky130_gnd \$20 \$10 sky130_gnd sky130_fd_pr__nfet_01v8_lvt L=1000000
++ W=1000000 AS=300000000000 AD=300000000000 PS=2600000 PD=2600000
+* device instance $76 r0 *1 11.71,14.67 sky130_fd_pr__nfet_01v8_lvt
+XM$76 \$26 \$1 \$24 sky130_gnd sky130_fd_pr__nfet_01v8_lvt L=1000000 W=1000000
++ AS=300000000000 AD=250000000000 PS=2600000 PD=1500000
+* device instance $77 r0 *1 13.21,14.67 sky130_fd_pr__nfet_01v8_lvt
+XM$77 \$24 \$1 \$26 sky130_gnd sky130_fd_pr__nfet_01v8_lvt L=1000000 W=1000000
++ AS=250000000000 AD=150000000000 PS=1500000 PD=1300000
+* device instance $78 r0 *1 14.51,14.67 sky130_fd_pr__nfet_01v8_lvt
+XM$78 \$26 \$10 \$27 sky130_gnd sky130_fd_pr__nfet_01v8_lvt L=1000000 W=1000000
++ AS=150000000000 AD=250000000000 PS=1300000 PD=1500000
+* device instance $79 r0 *1 16.01,14.67 sky130_fd_pr__nfet_01v8_lvt
+XM$79 \$27 \$10 \$26 sky130_gnd sky130_fd_pr__nfet_01v8_lvt L=1000000 W=1000000
++ AS=250000000000 AD=150000000000 PS=1500000 PD=1300000
+* device instance $80 r0 *1 17.31,14.67 sky130_fd_pr__nfet_01v8_lvt
+XM$80 \$26 sky130_gnd sky130_gnd sky130_gnd sky130_fd_pr__nfet_01v8_lvt
++ L=1000000 W=1000000 AS=150000000000 AD=150000000000 PS=1300000 PD=1300000
+* device instance $81 r0 *1 18.61,14.67 sky130_fd_pr__nfet_01v8_lvt
+XM$81 sky130_gnd \$25 \$27 sky130_gnd sky130_fd_pr__nfet_01v8_lvt L=1000000
++ W=1000000 AS=150000000000 AD=250000000000 PS=1300000 PD=1500000
+* device instance $82 r0 *1 20.11,14.67 sky130_fd_pr__nfet_01v8_lvt
+XM$82 \$27 \$25 sky130_gnd sky130_gnd sky130_fd_pr__nfet_01v8_lvt L=1000000
++ W=1000000 AS=250000000000 AD=300000000000 PS=1500000 PD=2600000
+.ENDS Dmux1to4_2select_bit
+
+* cell vias_gen$27
+* pin 
+.SUBCKT vias_gen$27 \$1
+.ENDS vias_gen$27
+
+* cell guard_ring_gen$5$2
+* pin 
+.SUBCKT guard_ring_gen$5$2 \$1
+.ENDS guard_ring_gen$5$2
+
+* cell vias_gen$11$2
+* pin 
+.SUBCKT vias_gen$11$2 \$1
+.ENDS vias_gen$11$2
+
+* cell res_poly$7$2
+* pin 
+* pin 
+* pin sky130_gnd
+.SUBCKT res_poly$7$2 \$3 \$4 sky130_gnd
+* device instance $1 r0 *1 0,0 sky130_fd_pr__res_high_po_1p41
+XR$1 \$3 \$4 sky130_gnd sky130_fd_pr__res_high_po_1p41 R=1750.96170213
++ L=7720000 W=1410000 A=1.08852e+13 P=18260000
+.ENDS res_poly$7$2
+
+* cell vias_gen$16$2
+* pin 
+.SUBCKT vias_gen$16$2 \$1
+.ENDS vias_gen$16$2
+
+* cell vias_gen$8$2
+* pin 
+.SUBCKT vias_gen$8$2 \$1
+.ENDS vias_gen$8$2
+
+* cell vias_gen$7$2
+* pin 
+.SUBCKT vias_gen$7$2 \$1
+.ENDS vias_gen$7$2
+
+* cell vias_gen$2$2
+* pin 
+.SUBCKT vias_gen$2$2 \$1
+.ENDS vias_gen$2$2
+
+* cell nfet$3$2
+* pin 
+* pin 
+* pin 
+.SUBCKT nfet$3$2 \$1 \$2 \$3
+.ENDS nfet$3$2
+
+* cell vias_gen$32
+* pin 
+.SUBCKT vias_gen$32 \$1
+.ENDS vias_gen$32
+
+* cell vias_gen$9$2
+* pin 
+.SUBCKT vias_gen$9$2 \$1
+.ENDS vias_gen$9$2
+
+* cell vias_gen$14$2
+* pin 
+.SUBCKT vias_gen$14$2 \$1
+.ENDS vias_gen$14$2
+
+* cell vias_gen$6$2
+* pin 
+.SUBCKT vias_gen$6$2 \$1
+.ENDS vias_gen$6$2
+
+* cell vias_gen$3$3
+* pin 
+.SUBCKT vias_gen$3$3 \$1
+.ENDS vias_gen$3$3
+
+* cell vias_gen$19$2
+* pin 
+.SUBCKT vias_gen$19$2 \$1
+.ENDS vias_gen$19$2
+
+* cell res_poly$1$2
+* pin 
+* pin 
+* pin sky130_gnd
+.SUBCKT res_poly$1$2 \$3 \$4 sky130_gnd
+* device instance $1 r0 *1 0,0 sky130_fd_pr__res_high_po_1p41
+XR$1 \$3 \$4 sky130_gnd sky130_fd_pr__res_high_po_1p41 R=158.765957447 L=700000
++ W=1410000 A=987000000000 P=4220000
+.ENDS res_poly$1$2
+
+* cell res_poly$3$2
+* pin 
+* pin 
+* pin sky130_gnd
+.SUBCKT res_poly$3$2 \$3 \$4 sky130_gnd
+* device instance $1 r0 *1 0,0 sky130_fd_pr__res_high_po_1p41
+XR$1 \$3 \$4 sky130_gnd sky130_fd_pr__res_high_po_1p41 R=480.834042553
++ L=2120000 W=1410000 A=2.9892e+12 P=7060000
+.ENDS res_poly$3$2
+
+* cell res_poly$4
+* pin 
+* pin 
+* pin sky130_gnd
+.SUBCKT res_poly$4 \$3 \$4 sky130_gnd
+* device instance $1 r0 *1 0,0 sky130_fd_pr__res_high_po_1p41
+XR$1 \$3 \$4 sky130_gnd sky130_fd_pr__res_high_po_1p41 R=254.025531915
++ L=1120000 W=1410000 A=1.5792e+12 P=5060000
+.ENDS res_poly$4
+
+* cell res_poly$5$2
+* pin 
+* pin 
+* pin sky130_gnd
+.SUBCKT res_poly$5$2 \$3 \$4 sky130_gnd
+* device instance $1 r0 *1 0,0 sky130_fd_pr__res_high_po_1p41
+XR$1 \$3 \$4 sky130_gnd sky130_fd_pr__res_high_po_1p41 R=9779.98297872
++ L=43120000 W=1410000 A=6.07992e+13 P=89060000
+.ENDS res_poly$5$2
+
+* cell guard_ring_gen$10
+* pin sky130_gnd
+.SUBCKT guard_ring_gen$10 sky130_gnd
+.ENDS guard_ring_gen$10
+
+* cell res_poly$13$2
+* pin 
+* pin 
+* pin sky130_gnd
+.SUBCKT res_poly$13$2 \$3 \$4 sky130_gnd
+* device instance $1 r0 *1 0,0 sky130_fd_pr__res_high_po_1p41
+XR$1 \$3 \$4 sky130_gnd sky130_fd_pr__res_high_po_1p41 R=3610.79148936
++ L=15920000 W=1410000 A=2.24472e+13 P=34660000
+.ENDS res_poly$13$2
+
+* cell pnp_bjt$2
+* pin Collector
+* pin Base
+* pin Emitter
+* pin sky130_gnd
+.SUBCKT pnp_bjt$2 Collector Base Emitter sky130_gnd
+* device instance $1 r0 *1 3.35,3.35 sky130_fd_pr__pnp_05v5_W3p40L3p40
+XQ$1 Collector Base Emitter sky130_fd_pr__pnp_05v5_W3p40L3p40 AE=1.156e+13
++ PE=13600000 AB=2.31361e+13 PB=19240000 AC=2.31361e+13 PC=19240000 NE=1
+.ENDS pnp_bjt$2
+
+* cell guard_ring_gen$13$2
+* pin sky130_gnd
+.SUBCKT guard_ring_gen$13$2 sky130_gnd
+.ENDS guard_ring_gen$13$2
+
+* cell guard_ring_gen$7$2
+* pin 
+.SUBCKT guard_ring_gen$7$2 \$2
+.ENDS guard_ring_gen$7$2
+
+* cell pfet$1$2
+* pin 
+* pin 
+* pin 
+* pin 
+.SUBCKT pfet$1$2 \$1 \$2 \$3 \$4
+.ENDS pfet$1$2
+
+* cell guard_ring_gen$4$2
+* pin 
+.SUBCKT guard_ring_gen$4$2 \$1
+.ENDS guard_ring_gen$4$2
+
+* cell pfet$4
+* pin 
+* pin 
+* pin 
+* pin 
+.SUBCKT pfet$4 \$1 \$2 \$3 \$4
+.ENDS pfet$4
+
+* cell vias_gen$1$2
+* pin 
+.SUBCKT vias_gen$1$2 \$1
+.ENDS vias_gen$1$2
+
+* cell nfet$5
+* pin 
+* pin 
+* pin 
+.SUBCKT nfet$5 \$1 \$2 \$3
+.ENDS nfet$5
+
+* cell vias_gen$10$2
+* pin 
+.SUBCKT vias_gen$10$2 \$1
+.ENDS vias_gen$10$2
+
+* cell vias_gen$12$2
+* pin 
+.SUBCKT vias_gen$12$2 \$1
+.ENDS vias_gen$12$2
+
+* cell vias_gen$13$2
+* pin 
+.SUBCKT vias_gen$13$2 \$1
+.ENDS vias_gen$13$2
+
+* cell vias_gen$17$2
+* pin 
+.SUBCKT vias_gen$17$2 \$1
+.ENDS vias_gen$17$2
+
+* cell vias_gen$15$2
+* pin 
+.SUBCKT vias_gen$15$2 \$1
+.ENDS vias_gen$15$2
+
+* cell vias_gen$24
+* pin 
+.SUBCKT vias_gen$24 \$1
+.ENDS vias_gen$24
+
+* cell vias_gen$22
+* pin 
+.SUBCKT vias_gen$22 \$1
+.ENDS vias_gen$22
+
+* cell vias_gen$21
+* pin 
+.SUBCKT vias_gen$21 \$1
+.ENDS vias_gen$21
+
+* cell vias_gen$23
+* pin 
+.SUBCKT vias_gen$23 \$1
+.ENDS vias_gen$23
+
+* cell nfet$4
+* pin 
+* pin 
+* pin 
+.SUBCKT nfet$4 \$1 \$2 \$3
+.ENDS nfet$4
+
+* cell guard_ring_gen$9
+* pin sky130_gnd
+.SUBCKT guard_ring_gen$9 sky130_gnd
+.ENDS guard_ring_gen$9
+
+* cell vias_gen$20
+* pin 
+.SUBCKT vias_gen$20 \$1
+.ENDS vias_gen$20
+
+* cell guard_ring_gen$8
+* pin 
+.SUBCKT guard_ring_gen$8 \$2
+.ENDS guard_ring_gen$8
+
+* cell pfet$2
+* pin 
+* pin 
+* pin 
+* pin 
+.SUBCKT pfet$2 \$1 \$2 \$3 \$4
+.ENDS pfet$2
+
+* cell vias_gen$3$4
+* pin 
+.SUBCKT vias_gen$3$4 \$1
+.ENDS vias_gen$3$4
+
+* cell vias_gen$34
+* pin 
+.SUBCKT vias_gen$34 \$1
+.ENDS vias_gen$34

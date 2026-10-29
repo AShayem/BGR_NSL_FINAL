@@ -1,0 +1,21 @@
+* Extracted by KLayout with SKY130 LVS runset on : 25/10/2026 15:34
+
+* cell StartupCircuit
+* pin sky130_gnd
+.SUBCKT StartupCircuit sky130_gnd
+* device instance $1 r0 *1 5.765,11.68 sky130_fd_pr__pfet_01v8_lvt
+XM$1 \$1 \$14 \$12 \$1 sky130_fd_pr__pfet_01v8_lvt L=1000000 W=2000000
++ AS=1.32e+12 AD=660000000000 PS=5320000 PD=2660000
+* device instance $2 r0 *1 7.425,11.68 sky130_fd_pr__pfet_01v8_lvt
+XM$2 \$12 \$14 \$3 \$1 sky130_fd_pr__pfet_01v8_lvt L=1000000 W=2000000
++ AS=660000000000 AD=1.32e+12 PS=2660000 PD=5320000
+* device instance $3 r0 *1 10.745,11.68 sky130_fd_pr__pfet_01v8_lvt
+XM$3 \$14 \$3 \$13 \$1 sky130_fd_pr__pfet_01v8_lvt L=1000000 W=4000000
++ AS=1.98e+12 AD=1.98e+12 PS=7980000 PD=7980000
+* device instance $5 r0 *1 8.255,3.8 sky130_fd_pr__nfet_01v8_lvt
+XM$5 sky130_gnd \$2 \$2 sky130_gnd sky130_fd_pr__nfet_01v8_lvt L=1000000
++ W=1000000 AS=660000000000 AD=330000000000 PS=3320000 PD=1660000
+* device instance $6 r0 *1 9.915,3.8 sky130_fd_pr__nfet_01v8_lvt
+XM$6 \$2 \$3 \$3 sky130_gnd sky130_fd_pr__nfet_01v8_lvt L=1000000 W=1000000
++ AS=330000000000 AD=660000000000 PS=1660000 PD=3320000
+.ENDS StartupCircuit

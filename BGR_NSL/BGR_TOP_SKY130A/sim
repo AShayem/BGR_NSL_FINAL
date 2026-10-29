@@ -1,0 +1,34 @@
+Completed: ngspice -b -r /headless/.xschem/simulations/MOS_charec.raw /headless/.xschem/simulations/MOS_charec.spice
+data:
+
+Note: Compatibility modes selected: hs a
+
+
+Circuit: ** sch_path: /headless/desktop/bgr_shayem/mos_charec.sch
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+binary raw file "/headless/.xschem/simulations/MOS_charec.raw"
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+No. of Data Columns : 8  
+
+No. of Data Rows : 703
+
+Total analysis time (seconds) = 0.0465745
+
+Total elapsed time (seconds) = 3.379 
+
+Total DRAM available = 7778.645 MB.
+DRAM currently available = 6027.961 MB.
+Maximum ngspice program size =  214.031 MB.
+Current ngspice program size =  178.586 MB.
+
+Shared ngspice pages =   12.250 MB.
+Text (code) pages =    5.895 MB.
+Stack = 0 bytes.
+Library pages =  190.199 MB.
+

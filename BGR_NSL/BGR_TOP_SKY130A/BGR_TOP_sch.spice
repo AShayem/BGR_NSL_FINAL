@@ -1,0 +1,155 @@
+** sch_path: /headless/Desktop/BGR_Shayem/BGR_TOP_SKY130A/BGR_TOP.sch
+.subckt BGR_TOP vdd out vss S1 S0
+*.iopin vdd
+*.opin out
+*.iopin vss
+*.ipin S1
+*.ipin S0
+x1 vdd net5 net6 vss StartupCircuit
+x5 vdd net5 net6 out net1 net2 net3 net4 vss BGR_coreAndVrefBranch
+x2 vdd net1 vdd S0 S1 vss NAND
+x3 vdd S1 net8 vss NOT
+x4 vdd S0 net7 vss NOT
+x6 vdd net2 vdd net7 S1 vss NAND
+x7 vdd net3 vdd S0 net8 vss NAND
+x8 vdd net4 vdd net7 net8 vss NAND
+.ends
+
+* expanding   symbol:  StartupCircuit.sym # of pins=4
+** sym_path: /headless/Desktop/BGR_Shayem/BGR_TOP_SKY130A/StartupCircuit.sym
+** sch_path: /headless/Desktop/BGR_Shayem/BGR_TOP_SKY130A/StartupCircuit.sch
+.subckt StartupCircuit vdd outP outN vss
+*.iopin vdd
+*.iopin vss
+*.opin outP
+*.opin outN
+XM4 net2 outP vdd vdd sky130_fd_pr__pfet_01v8_lvt L=1 W=2 nf=1 ad=0.58 as=0.58 pd=4.58 ps=4.58 nrd=0.145 nrs=0.145 sa=0 sb=0 sd=0
++ mult=1
+XM7 outN net1 outP vdd sky130_fd_pr__pfet_01v8_lvt L=1 W=2 nf=1 ad=0.58 as=0.58 pd=4.58 ps=4.58 nrd=0.145 nrs=0.145 sa=0 sb=0 sd=0
++ mult=2 m=2
+XM9 net1 net1 net3 vss sky130_fd_pr__nfet_01v8_lvt L=1 W=1 nf=1 ad=0.29 as=0.29 pd=2.58 ps=2.58 nrd=0.29 nrs=0.29 sa=0 sb=0 sd=0
++ mult=1
+XM5 net1 outP net2 vdd sky130_fd_pr__pfet_01v8_lvt L=1 W=2 nf=1 ad=0.58 as=0.58 pd=4.58 ps=4.58 nrd=0.145 nrs=0.145 sa=0 sb=0 sd=0
++ mult=1
+XM10 net3 net3 vss vss sky130_fd_pr__nfet_01v8_lvt L=1 W=1 nf=1 ad=0.29 as=0.29 pd=2.58 ps=2.58 nrd=0.29 nrs=0.29 sa=0 sb=0 sd=0
++ mult=1
+.ends
+
+
+* expanding   symbol:  BGR_coreAndVrefBranch.sym # of pins=9
+** sym_path: /headless/Desktop/BGR_Shayem/BGR_TOP_SKY130A/BGR_coreAndVrefBranch.sym
+** sch_path: /headless/Desktop/BGR_Shayem/BGR_TOP_SKY130A/BGR_coreAndVrefBranch.sch
+.subckt BGR_coreAndVrefBranch vdd inP inN out Y3 Y2 Y1 Y0 vss
+*.ipin Y3
+*.ipin Y2
+*.ipin Y1
+*.ipin Y0
+*.iopin vdd
+*.iopin vss
+*.ipin inP
+*.ipin inN
+*.opin out
+XM11 net3 Y3 out vdd sky130_fd_pr__pfet_01v8_lvt L=1 W=5 nf=1 ad=1.45 as=1.45 pd=10.58 ps=10.58 nrd=0.058 nrs=0.058 sa=0 sb=0 sd=0
++ mult=4 m=4
+XM12 net3 Y2 net5 vdd sky130_fd_pr__pfet_01v8_lvt L=1 W=5 nf=1 ad=1.45 as=1.45 pd=10.58 ps=10.58 nrd=0.058 nrs=0.058 sa=0 sb=0
++ sd=0 mult=4 m=4
+XM13 net3 Y1 net4 vdd sky130_fd_pr__pfet_01v8_lvt L=1 W=5 nf=1 ad=1.45 as=1.45 pd=10.58 ps=10.58 nrd=0.058 nrs=0.058 sa=0 sb=0
++ sd=0 mult=4 m=4
+XM14 net3 Y0 net2 vdd sky130_fd_pr__pfet_01v8_lvt L=1 W=5 nf=1 ad=1.45 as=1.45 pd=10.58 ps=10.58 nrd=0.058 nrs=0.058 sa=0 sb=0
++ sd=0 mult=9 m=9
+XR3 net5 out vss sky130_fd_pr__res_high_po_1p41 L=2.12 mult=1
+XR4 net4 net5 vss sky130_fd_pr__res_high_po_1p41 L=1.12 mult=2 m=2
+XR5 net2 net4 vss sky130_fd_pr__res_high_po_1p41 L=0.7 mult=1
+XR6 net1 net3 vss sky130_fd_pr__res_high_po_1p41 L=43.12 mult=1
+XM1 inN inP vdd vdd sky130_fd_pr__pfet_01v8_lvt L=2 W=6 nf=1 ad=1.74 as=1.74 pd=12.58 ps=12.58 nrd=0.0483333333333333
++ nrs=0.0483333333333333 sa=0 sb=0 sd=0 mult=6 m=6
+XM2 inP inP vdd vdd sky130_fd_pr__pfet_01v8_lvt L=2 W=6 nf=1 ad=1.74 as=1.74 pd=12.58 ps=12.58 nrd=0.0483333333333333
++ nrs=0.0483333333333333 sa=0 sb=0 sd=0 mult=6 m=6
+XM3 out inP vdd vdd sky130_fd_pr__pfet_01v8_lvt L=2 W=6 nf=1 ad=1.74 as=1.74 pd=12.58 ps=12.58 nrd=0.0483333333333333
++ nrs=0.0483333333333333 sa=0 sb=0 sd=0 mult=6 m=6
+XM4 inN inN net6 vss sky130_fd_pr__nfet_01v8_lvt L=1 W=2 nf=1 ad=0.58 as=0.58 pd=4.58 ps=4.58 nrd=0.145 nrs=0.145 sa=0 sb=0 sd=0
++ mult=8 m=8
+XM5 inP inN bs vss sky130_fd_pr__nfet_01v8_lvt L=1 W=2 nf=1 ad=0.58 as=0.58 pd=4.58 ps=4.58 nrd=0.145 nrs=0.145 sa=0 sb=0 sd=0
++ mult=8 m=8
+XR1 net8 bs vss sky130_fd_pr__res_high_po_1p41 L=15.92 mult=1
+XR2 net7 net6 vss sky130_fd_pr__res_high_po_1p41 L=7.72 mult=1
+XQ1 vss vss net7 sky130_fd_pr__pnp_05v5_W3p40L3p40 m=1 mult=1
+XQ2 vss vss net8 sky130_fd_pr__pnp_05v5_W3p40L3p40 m=1 mult=1
+XQ3 vss vss net1 sky130_fd_pr__pnp_05v5_W3p40L3p40 m=1 mult=1
+XM6 vdd vdd vdd vdd sky130_fd_pr__pfet_01v8_lvt L=2 W=6 nf=1 ad=1.74 as=1.74 pd=12.58 ps=12.58 nrd=0.0483333333333333
++ nrs=0.0483333333333333 sa=0 sb=0 sd=0 mult=6 m=6
+XM7 net3 vdd vdd vdd sky130_fd_pr__pfet_01v8_lvt L=1 W=5 nf=1 ad=1.45 as=1.45 pd=10.58 ps=10.58 nrd=0.058 nrs=0.058 sa=0 sb=0 sd=0
++ mult=1
+XM8 bs vss vss vss sky130_fd_pr__nfet_01v8_lvt L=1 W=2 nf=1 ad=0.58 as=0.58 pd=4.58 ps=4.58 nrd=0.145 nrs=0.145 sa=0 sb=0 sd=0
++ mult=4 m=4
+XM9 inP vss vss vss sky130_fd_pr__nfet_01v8_lvt L=1 W=2 nf=1 ad=0.58 as=0.58 pd=4.58 ps=4.58 nrd=0.145 nrs=0.145 sa=0 sb=0 sd=0
++ mult=8 m=8
+XM10 inN vss vss vss sky130_fd_pr__nfet_01v8_lvt L=1 W=2 nf=1 ad=0.58 as=0.58 pd=4.58 ps=4.58 nrd=0.145 nrs=0.145 sa=0 sb=0 sd=0
++ mult=8 m=8
+XQ4 vss vss vss sky130_fd_pr__pnp_05v5_W3p40L3p40 m=1 mult=1
+XQ5 vss vss vss sky130_fd_pr__pnp_05v5_W3p40L3p40 m=1 mult=1
+XQ6 vss vss vss sky130_fd_pr__pnp_05v5_W3p40L3p40 m=1 mult=1
+XQ7 vss vss vss sky130_fd_pr__pnp_05v5_W3p40L3p40 m=1 mult=1
+XQ8 vss vss vss sky130_fd_pr__pnp_05v5_W3p40L3p40 m=1 mult=1
+XQ9 vss vss vss sky130_fd_pr__pnp_05v5_W3p40L3p40 m=1 mult=1
+XQ10 vss vss vss sky130_fd_pr__pnp_05v5_W3p40L3p40 m=1 mult=1
+XQ11 vss vss vss sky130_fd_pr__pnp_05v5_W3p40L3p40 m=1 mult=1
+XQ12 vss vss net8 sky130_fd_pr__pnp_05v5_W3p40L3p40 m=1 mult=1
+XQ13 vss vss net8 sky130_fd_pr__pnp_05v5_W3p40L3p40 m=1 mult=1
+XQ14 vss vss net8 sky130_fd_pr__pnp_05v5_W3p40L3p40 m=1 mult=1
+XQ15 vss vss net8 sky130_fd_pr__pnp_05v5_W3p40L3p40 m=1 mult=1
+XQ16 vss vss net8 sky130_fd_pr__pnp_05v5_W3p40L3p40 m=1 mult=1
+XQ17 vss vss net8 sky130_fd_pr__pnp_05v5_W3p40L3p40 m=1 mult=1
+XQ18 vss vss net8 sky130_fd_pr__pnp_05v5_W3p40L3p40 m=1 mult=1
+XQ19 vss vss net1 sky130_fd_pr__pnp_05v5_W3p40L3p40 m=1 mult=1
+XQ20 vss vss net1 sky130_fd_pr__pnp_05v5_W3p40L3p40 m=1 mult=1
+XQ21 vss vss net1 sky130_fd_pr__pnp_05v5_W3p40L3p40 m=1 mult=1
+XQ22 vss vss net1 sky130_fd_pr__pnp_05v5_W3p40L3p40 m=1 mult=1
+XQ23 vss vss net1 sky130_fd_pr__pnp_05v5_W3p40L3p40 m=1 mult=1
+XQ24 vss vss net1 sky130_fd_pr__pnp_05v5_W3p40L3p40 m=1 mult=1
+XQ25 vss vss net1 sky130_fd_pr__pnp_05v5_W3p40L3p40 m=1 mult=1
+.ends
+
+
+* expanding   symbol:  NAND.sym # of pins=6
+** sym_path: /headless/Desktop/BGR_Shayem/BGR_TOP_SKY130A/NAND.sym
+** sch_path: /headless/Desktop/BGR_Shayem/BGR_TOP_SKY130A/NAND.sch
+.subckt NAND vdd out A B C vss
+*.iopin vdd
+*.iopin vss
+*.ipin A
+*.ipin C
+*.ipin B
+*.opin out
+XM6 out A net1 vss sky130_fd_pr__nfet_01v8_lvt L=1 W=2 nf=2 ad=0.29 as=0.58 pd=2.58 ps=5.16 nrd=0.145 nrs=0.145 sa=0 sb=0 sd=0
++ mult=1
+XM1 out B vdd vdd sky130_fd_pr__pfet_01v8_lvt L=1 W=4 nf=4 ad=0.58 as=0.87 pd=5.16 ps=7.74 nrd=0.0725 nrs=0.0725 sa=0 sb=0 sd=0
++ mult=1
+XM2 out A vdd vdd sky130_fd_pr__pfet_01v8_lvt L=1 W=4 nf=4 ad=0.58 as=0.87 pd=5.16 ps=7.74 nrd=0.0725 nrs=0.0725 sa=0 sb=0 sd=0
++ mult=1
+XM3 net1 B net2 vss sky130_fd_pr__nfet_01v8_lvt L=1 W=2 nf=2 ad=0.29 as=0.58 pd=2.58 ps=5.16 nrd=0.145 nrs=0.145 sa=0 sb=0 sd=0
++ mult=1
+XM4 out C vdd vdd sky130_fd_pr__pfet_01v8_lvt L=1 W=4 nf=4 ad=0.58 as=0.87 pd=5.16 ps=7.74 nrd=0.0725 nrs=0.0725 sa=0 sb=0 sd=0
++ mult=1
+XM5 net2 C vss vss sky130_fd_pr__nfet_01v8_lvt L=1 W=2 nf=2 ad=0.29 as=0.58 pd=2.58 ps=5.16 nrd=0.145 nrs=0.145 sa=0 sb=0 sd=0
++ mult=1
+XM7 net1 vss vss vss sky130_fd_pr__nfet_01v8_lvt L=1 W=1 nf=1 ad=0.29 as=0.29 pd=2.58 ps=2.58 nrd=0.29 nrs=0.29 sa=0 sb=0 sd=0
++ mult=1
+.ends
+
+
+* expanding   symbol:  NOT.sym # of pins=4
+** sym_path: /headless/Desktop/BGR_Shayem/BGR_TOP_SKY130A/NOT.sym
+** sch_path: /headless/Desktop/BGR_Shayem/BGR_TOP_SKY130A/NOT.sch
+.subckt NOT vdd in out vss
+*.iopin vdd
+*.iopin vss
+*.ipin in
+*.opin out
+XM6 out in vss vss sky130_fd_pr__nfet_01v8_lvt L=1 W=1 nf=1 ad=0.29 as=0.29 pd=2.58 ps=2.58 nrd=0.29 nrs=0.29 sa=0 sb=0 sd=0
++ mult=1
+XM1 out in vdd vdd sky130_fd_pr__pfet_01v8_lvt L=1 W=2 nf=2 ad=0.29 as=0.58 pd=2.58 ps=5.16 nrd=0.145 nrs=0.145 sa=0 sb=0 sd=0
++ mult=1
+.ends
+
+.end

@@ -1,0 +1,60 @@
+** sch_path: /foss/designs/BGR_FTK/Dmux1to4_2select_bit.sch
+.subckt Dmux1to4_2select_bit vdd S0 S1 vss Y3 Y2 Y1 Y0
+*.ipin S0
+*.ipin S1
+*.iopin vdd
+*.iopin vss
+*.opin Y3
+*.opin Y2
+*.opin Y1
+*.opin Y0
+x1 vdd Y3 vdd S0 S1 vss NAND
+x2 vdd S1 net2 vss NOT
+x3 vdd S0 net1 vss NOT
+x4 vdd Y2 vdd net1 S1 vss NAND
+x5 vdd Y1 vdd S0 net2 vss NAND
+x6 vdd Y0 vdd net1 net2 vss NAND
+.ends
+
+* expanding   symbol:  NAND.sym # of pins=6
+** sym_path: /foss/designs/BGR_FTK/NAND.sym
+** sch_path: /foss/designs/BGR_FTK/NAND.sch
+.subckt NAND vdd out A B C vss
+*.iopin vdd
+*.iopin vss
+*.ipin A
+*.ipin C
+*.ipin B
+*.opin out
+XM6 out A net1 vss sky130_fd_pr__nfet_01v8_lvt L=1 W=2 nf=2 ad=0.29 as=0.58 pd=2.58 ps=5.16 nrd=0.145 nrs=0.145 sa=0 sb=0 sd=0
++ mult=1
+XM1 out B vdd vdd sky130_fd_pr__pfet_01v8_lvt L=1 W=4 nf=4 ad=0.58 as=0.87 pd=5.16 ps=7.74 nrd=0.0725 nrs=0.0725 sa=0 sb=0 sd=0
++ mult=1
+XM2 out A vdd vdd sky130_fd_pr__pfet_01v8_lvt L=1 W=4 nf=4 ad=0.58 as=0.87 pd=5.16 ps=7.74 nrd=0.0725 nrs=0.0725 sa=0 sb=0 sd=0
++ mult=1
+XM3 net1 B net2 vss sky130_fd_pr__nfet_01v8_lvt L=1 W=2 nf=2 ad=0.29 as=0.58 pd=2.58 ps=5.16 nrd=0.145 nrs=0.145 sa=0 sb=0 sd=0
++ mult=1
+XM4 out C vdd vdd sky130_fd_pr__pfet_01v8_lvt L=1 W=4 nf=4 ad=0.58 as=0.87 pd=5.16 ps=7.74 nrd=0.0725 nrs=0.0725 sa=0 sb=0 sd=0
++ mult=1
+XM5 net2 C vss vss sky130_fd_pr__nfet_01v8_lvt L=1 W=2 nf=2 ad=0.29 as=0.58 pd=2.58 ps=5.16 nrd=0.145 nrs=0.145 sa=0 sb=0 sd=0
++ mult=1
+XM7 net1 vss vss vss sky130_fd_pr__nfet_01v8_lvt L=1 W=1 nf=1 ad=0.29 as=0.29 pd=2.58 ps=2.58 nrd=0.29 nrs=0.29 sa=0 sb=0 sd=0
++ mult=1
+.ends
+
+
+* expanding   symbol:  NOT.sym # of pins=4
+** sym_path: /foss/designs/BGR_FTK/NOT.sym
+** sch_path: /foss/designs/BGR_FTK/NOT.sch
+.subckt NOT vdd in out vss
+*.iopin vdd
+*.iopin vss
+*.ipin in
+*.opin out
+XM6 out in vss vss sky130_fd_pr__nfet_01v8_lvt L=1 W=1 nf=1 ad=0.29 as=0.29 pd=2.58 ps=2.58 nrd=0.29 nrs=0.29 sa=0 sb=0 sd=0
++ mult=1
+XM1 out in vdd vdd sky130_fd_pr__pfet_01v8_lvt L=1 W=2 nf=2 ad=0.29 as=0.58 pd=2.58 ps=5.16 nrd=0.145 nrs=0.145 sa=0 sb=0 sd=0
++ mult=1
+.ends
+
+.end

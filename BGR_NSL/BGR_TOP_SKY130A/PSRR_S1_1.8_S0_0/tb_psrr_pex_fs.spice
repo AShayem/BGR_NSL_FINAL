@@ -1,0 +1,15 @@
+* PSRR, pex, corner fs, S0=0 S1=1.8
+.lib /foss/pdks/sky130A/libs.tech/combined/sky130.lib.spice fs
+.include /headless/Desktop/BGR_Shayem/BGR_TOP_SKY130A/BGR_TOP_pex.spice
+.temp 27
+Vsup vdd 0 DC 1.8 AC 1
+Vgnd vss 0 DC 0
+Vs0 S0 0 DC 0
+Vs1 S1 0 DC 1.8
+Xdut   S1 S0 out vdd vss BGR_TOP
+.control
+ac dec 20 1 1G
+let psrr = -vdb(out)
+wrdata psrr_pex_fs.txt psrr
+.endc
+.end

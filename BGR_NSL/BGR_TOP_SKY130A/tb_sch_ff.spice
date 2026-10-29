@@ -1,0 +1,13 @@
+* sch temperature sweep, corner ff
+.lib /foss/pdks/sky130A/libs.tech/combined/sky130.lib.spice ff
+.include /headless/Desktop/BGR_Shayem/BGR_TOP_SKY130A/BGR_TOP_sch.spice
+Vsup vdd 0 DC 1.8
+Vgnd vss 0 DC 0
+Vs0 S0 0 DC 1.8
+Vs1 S1 0 DC 1.8
+Xdut  BGR_TOP
+.control
+dc temp -40 125 5
+wrdata vout_sch_ff.txt v(out)
+.endc
+.end

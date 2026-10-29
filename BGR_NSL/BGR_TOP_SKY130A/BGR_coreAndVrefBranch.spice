@@ -1,0 +1,49 @@
+** sch_path: /headless/Desktop/BGR_Shayem/BGR_TOP_SKY130A/BGR_coreAndVrefBranch.sch
+.subckt BGR_coreAndVrefBranch vdd inP inN out Y3 Y2 Y1 Y0 vss
+*.PININFO Y3:I Y2:I Y1:I Y0:I vdd:B vss:B inP:I inN:I out:O
+XM11 net3 Y3 out vdd sky130_fd_pr__pfet_01v8_lvt L=1 W=5 nf=1 m=4
+XM12 net3 Y2 net5 vdd sky130_fd_pr__pfet_01v8_lvt L=1 W=5 nf=1 m=4
+XM13 net3 Y1 net4 vdd sky130_fd_pr__pfet_01v8_lvt L=1 W=5 nf=1 m=4
+XM14 net3 Y0 net2 vdd sky130_fd_pr__pfet_01v8_lvt L=1 W=5 nf=1 m=9
+XR3 net5 out vss sky130_fd_pr__res_high_po_1p41 L=2.12 mult=1
+XR4 net4 net5 vss sky130_fd_pr__res_high_po_1p41 L=1.12 mult=2 m=2
+XR5 net2 net4 vss sky130_fd_pr__res_high_po_1p41 L=0.7 mult=1
+XR6 net1 net3 vss sky130_fd_pr__res_high_po_1p41 L=43.12 mult=1
+XM1 inN inP vdd vdd sky130_fd_pr__pfet_01v8_lvt L=2 W=6 nf=1 m=6
+XM2 inP inP vdd vdd sky130_fd_pr__pfet_01v8_lvt L=2 W=6 nf=1 m=6
+XM3 out inP vdd vdd sky130_fd_pr__pfet_01v8_lvt L=2 W=6 nf=1 m=6
+XM4 inN inN net6 vss sky130_fd_pr__nfet_01v8_lvt L=1 W=2 nf=1 m=8
+XM5 inP inN bs vss sky130_fd_pr__nfet_01v8_lvt L=1 W=2 nf=1 m=8
+XR1 net8 bs vss sky130_fd_pr__res_high_po_1p41 L=15.92 mult=1
+XR2 net7 net6 vss sky130_fd_pr__res_high_po_1p41 L=7.72 mult=1
+XQ1 vss vss net7 sky130_fd_pr__pnp_05v5_W3p40L3p40
+XQ2 vss vss net8 sky130_fd_pr__pnp_05v5_W3p40L3p40
+XQ3 vss vss net1 sky130_fd_pr__pnp_05v5_W3p40L3p40
+XM6 vdd vdd vdd vdd sky130_fd_pr__pfet_01v8_lvt L=2 W=6 nf=1 m=6
+XM7 net3 vdd vdd vdd sky130_fd_pr__pfet_01v8_lvt L=1 W=5 nf=1
+XM8 bs vss vss vss sky130_fd_pr__nfet_01v8_lvt L=1 W=2 nf=1 m=4
+XM9 inP vss vss vss sky130_fd_pr__nfet_01v8_lvt L=1 W=2 nf=1 m=8
+XM10 inN vss vss vss sky130_fd_pr__nfet_01v8_lvt L=1 W=2 nf=1 m=8
+XQ4 vss vss vss sky130_fd_pr__pnp_05v5_W3p40L3p40
+XQ5 vss vss vss sky130_fd_pr__pnp_05v5_W3p40L3p40
+XQ6 vss vss vss sky130_fd_pr__pnp_05v5_W3p40L3p40
+XQ7 vss vss vss sky130_fd_pr__pnp_05v5_W3p40L3p40
+XQ8 vss vss vss sky130_fd_pr__pnp_05v5_W3p40L3p40
+XQ9 vss vss vss sky130_fd_pr__pnp_05v5_W3p40L3p40
+XQ10 vss vss vss sky130_fd_pr__pnp_05v5_W3p40L3p40
+XQ11 vss vss vss sky130_fd_pr__pnp_05v5_W3p40L3p40
+XQ12 vss vss net8 sky130_fd_pr__pnp_05v5_W3p40L3p40
+XQ13 vss vss net8 sky130_fd_pr__pnp_05v5_W3p40L3p40
+XQ14 vss vss net8 sky130_fd_pr__pnp_05v5_W3p40L3p40
+XQ15 vss vss net8 sky130_fd_pr__pnp_05v5_W3p40L3p40
+XQ16 vss vss net8 sky130_fd_pr__pnp_05v5_W3p40L3p40
+XQ17 vss vss net8 sky130_fd_pr__pnp_05v5_W3p40L3p40
+XQ18 vss vss net8 sky130_fd_pr__pnp_05v5_W3p40L3p40
+XQ19 vss vss net1 sky130_fd_pr__pnp_05v5_W3p40L3p40
+XQ20 vss vss net1 sky130_fd_pr__pnp_05v5_W3p40L3p40
+XQ21 vss vss net1 sky130_fd_pr__pnp_05v5_W3p40L3p40
+XQ22 vss vss net1 sky130_fd_pr__pnp_05v5_W3p40L3p40
+XQ23 vss vss net1 sky130_fd_pr__pnp_05v5_W3p40L3p40
+XQ24 vss vss net1 sky130_fd_pr__pnp_05v5_W3p40L3p40
+XQ25 vss vss net1 sky130_fd_pr__pnp_05v5_W3p40L3p40
+.ends

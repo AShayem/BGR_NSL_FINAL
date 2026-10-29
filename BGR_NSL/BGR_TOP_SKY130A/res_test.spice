@@ -1,0 +1,7 @@
+** sch_path: /foss/designs/BGR_NSL/res_test.sch
+.subckt res_test vdd vss
+*.iopin vdd
+*.iopin vss
+XR1 vss vdd vss sky130_fd_pr__res_high_po_1p41 L=1.41 mult=1
+.ends
+.end

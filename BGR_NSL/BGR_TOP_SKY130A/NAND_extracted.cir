@@ -1,0 +1,27 @@
+* Extracted by KLayout with SKY130 LVS runset on : 25/10/2026 16:24
+
+* cell NAND
+* pin sky130_gnd
+.SUBCKT NAND sky130_gnd
+* device instance $1 r0 *1 1.105,4.23 sky130_fd_pr__pfet_01v8_lvt
+XM$1 \$5 \$2 \$4 \$5 sky130_fd_pr__pfet_01v8_lvt L=1000000 W=4000000
++ AS=1.05e+12 AD=900000000000 PS=7100000 PD=5800000
+* device instance $5 r0 *1 6.905,4.23 sky130_fd_pr__pfet_01v8_lvt
+XM$5 \$5 \$1 \$4 \$5 sky130_fd_pr__pfet_01v8_lvt L=1000000 W=4000000
++ AS=900000000000 AD=900000000000 PS=5800000 PD=5800000
+* device instance $9 r0 *1 12.705,4.23 sky130_fd_pr__pfet_01v8_lvt
+XM$9 \$5 \$3 \$4 \$5 sky130_fd_pr__pfet_01v8_lvt L=1000000 W=4000000
++ AS=900000000000 AD=1.05e+12 PS=5800000 PD=7100000
+* device instance $13 r0 *1 5,1.78 sky130_fd_pr__nfet_01v8_lvt
+XM$13 \$6 \$2 \$4 sky130_gnd sky130_fd_pr__nfet_01v8_lvt L=1000000 W=2000000
++ AS=550000000000 AD=400000000000 PS=4100000 PD=2800000
+* device instance $15 r0 *1 7.8,1.78 sky130_fd_pr__nfet_01v8_lvt
+XM$15 \$6 \$1 \$37 sky130_gnd sky130_fd_pr__nfet_01v8_lvt L=1000000 W=2000000
++ AS=400000000000 AD=400000000000 PS=2800000 PD=2800000
+* device instance $17 r0 *1 10.6,1.78 sky130_fd_pr__nfet_01v8_lvt
+XM$17 \$6 sky130_gnd sky130_gnd sky130_gnd sky130_fd_pr__nfet_01v8_lvt
++ L=1000000 W=1000000 AS=150000000000 AD=150000000000 PS=1300000 PD=1300000
+* device instance $18 r0 *1 11.9,1.78 sky130_fd_pr__nfet_01v8_lvt
+XM$18 sky130_gnd \$3 \$37 sky130_gnd sky130_fd_pr__nfet_01v8_lvt L=1000000
++ W=2000000 AS=400000000000 AD=550000000000 PS=2800000 PD=4100000
+.ENDS NAND

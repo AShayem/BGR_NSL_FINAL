@@ -1,0 +1,8 @@
+** sch_path: /foss/designs/BGR_Final/BGR_NSL/BGR_TOP_SKY130A/buffer.sch
+.subckt buffer in out vdd vss
+*.PININFO in:I out:O vdd:B vss:B
+XM6 net1 in vss vss sky130_fd_pr__nfet_01v8_lvt L=1 W=1 nf=1 m=4
+XM1 net1 in vdd vdd sky130_fd_pr__pfet_01v8_lvt L=1 W=2 nf=1 m=4
+XM2 out net1 vss vss sky130_fd_pr__nfet_01v8_lvt L=1 W=1 nf=1 m=8
+XM3 out net1 vdd vdd sky130_fd_pr__pfet_01v8_lvt L=1 W=2 nf=1 m=8
+.ends

@@ -1,0 +1,36 @@
+Warning: singular matrix:  check node xdut.startupcircuit_0/pfet$2_2/a_0_0#
+
+Note: Starting dynamic gmin stepping
+Warning: singular matrix:  check node xdut.startupcircuit_0/pfet$2_2/a_0_0#
+
+Warning: Dynamic gmin stepping failed
+Note: Starting true gmin stepping
+Warning: singular matrix:  check node xdut.startupcircuit_0/pfet$2_2/a_0_0#
+
+Warning: singular matrix:  check node xdut.startupcircuit_0/pfet$2_2/a_0_0#
+
+Warning: singular matrix:  check node xdut.startupcircuit_0/pfet$2_2/a_0_0#
+
+Warning: singular matrix:  check node xdut.startupcircuit_0/pfet$2_2/a_0_0#
+
+Warning: True gmin stepping failed
+Note: Starting source stepping
+Warning: source stepping failed
+Note: Transient op started
+Note: Transient op finished successfully
+
+Note: Compatibility modes selected: hs a
+
+
+Circuit: * psrr, pex, corner fs, s0=0 s1=0
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  1.00000e+00
+No. of Data Rows : 181
+Note: Simulation executed from .control section 

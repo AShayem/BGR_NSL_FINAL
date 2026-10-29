@@ -1,0 +1,9 @@
+** sch_path: /foss/designs/BGR_TOP_NSL/BGR_NSL/StartupCircuit.sch
+.subckt StartupCircuit vdd outP outN vss
+*.PININFO vdd:B vss:B outP:O outN:O
+M4 net2 outP vdd vdd sky130_fd_pr__pfet_01v8_lvt L=1 W=2 nf=1
+M7 outN net1 outP vdd sky130_fd_pr__pfet_01v8_lvt L=1 W=2 nf=1 m=2
+M9 net1 net1 net3 vss sky130_fd_pr__nfet_01v8_lvt L=1 W=1 nf=1
+M5 net1 outP net2 vdd sky130_fd_pr__pfet_01v8_lvt L=1 W=2 nf=1
+M10 net3 net3 vss vss sky130_fd_pr__nfet_01v8_lvt L=1 W=1 nf=1
+.ends

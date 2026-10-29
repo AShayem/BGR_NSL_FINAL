@@ -1,0 +1,331 @@
+
+Magic 8.3 revision 684 - Compiled on Tue Sep 22 03:44:29 PM CEST 2026.
+Starting magic under Tcl interpreter
+Using the terminal as the console.
+Using NULL graphics device.
+Could not find file 'sky130A.tech' in any of these directories:
+         . $CAD_ROOT/magic/sys $CAD_ROOT/magic/sys/current
+Failed to load technology "sky130A"
+Processing system .magicrc file
+Switching to WIRING tool.
+Switching to NETLIST tool.
+Switching to PICK tool.
+Switching to BOX tool.
+Sourcing design .magicrc for technology sky130A ...
+2 Magic internal units = 1 Lambda
+Input style sky130(): scaleFactor=2, multiplier=2
+The following types are not handled by extraction and will be treated as non-electrical types:
+    ubm 
+Scaled tech values by 2 / 1 to match internal grid scaling
+Loading sky130A Device Generator Menu ...
+Loading "pex_top.tcl" from command line.
+Warning: Calma reading is not undoable!  I hope that's OK.
+Library written using GDS-II Release 6.0
+Library name: LIB
+Reading "$$$CONTEXT_INFO$$$".
+Reading "vias_gen$17$4".
+Reading "vias_gen$16$4".
+Reading "vias_gen$15$4".
+Reading "vias_gen$12$4".
+Reading "vias_gen$14$4".
+Reading "vias_gen$13$4".
+Reading "vias_gen$11$4".
+Reading "vias_gen$7$4".
+Reading "vias_gen$6$4".
+Reading "guard_ring_gen$7$4".
+Reading "guard_ring_gen$5$4".
+Reading "guard_ring_gen$4$4".
+Reading "res_poly$5$4".
+Reading "res_poly$3$4".
+Reading "res_poly$7$4".
+Reading "pfet$1$4".
+Reading "nfet$3$4".
+Reading "nfet$7".
+Reading "pnp_bjt$4".
+Reading "pfet$6".
+Reading "guard_ring_gen$14".
+Reading "res_poly$13$4".
+Reading "res_poly$8".
+Reading "vias_gen$36".
+Reading "vias_gen$1$4".
+Reading "vias_gen$3$6".
+Reading "vias_gen$2$4".
+Reading "guard_ring_gen$13$4".
+Reading "vias_gen$8$4".
+Reading "vias_gen$9$4".
+Reading "vias_gen$10$4".
+Reading "vias_gen$19$4".
+Reading "res_poly$4$1".
+Reading "vias_gen$34".
+Reading "vias_gen$3$4".
+Reading "vias_gen$24".
+Reading "vias_gen$22".
+Reading "vias_gen$21".
+Reading "vias_gen$23".
+Reading "guard_ring_gen$9".
+Reading "pfet$2".
+Reading "nfet$4".
+Reading "guard_ring_gen$8".
+Reading "vias_gen$20".
+Reading "BGR_coreAndVrefBranch$3".
+Reading "vias_gen$19$2".
+Reading "vias_gen$10$2".
+Reading "vias_gen$9$2".
+Reading "vias_gen$8$2".
+Reading "guard_ring_gen$13$2".
+Reading "vias_gen$2$2".
+Reading "vias_gen$3$3".
+Reading "vias_gen$1$2".
+Reading "vias_gen$32".
+Reading "res_poly$4".
+Reading "res_poly$13$2".
+Reading "guard_ring_gen$10".
+Reading "pfet$4".
+Reading "pnp_bjt$2".
+Reading "nfet$5".
+Reading "nfet$3$2".
+Reading "pfet$1$2".
+Reading "res_poly$7$2".
+Reading "res_poly$3$2".
+Reading "res_poly$5$2".
+Reading "guard_ring_gen$4$2".
+Reading "guard_ring_gen$5$2".
+Reading "guard_ring_gen$7$2".
+Reading "vias_gen$6$2".
+Reading "vias_gen$7$2".
+Reading "vias_gen$11$2".
+Reading "vias_gen$13$2".
+Reading "vias_gen$14$2".
+Reading "vias_gen$12$2".
+Reading "vias_gen$15$2".
+Reading "vias_gen$16$2".
+Reading "vias_gen$17$2".
+Reading "res_poly$1$2".
+Reading "Dmux1to4_2select_bit".
+Reading "vias_gen$27".
+Reading "StartupCircuit".
+Reading "vias_gen$28".
+Reading "vias_gen$30".
+Reading "vias_gen$31".
+Reading "vias_gen$33".
+Reading "vias_gen$18".
+Reading "vias_gen$3$2".
+Reading "res_poly$1$1".
+Reading "vias_gen$17$1".
+Reading "vias_gen$16$1".
+Reading "vias_gen$15$1".
+Reading "vias_gen$12$1".
+Reading "vias_gen$14$1".
+Reading "vias_gen$13$1".
+Reading "vias_gen$11$1".
+Reading "vias_gen$7$1".
+Reading "vias_gen$6$1".
+Reading "guard_ring_gen$7$1".
+Reading "guard_ring_gen$5$1".
+Reading "guard_ring_gen$4$1".
+Reading "res_poly$5$1".
+Reading "res_poly$3$1".
+Reading "res_poly$7$1".
+Reading "pfet$1$1".
+Reading "nfet$3$1".
+Reading "nfet$2".
+Reading "pnp_bjt$1".
+Reading "pfet$3".
+Reading "guard_ring_gen$11".
+Reading "res_poly$13$1".
+Reading "res_poly$2".
+Reading "vias_gen$25".
+Reading "vias_gen$1$1".
+Reading "vias_gen$3$1".
+Reading "vias_gen$2$1".
+Reading "guard_ring_gen$13$1".
+Reading "vias_gen$8$1".
+Reading "vias_gen$9$1".
+Reading "vias_gen$10$1".
+Reading "vias_gen$19$1".
+Reading "vias_gen$17$3".
+Reading "vias_gen$16$3".
+Reading "vias_gen$15$3".
+Reading "vias_gen$12$3".
+Reading "vias_gen$14$3".
+Reading "vias_gen$13$3".
+Reading "vias_gen$11$3".
+Reading "vias_gen$7$3".
+Reading "vias_gen$6$3".
+Reading "guard_ring_gen$7$3".
+Reading "guard_ring_gen$5$3".
+Reading "guard_ring_gen$4$3".
+Reading "res_poly$5$3".
+Reading "res_poly$3$3".
+Reading "res_poly$7$3".
+Reading "pfet$1$3".
+Reading "nfet$3$3".
+Reading "nfet$6".
+Reading "pnp_bjt$3".
+Reading "pfet$5".
+Reading "guard_ring_gen$12".
+Reading "res_poly$13$3".
+Reading "res_poly$6".
+Reading "vias_gen$35".
+Reading "vias_gen$1$3".
+Reading "vias_gen$3$5".
+Reading "vias_gen$2$3".
+Reading "guard_ring_gen$13$3".
+Reading "vias_gen$8$3".
+Reading "vias_gen$9$3".
+Reading "vias_gen$10$3".
+Reading "vias_gen$19$3".
+Reading "res_poly$2$1".
+Reading "BGR_coreAndVrefBranch".
+Reading "BGR_TOP".
+Reading "vias_gen$19".
+Reading "vias_gen$10".
+Reading "vias_gen$9".
+Reading "vias_gen$8".
+Reading "guard_ring_gen$13".
+Reading "vias_gen$2".
+Reading "vias_gen$3".
+Reading "vias_gen$1".
+Reading "vias_gen".
+Reading "res_poly".
+Reading "res_poly$13".
+Reading "guard_ring_gen".
+Reading "pfet".
+Reading "pnp_bjt".
+Reading "nfet".
+Reading "nfet$3".
+Reading "pfet$1".
+Reading "res_poly$7".
+Reading "res_poly$3".
+Reading "res_poly$5".
+Reading "guard_ring_gen$4".
+Reading "guard_ring_gen$5".
+Reading "guard_ring_gen$7".
+Reading "vias_gen$6".
+Reading "vias_gen$7".
+Reading "vias_gen$11".
+Reading "vias_gen$13".
+Reading "vias_gen$14".
+Reading "vias_gen$12".
+Reading "vias_gen$15".
+Reading "vias_gen$16".
+Reading "vias_gen$17".
+Reading "res_poly$1".
+Reading "Dmux1to4_2select_bit$1".
+Reading "BGR_coreAndVrefBranch$1".
+Reading "BGR_coreAndVrefBranch$2".
+Extracting vias_gen$33 into vias_gen$33.ext:
+Processing vias_gen$33
+Extracting vias_gen$30 into vias_gen$30.ext:
+Processing vias_gen$30
+Extracting vias_gen$24 into vias_gen$24.ext:
+Processing vias_gen$24
+Extracting vias_gen$22 into vias_gen$22.ext:
+Processing vias_gen$22
+Extracting vias_gen$21 into vias_gen$21.ext:
+Processing vias_gen$21
+Extracting vias_gen$23 into vias_gen$23.ext:
+Processing vias_gen$23
+Extracting vias_gen$20 into vias_gen$20.ext:
+Processing vias_gen$20
+Extracting nfet$4 into nfet$4.ext:
+Processing nfet$4
+Extracting guard_ring_gen$9 into guard_ring_gen$9.ext:
+Processing guard_ring_gen$9
+Extracting guard_ring_gen$8 into guard_ring_gen$8.ext:
+Processing guard_ring_gen$8
+Extracting pfet$2 into pfet$2.ext:
+Processing pfet$2
+Extracting StartupCircuit into StartupCircuit.ext:
+Processing StartupCircuit
+Extracting vias_gen$28 into vias_gen$28.ext:
+Processing vias_gen$28
+Extracting vias_gen$27 into vias_gen$27.ext:
+Processing vias_gen$27
+Extracting vias_gen$31 into vias_gen$31.ext:
+Processing vias_gen$31
+Extracting vias_gen$3$4 into vias_gen$3$4.ext:
+Processing vias_gen$3$4
+Extracting vias_gen$34 into vias_gen$34.ext:
+Processing vias_gen$34
+Extracting Dmux1to4_2select_bit into Dmux1to4_2select_bit.ext:
+Processing Dmux1to4_2select_bit
+Extracting vias_gen$6$4 into vias_gen$6$4.ext:
+Processing vias_gen$6$4
+Extracting vias_gen$7$4 into vias_gen$7$4.ext:
+Processing vias_gen$7$4
+Extracting pnp_bjt$4 into pnp_bjt$4.ext:
+Processing pnp_bjt$4
+Extracting vias_gen$10$4 into vias_gen$10$4.ext:
+Processing vias_gen$10$4
+Extracting pfet$6 into pfet$6.ext:
+Processing pfet$6
+Extracting vias_gen$9$4 into vias_gen$9$4.ext:
+Processing vias_gen$9$4
+Extracting vias_gen$14$4 into vias_gen$14$4.ext:
+Processing vias_gen$14$4
+Extracting vias_gen$1$4 into vias_gen$1$4.ext:
+Processing vias_gen$1$4
+Extracting vias_gen$19$4 into vias_gen$19$4.ext:
+Processing vias_gen$19$4
+Extracting vias_gen$13$4 into vias_gen$13$4.ext:
+Processing vias_gen$13$4
+Extracting vias_gen$8$4 into vias_gen$8$4.ext:
+Processing vias_gen$8$4
+Extracting vias_gen$11$4 into vias_gen$11$4.ext:
+Processing vias_gen$11$4
+Extracting guard_ring_gen$5$4 into guard_ring_gen$5$4.ext:
+Processing guard_ring_gen$5$4
+Extracting res_poly$7$4 into res_poly$7$4.ext:
+Processing res_poly$7$4
+Extracting vias_gen$16$4 into vias_gen$16$4.ext:
+Processing vias_gen$16$4
+Extracting vias_gen$2$4 into vias_gen$2$4.ext:
+Processing vias_gen$2$4
+Extracting nfet$7 into nfet$7.ext:
+Processing nfet$7
+Extracting nfet$3$4 into nfet$3$4.ext:
+Processing nfet$3$4
+Extracting vias_gen$3$6 into vias_gen$3$6.ext:
+Processing vias_gen$3$6
+Extracting pfet$1$4 into pfet$1$4.ext:
+Processing pfet$1$4
+Extracting vias_gen$36 into vias_gen$36.ext:
+Processing vias_gen$36
+Extracting guard_ring_gen$4$4 into guard_ring_gen$4$4.ext:
+Processing guard_ring_gen$4$4
+Extracting res_poly$8 into res_poly$8.ext:
+Processing res_poly$8
+Extracting res_poly$4$1 into res_poly$4$1.ext:
+Processing res_poly$4$1
+Extracting res_poly$3$4 into res_poly$3$4.ext:
+Processing res_poly$3$4
+Extracting res_poly$5$4 into res_poly$5$4.ext:
+Processing res_poly$5$4
+Extracting guard_ring_gen$14 into guard_ring_gen$14.ext:
+Processing guard_ring_gen$14
+Extracting res_poly$13$4 into res_poly$13$4.ext:
+Processing res_poly$13$4
+Extracting guard_ring_gen$13$4 into guard_ring_gen$13$4.ext:
+Processing guard_ring_gen$13$4
+Extracting guard_ring_gen$7$4 into guard_ring_gen$7$4.ext:
+Processing guard_ring_gen$7$4
+Extracting vias_gen$12$4 into vias_gen$12$4.ext:
+Processing vias_gen$12$4
+Extracting vias_gen$15$4 into vias_gen$15$4.ext:
+Processing vias_gen$15$4
+Extracting vias_gen$17$4 into vias_gen$17$4.ext:
+Processing vias_gen$17$4
+Extracting BGR_coreAndVrefBranch$3 into BGR_coreAndVrefBranch$3.ext:
+Processing BGR_coreAndVrefBranch$3
+Extracting BGR_TOP into BGR_TOP.ext:
+Processing BGR_TOP
+Warning:  Ports "C" and "out" are electrically shorted.
+Warning:  Ports "B" and "out" are electrically shorted.
+Warning:  Ports "in" and "C" are electrically shorted.
+Warning:  Ports "in" and "S1" are electrically shorted.
+Warning:  Ports "in" and "B" are electrically shorted.
+Warning:  Ports "out" and "A" are electrically shorted.
+Warning:  Ports "out" and "VDD" are electrically shorted.
+Warning:  Ports "out" and "vdd" are electrically shorted.
+exttospice finished.

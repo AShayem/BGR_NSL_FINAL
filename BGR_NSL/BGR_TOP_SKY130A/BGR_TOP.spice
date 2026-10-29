@@ -1,0 +1,117 @@
+** sch_path: /foss/designs/BGR_Final/BGR_NSL/BGR_TOP_SKY130A/BGR_TOP.sch
+.subckt BGR_TOP vdd out vss S1 S0
+*.PININFO vdd:B out:O vss:B S1:I S0:I
+x1 vdd net5 net6 vss StartupCircuit
+x5 vdd net5 net6 out net1 net2 net3 net4 vss BGR_coreAndVrefBranch
+x2 vdd net1 vdd net7 net8 vss NAND
+x3 vdd net8 net10 vss NOT
+x4 vdd net7 net9 vss NOT
+x6 vdd net2 vdd net9 net8 vss NAND
+x7 vdd net3 vdd net7 net10 vss NAND
+x8 vdd net4 vdd net9 net10 vss NAND
+x9 vdd S0 net7 vss buffer
+x10 vdd S1 net8 vss buffer
+.ends
+
+* expanding   symbol:  StartupCircuit.sym # of pins=4
+** sym_path: /foss/designs/BGR_Final/BGR_NSL/BGR_TOP_SKY130A/StartupCircuit.sym
+** sch_path: /foss/designs/BGR_Final/BGR_NSL/BGR_TOP_SKY130A/StartupCircuit.sch
+.subckt StartupCircuit vdd outP outN vss
+*.PININFO vdd:B vss:B outP:O outN:O
+XM4 net2 outP vdd vdd sky130_fd_pr__pfet_01v8_lvt L=1 W=2 nf=1
+XM7 outN net1 outP vdd sky130_fd_pr__pfet_01v8_lvt L=1 W=2 nf=1 m=2
+XM9 net1 net1 net3 vss sky130_fd_pr__nfet_01v8_lvt L=1 W=1 nf=1
+XM5 net1 outP net2 vdd sky130_fd_pr__pfet_01v8_lvt L=1 W=2 nf=1
+XM10 net3 net3 vss vss sky130_fd_pr__nfet_01v8_lvt L=1 W=1 nf=1
+.ends
+
+
+* expanding   symbol:  BGR_coreAndVrefBranch.sym # of pins=9
+** sym_path: /foss/designs/BGR_Final/BGR_NSL/BGR_TOP_SKY130A/BGR_coreAndVrefBranch.sym
+** sch_path: /foss/designs/BGR_Final/BGR_NSL/BGR_TOP_SKY130A/BGR_coreAndVrefBranch.sch
+.subckt BGR_coreAndVrefBranch vdd inP inN out Y3 Y2 Y1 Y0 vss
+*.PININFO Y3:I Y2:I Y1:I Y0:I vdd:B vss:B inP:I inN:I out:O
+XM11 net3 Y3 out vdd sky130_fd_pr__pfet_01v8_lvt L=1 W=5 nf=1 m=4
+XM12 net3 Y2 net5 vdd sky130_fd_pr__pfet_01v8_lvt L=1 W=5 nf=1 m=4
+XM13 net3 Y1 net4 vdd sky130_fd_pr__pfet_01v8_lvt L=1 W=5 nf=1 m=4
+XM14 net3 Y0 net2 vdd sky130_fd_pr__pfet_01v8_lvt L=1 W=5 nf=1 m=9
+XR3 net5 out vss sky130_fd_pr__res_high_po_1p41 L=2.12 mult=1
+XR4 net4 net5 vss sky130_fd_pr__res_high_po_1p41 L=1.12 mult=2 m=2
+XR5 net2 net4 vss sky130_fd_pr__res_high_po_1p41 L=0.7 mult=1
+XR6 net1 net3 vss sky130_fd_pr__res_high_po_1p41 L=43.12 mult=1
+XM1 inN inP vdd vdd sky130_fd_pr__pfet_01v8_lvt L=2 W=6 nf=1 m=6
+XM2 inP inP vdd vdd sky130_fd_pr__pfet_01v8_lvt L=2 W=6 nf=1 m=6
+XM3 out inP vdd vdd sky130_fd_pr__pfet_01v8_lvt L=2 W=6 nf=1 m=6
+XM4 inN inN net6 vss sky130_fd_pr__nfet_01v8_lvt L=1 W=2 nf=1 m=8
+XM5 inP inN bs vss sky130_fd_pr__nfet_01v8_lvt L=1 W=2 nf=1 m=8
+XR1 net8 bs vss sky130_fd_pr__res_high_po_1p41 L=15.92 mult=1
+XR2 net7 net6 vss sky130_fd_pr__res_high_po_1p41 L=7.72 mult=1
+XQ1 vss vss net7 sky130_fd_pr__pnp_05v5_W3p40L3p40
+XQ2 vss vss net8 sky130_fd_pr__pnp_05v5_W3p40L3p40
+XQ3 vss vss net1 sky130_fd_pr__pnp_05v5_W3p40L3p40
+XM6 vdd vdd vdd vdd sky130_fd_pr__pfet_01v8_lvt L=2 W=6 nf=1 m=6
+XM7 net3 vdd vdd vdd sky130_fd_pr__pfet_01v8_lvt L=1 W=5 nf=1
+XM8 bs vss vss vss sky130_fd_pr__nfet_01v8_lvt L=1 W=2 nf=1 m=4
+XM9 inP vss vss vss sky130_fd_pr__nfet_01v8_lvt L=1 W=2 nf=1 m=8
+XM10 inN vss vss vss sky130_fd_pr__nfet_01v8_lvt L=1 W=2 nf=1 m=8
+XQ4 vss vss vss sky130_fd_pr__pnp_05v5_W3p40L3p40
+XQ5 vss vss vss sky130_fd_pr__pnp_05v5_W3p40L3p40
+XQ6 vss vss vss sky130_fd_pr__pnp_05v5_W3p40L3p40
+XQ7 vss vss vss sky130_fd_pr__pnp_05v5_W3p40L3p40
+XQ8 vss vss vss sky130_fd_pr__pnp_05v5_W3p40L3p40
+XQ9 vss vss vss sky130_fd_pr__pnp_05v5_W3p40L3p40
+XQ10 vss vss vss sky130_fd_pr__pnp_05v5_W3p40L3p40
+XQ11 vss vss vss sky130_fd_pr__pnp_05v5_W3p40L3p40
+XQ12 vss vss net8 sky130_fd_pr__pnp_05v5_W3p40L3p40
+XQ13 vss vss net8 sky130_fd_pr__pnp_05v5_W3p40L3p40
+XQ14 vss vss net8 sky130_fd_pr__pnp_05v5_W3p40L3p40
+XQ15 vss vss net8 sky130_fd_pr__pnp_05v5_W3p40L3p40
+XQ16 vss vss net8 sky130_fd_pr__pnp_05v5_W3p40L3p40
+XQ17 vss vss net8 sky130_fd_pr__pnp_05v5_W3p40L3p40
+XQ18 vss vss net8 sky130_fd_pr__pnp_05v5_W3p40L3p40
+XQ19 vss vss net1 sky130_fd_pr__pnp_05v5_W3p40L3p40
+XQ20 vss vss net1 sky130_fd_pr__pnp_05v5_W3p40L3p40
+XQ21 vss vss net1 sky130_fd_pr__pnp_05v5_W3p40L3p40
+XQ22 vss vss net1 sky130_fd_pr__pnp_05v5_W3p40L3p40
+XQ23 vss vss net1 sky130_fd_pr__pnp_05v5_W3p40L3p40
+XQ24 vss vss net1 sky130_fd_pr__pnp_05v5_W3p40L3p40
+XQ25 vss vss net1 sky130_fd_pr__pnp_05v5_W3p40L3p40
+.ends
+
+
+* expanding   symbol:  NAND.sym # of pins=6
+** sym_path: /foss/designs/BGR_Final/BGR_NSL/BGR_TOP_SKY130A/NAND.sym
+** sch_path: /foss/designs/BGR_Final/BGR_NSL/BGR_TOP_SKY130A/NAND.sch
+.subckt NAND vdd out A B C vss
+*.PININFO vdd:B vss:B A:I C:I B:I out:O
+XM6 out A net1 vss sky130_fd_pr__nfet_01v8_lvt L=1 W=2 nf=2
+XM1 out B vdd vdd sky130_fd_pr__pfet_01v8_lvt L=1 W=4 nf=4
+XM2 out A vdd vdd sky130_fd_pr__pfet_01v8_lvt L=1 W=4 nf=4
+XM3 net1 B net2 vss sky130_fd_pr__nfet_01v8_lvt L=1 W=2 nf=2
+XM4 out C vdd vdd sky130_fd_pr__pfet_01v8_lvt L=1 W=4 nf=4
+XM5 net2 C vss vss sky130_fd_pr__nfet_01v8_lvt L=1 W=2 nf=2
+XM7 net1 vss vss vss sky130_fd_pr__nfet_01v8_lvt L=1 W=1 nf=1
+.ends
+
+
+* expanding   symbol:  NOT.sym # of pins=4
+** sym_path: /foss/designs/BGR_Final/BGR_NSL/BGR_TOP_SKY130A/NOT.sym
+** sch_path: /foss/designs/BGR_Final/BGR_NSL/BGR_TOP_SKY130A/NOT.sch
+.subckt NOT vdd in out vss
+*.PININFO vdd:B vss:B in:I out:O
+XM6 out in vss vss sky130_fd_pr__nfet_01v8_lvt L=1 W=1 nf=1
+XM1 out in vdd vdd sky130_fd_pr__pfet_01v8_lvt L=1 W=2 nf=2
+.ends
+
+
+* expanding   symbol:  buffer.sym # of pins=4
+** sym_path: /foss/designs/BGR_Final/BGR_NSL/BGR_TOP_SKY130A/buffer.sym
+** sch_path: /foss/designs/BGR_Final/BGR_NSL/BGR_TOP_SKY130A/buffer.sch
+.subckt buffer vdd in out vss
+*.PININFO in:I out:O vdd:B vss:B
+XM6 net1 in vss vss sky130_fd_pr__nfet_01v8_lvt L=1 W=1 nf=1 m=4
+XM1 net1 in vdd vdd sky130_fd_pr__pfet_01v8_lvt L=1 W=2 nf=1 m=4
+XM2 out net1 vss vss sky130_fd_pr__nfet_01v8_lvt L=1 W=1 nf=1 m=8
+XM3 out net1 vdd vdd sky130_fd_pr__pfet_01v8_lvt L=1 W=2 nf=1 m=8
+.ends
+

@@ -1,0 +1,13 @@
+* pex temperature sweep, corner fs
+.lib /foss/pdks/sky130A/libs.tech/combined/sky130.lib.spice fs
+.include /headless/Desktop/BGR_Shayem/BGR_TOP_SKY130A/BGR_TOP_pex.spice
+Vsup vdd 0 DC 1.8
+Vgnd vss 0 DC 0
+Vs0 S0 0 DC 1.8
+Vs1 S1 0 DC 1.8
+Xdut   S1 S0 out vdd vss BGR_TOP
+.control
+dc temp -40 125 5
+wrdata vout_pex_fs.txt v(out)
+.endc
+.end
