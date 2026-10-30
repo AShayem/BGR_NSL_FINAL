@@ -11,9 +11,6 @@ I=4.5uA
 T {
 I=80.5uA
  } 560 -230 0 0 0.25 0.25 {}
-T {
-I=67nA
- } 40 -10 0 0 0.25 0.25 {}
 T {OUTPUT Pin} 780 -190 0 0 0.3 0.3 {}
 N 30 -100 30 -70 {lab=vss}
 N 700 -150 770 -150 {lab=out}
@@ -142,7 +139,7 @@ N -1110 -380 -1030 -380 {lab=vss}
 N -1110 -400 -860 -400 {lab=#net8}
 N -860 -400 -850 -400 {lab=#net8}
 N -850 -400 -850 -180 {lab=#net8}
-N -1490 -420 -1410 -420 {lab=S0}
+N -1490 -420 -1410 -420 {lab=S1}
 C {StartupCircuit.sym} 30 -160 0 0 {name=x1}
 C {iopin.sym} 30 -240 2 0 {name=p2 lab=vdd}
 C {opin.sym} 770 -150 0 0 {name=p6 lab=out}
@@ -164,5 +161,7 @@ C {lab_pin.sym} -1030 -420 2 0 {name=p3 sig_type=std_logic lab=vdd}
 C {lab_pin.sym} -1030 -310 2 0 {name=p8 sig_type=std_logic lab=vdd}
 C {lab_pin.sym} -1030 -380 2 0 {name=p9 sig_type=std_logic lab=vss}
 C {lab_pin.sym} -1110 -220 0 0 {name=p10 sig_type=std_logic lab=vss}
-C {ipin.sym} -1490 -420 0 0 {name=p11 lab=S1}
-C {ipin.sym} -1490 -310 0 0 {name=p13 lab=S0}
+C {ipin.sym} -1490 -420 0 0 {name=p11 lab=S1
+}
+C {ipin.sym} -1490 -310 0 0 {name=p13 lab=S0
+}

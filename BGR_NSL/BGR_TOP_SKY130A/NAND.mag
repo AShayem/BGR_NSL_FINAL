@@ -1,0 +1,164 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1621540482
+<< checkpaint >>
+rect -1260 -1261 4932 2454
+<< nwell >>
+rect 3662 602 3672 1028
+<< metal1 >>
+rect 57 781 121 1152
+rect 305 1088 573 1128
+rect 339 781 403 982
+rect 639 781 703 1152
+rect 939 781 1003 982
+rect 1219 781 1283 1152
+rect 1499 781 1563 982
+rect 1797 781 1861 1152
+rect 2099 781 2163 982
+rect 2377 780 2441 1151
+rect 2657 781 2721 982
+rect 2959 780 3023 1151
+rect 3257 781 3321 982
+rect 3539 780 3603 1151
+rect 305 650 466 696
+rect 585 650 746 696
+rect 889 650 1050 696
+rect 1458 690 1619 696
+rect 1055 552 1155 690
+rect 1458 650 1719 690
+rect 1738 650 1899 696
+rect 2042 650 2203 696
+rect 1619 552 1719 650
+rect 2503 552 2603 690
+rect 2630 650 2791 696
+rect 2910 650 3071 696
+rect 3214 650 3375 696
+rect 1055 506 1248 552
+rect 1619 508 1803 552
+rect 1642 506 1803 508
+rect 1085 458 1125 506
+rect 839 204 903 421
+rect 1120 280 1184 442
+rect 1397 196 1461 421
+rect 1678 280 1742 456
+rect 1958 172 2022 421
+rect 2087 104 2151 552
+rect 2460 506 2621 552
+rect 1104 55 1354 95
+rect 2218 34 2282 421
+rect 2497 200 2561 438
+rect 2776 51 2840 421
+<< metal2 >>
+rect 201 858 3662 958
+rect 832 360 1494 460
+rect 1634 360 2865 460
+rect 832 184 2062 284
+<< metal3 >>
+rect 887 256 987 986
+use nfet$1  nfet$1_0
+timestamp 1621540482
+transform 1 0 1960 0 1 256
+box -26 -40 346 306
+use nfet  nfet_0
+timestamp 1621540482
+transform 1 0 840 0 1 256
+box -26 -40 646 306
+use nfet  nfet_1
+timestamp 1621540482
+transform 1 0 1400 0 1 256
+box -26 -40 646 306
+use nfet  nfet_2
+timestamp 1621540482
+transform 1 0 2220 0 1 256
+box -26 -40 646 306
+use pfet  pfet_0
+timestamp 1621540482
+transform 1 0 2381 0 1 746
+box -61 -144 1281 276
+use pfet  pfet_1
+timestamp 1621540482
+transform 1 0 1221 0 1 746
+box -61 -144 1281 276
+use pfet  pfet_2
+timestamp 1621540482
+transform 1 0 61 0 1 746
+box -61 -144 1281 276
+use vias_gen$1  vias_gen$1_0
+timestamp 1621540482
+transform 1 0 841 0 1 25
+box -26 -26 2026 126
+use vias_gen$2  vias_gen$2_0
+timestamp 1621540482
+transform 1 0 3257 0 1 880
+box 0 0 64 52
+use vias_gen$2  vias_gen$2_1
+timestamp 1621540482
+transform 1 0 2657 0 1 880
+box 0 0 64 52
+use vias_gen$2  vias_gen$2_2
+timestamp 1621540482
+transform 1 0 2099 0 1 880
+box 0 0 64 52
+use vias_gen$2  vias_gen$2_3
+timestamp 1621540482
+transform 1 0 1499 0 1 880
+box 0 0 64 52
+use vias_gen$2  vias_gen$2_4
+timestamp 1621540482
+transform 1 0 939 0 1 880
+box 0 0 64 52
+use vias_gen$2  vias_gen$2_5
+timestamp 1621540482
+transform 1 0 339 0 1 880
+box 0 0 64 52
+use vias_gen$2  vias_gen$2_6
+timestamp 1621540482
+transform 1 0 2496 0 1 368
+box 0 0 64 52
+use vias_gen$2  vias_gen$2_7
+timestamp 1621540482
+transform 1 0 1678 0 1 368
+box 0 0 64 52
+use vias_gen$2  vias_gen$2_8
+timestamp 1621540482
+transform 1 0 1958 0 1 212
+box 0 0 64 52
+use vias_gen$2  vias_gen$2_9
+timestamp 1621540482
+transform 1 0 1120 0 1 368
+box 0 0 64 52
+use vias_gen$2  vias_gen$2_10
+timestamp 1621540482
+transform 1 0 1397 0 1 212
+box 0 0 64 52
+use vias_gen$2  vias_gen$2_11
+timestamp 1621540482
+transform 1 0 839 0 1 212
+box 0 0 64 52
+use vias_gen$4  vias_gen$4_0
+timestamp 1621540482
+transform 1 0 895 0 1 376
+box 0 0 74 66
+use vias_gen$4  vias_gen$4_1
+timestamp 1621540482
+transform 1 0 897 0 1 874
+box 0 0 74 66
+use vias_gen  vias_gen_0
+timestamp 1621540482
+transform 1 0 36 0 1 1058
+box -36 -36 3636 136
+<< labels >>
+flabel metal1 s 431 1102 431 1102 1 FreeSans 44 0 0 0 vdd
+port 1 nsew
+flabel metal1 s 1228 72 1228 72 1 FreeSans 44 0 0 0 vss
+port 2 nsew
+flabel metal1 s 1670 547 1670 547 1 FreeSans 44 0 0 0 B
+port 3 nsew
+flabel metal1 s 2554 542 2554 542 1 FreeSans 44 0 0 0 C
+port 4 nsew
+flabel metal1 s 1095 546 1095 546 2 FreeSans 44 0 0 0 A
+port 5 nsew
+flabel metal2 s 968 406 968 406 1 FreeSans 44 0 0 0 out
+port 6 nsew
+<< end >>

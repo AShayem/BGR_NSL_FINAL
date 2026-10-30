@@ -2,11 +2,11 @@
 
 .subckt pfet$2 a_132_n40# a_332_0# w_n61_n76# a_0_0# VSUBS
 X0 a_332_0# a_132_n40# a_0_0# w_n61_n76# sky130_fd_pr__pfet_01v8_lvt ad=1.32 pd=5.32 as=1.32 ps=5.32 w=2 l=1
-C0 a_0_0# w_n61_n76# 0.0663f
-C1 a_0_0# a_332_0# 0.05169f
+C0 a_332_0# w_n61_n76# 0.0663f
+C1 a_132_n40# a_332_0# 0.09524f
 C2 a_132_n40# w_n61_n76# 0.19557f
-C3 a_132_n40# a_332_0# 0.09524f
-C4 w_n61_n76# a_332_0# 0.0663f
+C3 a_332_0# a_0_0# 0.05169f
+C4 w_n61_n76# a_0_0# 0.0663f
 C5 a_132_n40# a_0_0# 0.09524f
 C6 a_332_0# VSUBS 0.29136f
 C7 a_0_0# VSUBS 0.29136f
@@ -15,44 +15,104 @@ C8 w_n61_n76# VSUBS 1.08996f
 
 .subckt nfet$4 a_132_n40# a_332_0# a_0_0# VSUBS
 X0 a_332_0# a_132_n40# a_0_0# VSUBS sky130_fd_pr__nfet_01v8_lvt ad=0.66 pd=3.32 as=0.66 ps=3.32 w=1 l=1
-C0 a_332_0# a_132_n40# 0.03685f
-C1 a_0_0# a_132_n40# 0.03685f
+C0 a_0_0# a_132_n40# 0.03685f
+C1 a_132_n40# a_332_0# 0.03685f
 C2 a_0_0# a_332_0# 0.01971f
 C3 a_332_0# VSUBS 0.34974f
 C4 a_0_0# VSUBS 0.34974f
 .ends
 
-.subckt StartupCircuit outP outN vdd w_598_1623# m1_1882_883# vss
+.subckt StartupCircuit outP outN pfet$2_2/a_0_0# w_598_1623# m1_1882_883# m1_1550_536#
++ vdd vss
 Xpfet$2_0 m1_1882_883# outN w_598_1623# outP vss pfet$2
 Xpfet$2_1 m1_1882_883# outP w_598_1623# outN vss pfet$2
 Xpfet$2_2 outP m1_1882_883# w_598_1623# pfet$2_2/a_0_0# vss pfet$2
 Xpfet$2_3 outP pfet$2_2/a_0_0# w_598_1623# vdd vss pfet$2
 Xnfet$4_0 m1_1882_883# m1_1882_883# m1_1550_536# vss nfet$4
 Xnfet$4_1 m1_1550_536# m1_1550_536# vss vss nfet$4
-C0 outP vdd 1.30513f
-C1 w_598_1623# m1_1882_883# 0.6359f
-C2 m1_1882_883# outN 0.08353f
-C3 w_598_1623# pfet$2_2/a_0_0# -0.01865f
-C4 w_598_1623# outN 0.1098f
-C5 outP m1_1882_883# 0.1691f
-C6 m1_1882_883# m1_1550_536# 0.01952f
-C7 vdd m1_1882_883# 0.75264f
-C8 outP w_598_1623# 0.91208f
-C9 w_598_1623# vdd 4.12175f
-C10 vdd pfet$2_2/a_0_0# 0.02843f
-C11 outP outN 0.48917f
-C12 vdd outN 0.30038f
-C13 m1_1550_536# vss -0.05773f
-C14 m1_1882_883# vss -0.98788f
-C15 vdd vss -3.37808f
+C0 m1_1882_883# outP 0.16903f
+C1 outP outN 0.48918f
+C2 m1_1882_883# outN 0.08287f
+C3 vdd w_598_1623# 4.10949f
+C4 pfet$2_2/a_0_0# w_598_1623# -0.01865f
+C5 outP w_598_1623# 0.91144f
+C6 m1_1882_883# w_598_1623# 0.63541f
+C7 outN w_598_1623# 0.10986f
+C8 m1_1882_883# m1_1550_536# 0.01952f
+C9 vdd pfet$2_2/a_0_0# 0.02843f
+C10 vdd outP 1.30602f
+C11 m1_1882_883# vdd 0.75245f
+C12 vdd outN 0.30076f
+C13 vdd vss -3.36344f
+C14 m1_1550_536# vss -0.05749f
+C15 m1_1882_883# vss -0.97408f
 C16 pfet$2_2/a_0_0# vss -0.37957f
-C17 outP vss -1.63782f
+C17 outP vss -1.63768f
 C18 outN vss -0.36193f
-C19 w_598_1623# vss 9.20577f
+C19 w_598_1623# vss 9.20576f
+.ends
+
+.subckt nfet$11 a_132_n40# a_332_0# a_0_0# VSUBS
+X0 a_332_0# a_132_n40# a_0_0# VSUBS sky130_fd_pr__nfet_01v8_lvt ad=0.66 pd=3.32 as=0.66 ps=3.32 w=1 l=1
+C0 a_132_n40# a_0_0# 0.03685f
+C1 a_132_n40# a_332_0# 0.03685f
+C2 a_0_0# a_332_0# 0.01971f
+C3 a_332_0# VSUBS 0.34974f
+C4 a_0_0# VSUBS 0.34974f
+.ends
+
+.subckt pfet$10 a_132_n40# a_332_0# w_n61_n76# a_0_0# VSUBS
+X0 a_332_0# a_132_n40# a_0_0# w_n61_n76# sky130_fd_pr__pfet_01v8_lvt ad=1.32 pd=5.32 as=1.32 ps=5.32 w=2 l=1
+C0 w_n61_n76# a_332_0# 0.0663f
+C1 w_n61_n76# a_132_n40# 0.19557f
+C2 a_132_n40# a_332_0# 0.09524f
+C3 w_n61_n76# a_0_0# 0.0663f
+C4 a_0_0# a_332_0# 0.05169f
+C5 a_132_n40# a_0_0# 0.09524f
+C6 a_332_0# VSUBS 0.29136f
+C7 a_0_0# VSUBS 0.29136f
+C8 w_n61_n76# VSUBS 1.08996f
+.ends
+
+.subckt buffer$3 in out vdd m2_401_998# vss
+Xnfet$11_0 m2_401_998# vss out vss nfet$11
+Xpfet$10_0 m2_401_998# vdd vdd out vss pfet$10
+Xnfet$11_1 m2_401_998# out vss vss nfet$11
+Xpfet$10_1 m2_401_998# out vdd vdd vss pfet$10
+Xnfet$11_2 m2_401_998# vss out vss nfet$11
+Xpfet$10_2 m2_401_998# out vdd vdd vss pfet$10
+Xnfet$11_3 m2_401_998# out vss vss nfet$11
+Xnfet$11_4 m2_401_998# vss out vss nfet$11
+Xpfet$10_3 m2_401_998# vdd vdd out vss pfet$10
+Xpfet$10_4 m2_401_998# vdd vdd out vss pfet$10
+Xnfet$11_5 m2_401_998# out vss vss nfet$11
+Xpfet$10_5 m2_401_998# out vdd vdd vss pfet$10
+Xnfet$11_6 m2_401_998# vss out vss nfet$11
+Xpfet$10_6 m2_401_998# out vdd vdd vss pfet$10
+Xnfet$11_7 m2_401_998# out vss vss nfet$11
+Xpfet$10_7 m2_401_998# vdd vdd out vss pfet$10
+Xnfet$11_8 in vss m2_401_998# vss nfet$11
+Xpfet$10_8 in vdd vdd m2_401_998# vss pfet$10
+Xnfet$11_9 in m2_401_998# vss vss nfet$11
+Xpfet$10_9 in m2_401_998# vdd vdd vss pfet$10
+Xnfet$11_10 in vss m2_401_998# vss nfet$11
+Xnfet$11_11 in m2_401_998# vss vss nfet$11
+Xpfet$10_10 in m2_401_998# vdd vdd vss pfet$10
+Xpfet$10_11 in vdd vdd m2_401_998# vss pfet$10
+C0 out vdd 0.9192f
+C1 m2_401_998# vdd 1.53959f
+C2 in m2_401_998# 0.66718f
+C3 in vdd 0.55874f
+C4 m2_401_998# out 1.41237f
+C5 vdd vss -10.43741f
+C6 m2_401_998# vss -5.66289f
+C7 in vss -1.76584f
+C8 out vss -2.97202f
 .ends
 
 .subckt Dmux1to4_2select_bit out vss B C out_uq0 out_uq2 out_uq4 C_uq0 B_uq0 A a_3002_768#
-+ m3_3518_16# a_3002_2834# a_3002_1330# a_3002_3396#
++ a_2182_2834# m3_3518_16# m3_2966_16# a_2182_1330# a_2182_3396# m3_3240_16# a_3002_2834#
++ a_3002_1330# a_3002_3396# a_2182_768#
 X0 A C C_uq0 A sky130_fd_pr__pfet_01v8_lvt ad=0.3 pd=2.6 as=0.25 ps=1.5 w=1 l=1
 X1 vss vss a_2182_1330# vss sky130_fd_pr__nfet_01v8_lvt ad=0.15 pd=1.3 as=0.15 ps=1.3 w=1 l=1
 X2 B_uq0 B A A sky130_fd_pr__pfet_01v8_lvt ad=0.25 pd=1.5 as=0.3 ps=2.6 w=1 l=1
@@ -135,150 +195,207 @@ X78 out_uq4 B A A sky130_fd_pr__pfet_01v8_lvt ad=0.25 pd=1.5 as=0.25 ps=1.5 w=1 
 X79 a_2182_2834# A out_uq2 vss sky130_fd_pr__nfet_01v8_lvt ad=0.15 pd=1.3 as=0.25 ps=1.5 w=1 l=1
 X80 out_uq2 C A A sky130_fd_pr__pfet_01v8_lvt ad=0.25 pd=1.5 as=0.25 ps=1.5 w=1 l=1
 X81 A C_uq0 out A sky130_fd_pr__pfet_01v8_lvt ad=0.3 pd=2.6 as=0.25 ps=1.5 w=1 l=1
-C0 out B 0.71875f
-C1 m3_3240_16# out 0.08539f
-C2 C_uq0 a_2182_1330# 0.01305f
-C3 A B 5.66652f
-C4 m3_3240_16# A 0.48052f
-C5 m3_3518_16# a_2182_3396# 0.01045f
-C6 m3_3518_16# out_uq0 0.10081f
-C7 a_2182_3396# out_uq4 0.32832f
-C8 a_3002_3396# B 0.38327f
-C9 m3_3240_16# a_3002_3396# 0.08208f
-C10 B m3_2966_16# 0.25838f
-C11 m3_3240_16# m3_2966_16# 0.62842f
-C12 C out 0.06357f
-C13 a_2182_768# A 0.23742f
-C14 C A 5.62753f
-C15 a_3002_2834# B_uq0 0.15723f
-C16 a_3002_1330# C_uq0 0.27163f
-C17 B a_2182_1330# 0.19733f
-C18 m3_3240_16# a_2182_1330# 0.07864f
-C19 C a_3002_3396# 0.29264f
-C20 a_2182_768# m3_2966_16# 0.08017f
-C21 C m3_2966_16# 0.15259f
-C22 m3_3240_16# a_3002_2834# 0.0806f
-C23 a_3002_768# out_uq0 0.02512f
-C24 C_uq0 out_uq0 0.58938f
-C25 a_3002_1330# B 0.24259f
-C26 a_3002_1330# m3_3240_16# 0.08561f
-C27 out_uq2 out 0.03225f
-C28 B_uq0 out_uq0 1.00449f
-C29 m3_3518_16# a_2182_2834# 0.01045f
-C30 m3_3518_16# out_uq4 0.10109f
-C31 out_uq2 A 3.32066f
-C32 C a_3002_2834# 0.45336f
-C33 out_uq2 m3_2966_16# 0.08646f
-C34 a_2182_3396# B 0.20181f
-C35 m3_3240_16# a_2182_3396# 0.07774f
-C36 B out_uq0 0.11578f
-C37 m3_3240_16# out_uq0 0.08539f
-C38 a_2182_768# out_uq0 0.32834f
-C39 m3_3518_16# a_3002_768# 0.102f
-C40 m3_3518_16# C_uq0 0.30854f
-C41 m3_3518_16# B_uq0 0.2127f
-C42 a_2182_2834# B_uq0 0.17471f
-C43 out_uq2 a_3002_2834# 0.01596f
-C44 m3_3518_16# B 0.14526f
-C45 m3_3518_16# m3_3240_16# 0.61867f
-C46 a_2182_2834# B 0.01605f
-C47 a_2182_2834# m3_3240_16# 0.07766f
-C48 B out_uq4 0.62734f
-C49 m3_3240_16# out_uq4 0.08633f
-C50 a_3002_768# C_uq0 0.44366f
-C51 m3_3518_16# a_2182_768# 0.01045f
-C52 a_3002_768# B_uq0 0.17285f
-C53 m3_3518_16# C 0.34413f
-C54 C_uq0 B_uq0 1.58848f
-C55 a_2182_2834# C 0.03123f
-C56 C out_uq4 1.22099f
-C57 A out 3.31955f
-C58 m3_3240_16# a_3002_768# 0.08398f
-C59 out m3_2966_16# 0.08445f
-C60 C_uq0 B 1.40828f
-C61 m3_3240_16# C_uq0 0.16275f
-C62 B B_uq0 2.18329f
-C63 m3_3240_16# B_uq0 0.24434f
-C64 A m3_2966_16# 0.45006f
-C65 out a_2182_1330# 0.32833f
-C66 a_3002_768# a_2182_768# 0.20468f
-C67 a_3002_3396# m3_2966_16# 0.06357f
-C68 m3_3518_16# out_uq2 0.10531f
-C69 a_2182_2834# out_uq2 0.3283f
-C70 a_2182_768# C_uq0 0.02477f
-C71 C C_uq0 0.96163f
-C72 a_2182_768# B_uq0 0.166f
-C73 A a_2182_1330# 0.23742f
-C74 C B_uq0 1.48606f
-C75 m3_3240_16# B 0.21865f
-C76 m3_2966_16# a_2182_1330# 0.08015f
-C77 a_3002_1330# out 0.01596f
-C78 a_2182_768# B 0.0157f
-C79 m3_3240_16# a_2182_768# 0.07779f
-C80 C B 1.88349f
-C81 m3_3240_16# C 0.15747f
-C82 a_3002_2834# m3_2966_16# 0.06211f
-C83 a_3002_1330# m3_2966_16# 0.06461f
-C84 out_uq2 B_uq0 0.85348f
-C85 a_3002_1330# a_2182_1330# 0.20468f
-C86 A a_2182_3396# 0.23742f
-C87 A out_uq0 3.3253f
-C88 a_3002_3396# a_2182_3396# 0.20468f
-C89 a_2182_3396# m3_2966_16# 0.08012f
-C90 m3_2966_16# out_uq0 0.08235f
-C91 out_uq2 B 0.18679f
-C92 m3_3240_16# out_uq2 0.08972f
-C93 C out_uq2 0.76446f
-C94 m3_3518_16# out 0.10037f
-C95 m3_3518_16# A 0.64912f
-C96 a_2182_2834# A 0.23742f
-C97 A out_uq4 3.31706f
-C98 m3_3518_16# a_3002_3396# 0.1001f
-C99 a_3002_3396# out_uq4 0.01596f
-C100 a_2182_2834# m3_2966_16# 0.08008f
-C101 m3_2966_16# out_uq4 0.08543f
-C102 m3_3518_16# a_2182_1330# 0.01045f
-C103 C_uq0 out 1.08976f
-C104 C_uq0 A 4.84935f
-C105 m3_3518_16# a_3002_2834# 0.09612f
-C106 a_2182_2834# a_3002_2834# 0.20468f
-C107 A B_uq0 5.44596f
-C108 a_3002_1330# m3_3518_16# 0.10709f
-C109 a_3002_768# m3_2966_16# 0.06526f
-C110 C_uq0 m3_2966_16# 0.1554f
-C111 m3_2966_16# B_uq0 0.25949f
-C112 out_uq0 vss 0.63521f
-C113 out vss 0.56023f
-C114 out_uq2 vss 0.48747f
-C115 out_uq4 vss 20.67812f
-C116 m3_3518_16# vss 0.66837f
-C117 m3_3240_16# vss 0.34762f ; **FLOATING
-C118 m3_2966_16# vss 0.99179f ; **FLOATING
-C119 a_3002_768# vss 3.13228f
-C120 a_2182_768# vss 0.7996f
-C121 a_3002_1330# vss 0.40867f
-C122 a_2182_1330# vss 1.4997f
-C123 a_3002_2834# vss 2.90789f
-C124 a_2182_2834# vss 4.6212f
-C125 a_3002_3396# vss 0.47626f
-C126 a_2182_3396# vss 20.9075f
+C0 a_3002_2834# m3_3240_16# 0.0806f
+C1 out a_3002_1330# 0.01596f
+C2 a_2182_3396# m3_2966_16# 0.08012f
+C3 C m3_3518_16# 0.34413f
+C4 out m3_2966_16# 0.08445f
+C5 a_3002_3396# m3_2966_16# 0.06357f
+C6 C_uq0 C 0.98112f
+C7 C_uq0 m3_3518_16# 0.30854f
+C8 m3_3518_16# a_2182_768# 0.01045f
+C9 out a_2182_1330# 0.32833f
+C10 C_uq0 a_2182_768# 0.02477f
+C11 A a_2182_2834# 0.23742f
+C12 A m3_3240_16# 0.48052f
+C13 out out_uq2 0.03225f
+C14 m3_2966_16# out_uq4 0.08543f
+C15 a_2182_3396# B 0.20181f
+C16 C a_3002_2834# 0.45336f
+C17 m3_3518_16# a_3002_2834# 0.09612f
+C18 out B 0.68971f
+C19 a_3002_3396# B 0.38327f
+C20 B_uq0 a_3002_768# 0.17285f
+C21 B_uq0 a_2182_2834# 0.17471f
+C22 out_uq0 a_3002_768# 0.02512f
+C23 C A 5.62753f
+C24 B_uq0 m3_3240_16# 0.24434f
+C25 a_3002_768# m3_2966_16# 0.06526f
+C26 m3_3518_16# A 0.64912f
+C27 C_uq0 A 4.85302f
+C28 A a_2182_768# 0.23742f
+C29 B out_uq4 0.62734f
+C30 a_3002_1330# m3_3240_16# 0.08561f
+C31 out_uq0 m3_3240_16# 0.08539f
+C32 a_3002_3396# a_2182_3396# 0.20468f
+C33 a_2182_2834# m3_2966_16# 0.08008f
+C34 m3_3240_16# m3_2966_16# 0.62842f
+C35 m3_3240_16# a_2182_1330# 0.07864f
+C36 a_2182_2834# out_uq2 0.3283f
+C37 out_uq2 m3_3240_16# 0.08972f
+C38 a_2182_3396# out_uq4 0.32832f
+C39 C B_uq0 1.50877f
+C40 B_uq0 m3_3518_16# 0.2127f
+C41 a_3002_3396# out_uq4 0.01596f
+C42 C_uq0 B_uq0 1.71625f
+C43 B_uq0 a_2182_768# 0.16698f
+C44 B a_2182_2834# 0.01605f
+C45 m3_3518_16# a_3002_1330# 0.10709f
+C46 B m3_3240_16# 0.21865f
+C47 out_uq0 m3_3518_16# 0.10081f
+C48 C_uq0 a_3002_1330# 0.27163f
+C49 out_uq0 C_uq0 0.59607f
+C50 out_uq0 a_2182_768# 0.32834f
+C51 C m3_2966_16# 0.15259f
+C52 C_uq0 m3_2966_16# 0.1554f
+C53 a_2182_768# m3_2966_16# 0.08017f
+C54 m3_3518_16# a_2182_1330# 0.01045f
+C55 C_uq0 a_2182_1330# 0.01305f
+C56 C out_uq2 0.76446f
+C57 B_uq0 a_3002_2834# 0.15723f
+C58 m3_3518_16# out_uq2 0.10531f
+C59 a_2182_3396# m3_3240_16# 0.07774f
+C60 out m3_3240_16# 0.08539f
+C61 a_3002_3396# m3_3240_16# 0.08208f
+C62 C B 1.77262f
+C63 a_3002_2834# m3_2966_16# 0.06211f
+C64 B m3_3518_16# 0.14526f
+C65 C_uq0 B 0.86622f
+C66 B_uq0 A 5.49921f
+C67 out_uq0 A 3.33824f
+C68 a_3002_2834# out_uq2 0.01596f
+C69 m3_3240_16# out_uq4 0.08633f
+C70 A m3_2966_16# 0.45006f
+C71 A a_2182_1330# 0.23742f
+C72 a_2182_3396# m3_3518_16# 0.01045f
+C73 C out 0.06357f
+C74 a_3002_3396# C 0.29264f
+C75 out m3_3518_16# 0.10037f
+C76 a_3002_3396# m3_3518_16# 0.1001f
+C77 C_uq0 out 1.08976f
+C78 A out_uq2 3.32066f
+C79 a_3002_768# m3_3240_16# 0.08398f
+C80 out_uq0 B_uq0 1.03698f
+C81 B A 5.38257f
+C82 C out_uq4 1.22099f
+C83 a_2182_2834# m3_3240_16# 0.07766f
+C84 B_uq0 m3_2966_16# 0.25949f
+C85 m3_3518_16# out_uq4 0.10109f
+C86 a_3002_1330# m3_2966_16# 0.06461f
+C87 out_uq0 m3_2966_16# 0.08235f
+C88 a_3002_1330# a_2182_1330# 0.20468f
+C89 B_uq0 out_uq2 0.85348f
+C90 m3_2966_16# a_2182_1330# 0.08015f
+C91 a_2182_3396# A 0.23742f
+C92 out A 3.31955f
+C93 m3_3518_16# a_3002_768# 0.102f
+C94 C_uq0 a_3002_768# 0.44366f
+C95 a_3002_768# a_2182_768# 0.20468f
+C96 out_uq2 m3_2966_16# 0.08646f
+C97 B_uq0 B 1.53071f
+C98 C a_2182_2834# 0.03123f
+C99 m3_3518_16# a_2182_2834# 0.01045f
+C100 C m3_3240_16# 0.15747f
+C101 m3_3518_16# m3_3240_16# 0.61867f
+C102 B a_3002_1330# 0.24256f
+C103 C_uq0 m3_3240_16# 0.16275f
+C104 a_2182_768# m3_3240_16# 0.07779f
+C105 B m3_2966_16# 0.25838f
+C106 B a_2182_1330# 0.18284f
+C107 A out_uq4 3.31706f
+C108 B_uq0 out 0.01167f
+C109 B out_uq2 0.18659f
+C110 a_3002_2834# a_2182_2834# 0.20468f
+C111 out_uq0 vss 0.65429f
+C112 out vss 0.57414f
+C113 out_uq2 vss 0.48747f
+C114 out_uq4 vss 20.60193f
+C115 m3_3518_16# vss 0.66837f
+C116 m3_3240_16# vss 0.34762f
+C117 m3_2966_16# vss 0.99179f
+C118 a_3002_768# vss 3.14246f
+C119 a_2182_768# vss 0.7996f
+C120 a_3002_1330# vss 0.40867f
+C121 a_2182_1330# vss 1.4997f
+C122 a_3002_2834# vss 2.85251f
+C123 a_2182_2834# vss 4.57091f
+C124 a_3002_3396# vss 0.47626f
+C125 a_2182_3396# vss 20.83131f
+.ends
+
+.subckt pfet$10$1 a_132_n40# a_332_0# w_n61_n76# a_0_0# VSUBS
+X0 a_332_0# a_132_n40# a_0_0# w_n61_n76# sky130_fd_pr__pfet_01v8_lvt ad=1.32 pd=5.32 as=1.32 ps=5.32 w=2 l=1
+C0 a_0_0# w_n61_n76# 0.0663f
+C1 a_0_0# a_332_0# 0.05169f
+C2 w_n61_n76# a_332_0# 0.0663f
+C3 a_0_0# a_132_n40# 0.09524f
+C4 a_132_n40# w_n61_n76# 0.19557f
+C5 a_132_n40# a_332_0# 0.09524f
+C6 a_332_0# VSUBS 0.29136f
+C7 a_0_0# VSUBS 0.29136f
+C8 w_n61_n76# VSUBS 1.08996f
+.ends
+
+.subckt nfet$11$1 a_132_n40# a_332_0# a_0_0# VSUBS
+X0 a_332_0# a_132_n40# a_0_0# VSUBS sky130_fd_pr__nfet_01v8_lvt ad=0.66 pd=3.32 as=0.66 ps=3.32 w=1 l=1
+C0 a_332_0# a_132_n40# 0.03685f
+C1 a_332_0# a_0_0# 0.01971f
+C2 a_0_0# a_132_n40# 0.03685f
+C3 a_332_0# VSUBS 0.34974f
+C4 a_0_0# VSUBS 0.34974f
+.ends
+
+.subckt buffer$3$1 in out vdd m2_401_998# vss
+Xpfet$10$1_0 m2_401_998# vdd vdd out vss pfet$10$1
+Xpfet$10$1_1 m2_401_998# out vdd vdd vss pfet$10$1
+Xpfet$10$1_2 m2_401_998# out vdd vdd vss pfet$10$1
+Xpfet$10$1_3 m2_401_998# vdd vdd out vss pfet$10$1
+Xpfet$10$1_4 m2_401_998# vdd vdd out vss pfet$10$1
+Xpfet$10$1_5 m2_401_998# out vdd vdd vss pfet$10$1
+Xpfet$10$1_6 m2_401_998# out vdd vdd vss pfet$10$1
+Xnfet$11$1_0 m2_401_998# vss out vss nfet$11$1
+Xpfet$10$1_7 m2_401_998# vdd vdd out vss pfet$10$1
+Xnfet$11$1_1 m2_401_998# out vss vss nfet$11$1
+Xpfet$10$1_9 in m2_401_998# vdd vdd vss pfet$10$1
+Xpfet$10$1_8 in vdd vdd m2_401_998# vss pfet$10$1
+Xnfet$11$1_2 m2_401_998# vss out vss nfet$11$1
+Xnfet$11$1_3 m2_401_998# out vss vss nfet$11$1
+Xnfet$11$1_4 m2_401_998# vss out vss nfet$11$1
+Xnfet$11$1_5 m2_401_998# out vss vss nfet$11$1
+Xnfet$11$1_6 m2_401_998# vss out vss nfet$11$1
+Xnfet$11$1_7 m2_401_998# out vss vss nfet$11$1
+Xnfet$11$1_8 in vss m2_401_998# vss nfet$11$1
+Xnfet$11$1_9 in m2_401_998# vss vss nfet$11$1
+Xnfet$11$1_10 in vss m2_401_998# vss nfet$11$1
+Xnfet$11$1_11 in m2_401_998# vss vss nfet$11$1
+Xpfet$10$1_10 in m2_401_998# vdd vdd vss pfet$10$1
+Xpfet$10$1_11 in vdd vdd m2_401_998# vss pfet$10$1
+C0 out vdd 0.9192f
+C1 in vdd 0.55874f
+C2 m2_401_998# vdd 1.53959f
+C3 m2_401_998# out 1.41237f
+C4 m2_401_998# in 0.66718f
+C5 vdd vss -10.43743f
+C6 m2_401_998# vss -5.66288f
+C7 in vss -1.76586f
+C8 out vss -2.97202f
 .ends
 
 .subckt pnp_bjt$4 Emitter Base Collector
 X0 Collector Base Emitter sky130_fd_pr__pnp_05v5_W3p40L3p40
 **devattr s=462400,2720
-C0 Base Emitter 0.50332f
+C0 Emitter Base 0.50332f
 C1 Emitter Collector 0.28697f
 .ends
 
 .subckt pfet$1$4 a_532_0# a_132_n40# w_n61_n76# a_0_0# VSUBS
 X0 a_532_0# a_132_n40# a_0_0# w_n61_n76# sky130_fd_pr__pfet_01v8_lvt ad=3.96 pd=13.32 as=3.96 ps=13.32 w=6 l=2
-C0 a_532_0# a_0_0# 0.09302f
-C1 a_132_n40# a_0_0# 0.40209f
-C2 w_n61_n76# a_0_0# 0.22554f
-C3 a_132_n40# a_532_0# 0.40209f
-C4 w_n61_n76# a_532_0# 0.22554f
-C5 w_n61_n76# a_132_n40# 0.31809f
+C0 a_0_0# a_132_n40# 0.40209f
+C1 a_0_0# w_n61_n76# 0.22554f
+C2 a_532_0# a_132_n40# 0.40209f
+C3 a_532_0# w_n61_n76# 0.22554f
+C4 a_132_n40# w_n61_n76# 0.31809f
+C5 a_532_0# a_0_0# 0.09302f
 C6 a_532_0# VSUBS 0.59429f
 C7 a_0_0# VSUBS 0.59429f
 C8 w_n61_n76# VSUBS 3.34836f
@@ -292,12 +409,12 @@ C1 a_n141_756# a_n271_n1322# 0.71317f
 
 .subckt pfet$6 a_132_n40# a_332_0# w_n61_n76# a_0_0# VSUBS
 X0 a_332_0# a_132_n40# a_0_0# w_n61_n76# sky130_fd_pr__pfet_01v8_lvt ad=3.3 pd=11.32 as=3.3 ps=11.32 w=5 l=1
-C0 a_332_0# a_0_0# 0.13697f
-C1 a_132_n40# a_0_0# 0.25058f
-C2 w_n61_n76# a_0_0# 0.14941f
-C3 a_132_n40# a_332_0# 0.25058f
-C4 w_n61_n76# a_332_0# 0.14941f
-C5 w_n61_n76# a_132_n40# 0.19771f
+C0 a_0_0# a_132_n40# 0.25058f
+C1 a_0_0# w_n61_n76# 0.14941f
+C2 a_332_0# a_132_n40# 0.25058f
+C3 a_332_0# w_n61_n76# 0.14941f
+C4 a_132_n40# w_n61_n76# 0.19771f
+C5 a_332_0# a_0_0# 0.13697f
 C6 a_332_0# VSUBS 0.45804f
 C7 a_0_0# VSUBS 0.45804f
 C8 w_n61_n76# VSUBS 2.14476f
@@ -305,16 +422,16 @@ C8 w_n61_n76# VSUBS 2.14476f
 
 .subckt nfet$7 a_132_n106# a_332_0# a_0_0# VSUBS
 X0 a_332_0# a_132_n106# a_0_0# VSUBS sky130_fd_pr__nfet_01v8_lvt ad=1.32 pd=5.32 as=1.32 ps=5.32 w=2 l=1
-C0 a_0_0# a_332_0# 0.05169f
-C1 a_132_n106# a_332_0# 0.09524f
-C2 a_132_n106# a_0_0# 0.09524f
+C0 a_332_0# a_0_0# 0.05169f
+C1 a_332_0# a_132_n106# 0.09524f
+C2 a_0_0# a_132_n106# 0.09524f
 C3 a_332_0# VSUBS 0.42578f
 C4 a_0_0# VSUBS 0.42578f
 .ends
 
 .subckt res_poly$3$4 a_n141_196# a_n141_n632# a_n271_n762#
 X0 a_n141_196# a_n141_n632# a_n271_n762# sky130_fd_pr__res_high_po_1p41 l=2.12
-C0 a_n141_196# a_n141_n632# 0.02155f
+C0 a_n141_n632# a_n141_196# 0.02155f
 C1 a_n141_n632# a_n271_n762# 0.68196f
 C2 a_n141_196# a_n271_n762# 0.68196f
 .ends
@@ -327,23 +444,23 @@ C1 a_n141_1576# a_n271_n2142# 0.72895f
 
 .subckt res_poly$8 a_n141_n532# a_n271_n662# a_n141_96#
 X0 a_n141_96# a_n141_n532# a_n271_n662# sky130_fd_pr__res_high_po_1p41 l=1.12
-C0 a_n141_96# a_n141_n532# 0.04008f
+C0 a_n141_n532# a_n141_96# 0.04008f
 C1 a_n141_n532# a_n271_n662# 0.65823f
 C2 a_n141_96# a_n271_n662# 0.65823f
 .ends
 
 .subckt nfet$3$4 a_132_n40# a_332_0# a_0_0# VSUBS
 X0 a_332_0# a_132_n40# a_0_0# VSUBS sky130_fd_pr__nfet_01v8_lvt ad=1.32 pd=5.32 as=1.32 ps=5.32 w=2 l=1
-C0 a_0_0# a_332_0# 0.05169f
-C1 a_132_n40# a_332_0# 0.09524f
-C2 a_132_n40# a_0_0# 0.09524f
+C0 a_332_0# a_0_0# 0.05169f
+C1 a_332_0# a_132_n40# 0.09524f
+C2 a_0_0# a_132_n40# 0.09524f
 C3 a_332_0# VSUBS 0.42578f
 C4 a_0_0# VSUBS 0.42578f
 .ends
 
 .subckt res_poly$4$1 a_n141_54# a_n141_n490# a_n271_n620#
 X0 a_n141_54# a_n141_n490# a_n271_n620# sky130_fd_pr__res_high_po_1p41 l=0.7
-C0 a_n141_54# a_n141_n490# 0.06268f
+C0 a_n141_n490# a_n141_54# 0.06268f
 C1 a_n141_n490# a_n271_n620# 0.64329f
 C2 a_n141_54# a_n271_n620# 0.64329f
 .ends
@@ -354,9 +471,9 @@ C0 a_n141_n4732# a_n271_n4862# 0.72895f
 C1 a_n141_4296# a_n271_n4862# 0.72895f
 .ends
 
-.subckt BGR_coreAndVrefBranch$3 bs inP m3_9013_9929# m3_1018_8628# w_9130_485# m3_8157_13103#
-+ Y1 Y2 w_1808_12087# pnp_bjt$4_5/Emitter m2_9779_894# m3_8157_734# Y3 inN Y0 out
-+ pnp_bjt$4_9/Emitter vdd vss
+.subckt BGR_coreAndVrefBranch$3 inP w_9130_485# pnp_bjt$4_6/Emitter bs Y1 m3_9013_9929#
++ m2_9779_894# Y2 w_1808_12087# m3_8157_734# Y3 pnp_bjt$4_5/Emitter Y0 out pnp_bjt$4_9/Emitter
++ m3_1018_8628# vdd vss m3_8157_13103# inN
 Xpnp_bjt$4_0 pnp_bjt$4_9/Emitter vss vss pnp_bjt$4
 Xpfet$1$4_9 out inP w_1808_12087# vdd vss pfet$1$4
 Xpnp_bjt$4_1 pnp_bjt$4_9/Emitter vss vss pnp_bjt$4
@@ -471,188 +588,249 @@ Xpfet$6_19 Y2 m2_9779_894# w_9130_485# m3_8157_13103# vss pfet$6
 Xnfet$3$4_8 vss inN vss vss nfet$3$4
 Xpfet$1$4_8 inN inP w_1808_12087# vdd vss pfet$1$4
 Xnfet$3$4_9 vss bs vss vss nfet$3$4
-C0 w_9130_485# out 0.63639f
-C1 vdd w_9130_485# 16.6913f
-C2 vdd out 4.86677f
-C3 w_9130_485# Y1 0.54819f
-C4 bs inP 1.18763f
-C5 vdd Y1 0.99397f
-C6 vdd m3_1018_8628# 0.06191f
-C7 m3_9013_9929# w_9130_485# 0.83841f
-C8 m3_9013_9929# vdd 1.64368f
-C9 inN w_9130_485# 0.01969f
-C10 vdd pnp_bjt$4_5/Emitter 1.23999f
-C11 inN out 5.02372f
-C12 m3_9013_9929# Y1 0.24329f
-C13 vdd inN 4.11037f
-C14 w_9130_485# m3_8157_734# 1.38033f
-C15 vdd m3_8157_734# 2.60763f
-C16 m3_1018_8628# pnp_bjt$4_5/Emitter 0.06859f
-C17 Y2 w_9130_485# 0.55458f
-C18 m2_9779_894# w_9130_485# 0.67234f
-C19 inN m3_1018_8628# 1.35709f
-C20 m2_9779_894# out 0.69723f
-C21 Y2 vdd 1.36367f
-C22 vdd m2_9779_894# 3.90404f
-C23 w_9130_485# Y3 0.59816f
-C24 m3_8157_13103# w_9130_485# 0.6283f
-C25 out Y3 0.33287f
-C26 vdd Y3 1.13f
-C27 m3_8157_13103# out 0.02688f
-C28 pnp_bjt$4_5/Emitter pnp_bjt$4_6/Emitter 1.21004f
-C29 m3_8157_13103# vdd 2.23479f
-C30 Y2 Y1 0.01079f
-C31 m2_9779_894# Y1 1.30671f
-C32 m3_9013_9929# inN 0.04421f
-C33 w_9130_485# pnp_bjt$4_9/Emitter 0.01247f
-C34 vdd pnp_bjt$4_9/Emitter 0.02335f
-C35 m3_9013_9929# m3_8157_734# 0.0263f
-C36 m3_8157_734# pnp_bjt$4_6/Emitter 1.11594f
-C37 w_1808_12087# out 0.7857f
-C38 Y2 m3_9013_9929# 0.09737f
-C39 w_1808_12087# vdd 12.02122f
-C40 m3_9013_9929# m2_9779_894# 1.05937f
-C41 inN m3_8157_734# 0.2072f
-C42 m3_8157_13103# m3_9013_9929# 0.23976f
-C43 pnp_bjt$4_9/Emitter pnp_bjt$4_6/Emitter 1.49663f
-C44 m2_9779_894# m3_8157_734# 1.1192f
-C45 m3_8157_13103# inN 0.58051f
-C46 out inP 9.14107f
-C47 vdd inP 5.47732f
-C48 pnp_bjt$4_9/Emitter pnp_bjt$4_5/Emitter 10.20033f
-C49 Y2 m2_9779_894# 1.23f
-C50 Y2 Y3 0.01117f
-C51 m2_9779_894# Y3 0.75323f
-C52 Y2 m3_8157_13103# 0.20386f
-C53 w_9130_485# Y0 1.1945f
-C54 m3_8157_13103# m2_9779_894# 0.54814f
-C55 m3_1018_8628# inP 0.61874f
-C56 m3_8157_734# pnp_bjt$4_9/Emitter 0.40788f
-C57 w_1808_12087# inN 0.75283f
-C58 vdd Y0 1.36378f
-C59 bs m3_1018_8628# 0.43569f
-C60 Y1 Y0 0.01145f
-C61 inN inP 13.47481f
-C62 bs pnp_bjt$4_6/Emitter 0.25825f
-C63 bs inN 3.00723f
-C64 bs m3_8157_734# 0.05643f
-C65 Y0 m3_8157_734# 0.27236f
-C66 m3_8157_13103# inP 0.01256f
-C67 m2_9779_894# Y0 2.4003f
-C68 w_1808_12087# inP 5.91598f
+C0 w_9130_485# Y2 0.55458f
+C1 Y3 Y2 0.01117f
+C2 inN out 5.02372f
+C3 vdd Y1 0.99397f
+C4 vdd m3_9013_9929# 1.64368f
+C5 m2_9779_894# out 0.69723f
+C6 Y3 w_9130_485# 0.59816f
+C7 inP out 9.14107f
+C8 inN m3_1018_8628# 1.35709f
+C9 Y0 m3_8157_734# 0.27236f
+C10 vdd inN 4.11037f
+C11 inP m3_1018_8628# 0.61874f
+C12 m3_1018_8628# pnp_bjt$4_5/Emitter 0.06859f
+C13 Y1 m3_9013_9929# 0.24329f
+C14 vdd m2_9779_894# 3.90404f
+C15 inP vdd 5.47732f
+C16 out m3_8157_13103# 0.02688f
+C17 vdd pnp_bjt$4_5/Emitter 1.23999f
+C18 inN m3_9013_9929# 0.04421f
+C19 Y0 w_9130_485# 1.1945f
+C20 vdd pnp_bjt$4_9/Emitter 0.02335f
+C21 Y1 m2_9779_894# 1.30671f
+C22 vdd m3_8157_13103# 2.23479f
+C23 m3_9013_9929# m2_9779_894# 1.05937f
+C24 vdd m3_8157_734# 2.60763f
+C25 inP inN 13.47481f
+C26 m3_9013_9929# m3_8157_13103# 0.23976f
+C27 w_9130_485# out 0.63639f
+C28 Y3 out 0.33287f
+C29 vdd Y2 1.36367f
+C30 pnp_bjt$4_6/Emitter pnp_bjt$4_5/Emitter 1.21004f
+C31 m3_8157_734# m3_9013_9929# 0.0263f
+C32 inN m3_8157_13103# 0.58051f
+C33 vdd w_9130_485# 16.6913f
+C34 pnp_bjt$4_9/Emitter pnp_bjt$4_5/Emitter 10.20033f
+C35 m2_9779_894# m3_8157_13103# 0.54814f
+C36 inP m3_8157_13103# 0.01256f
+C37 Y1 Y2 0.01079f
+C38 vdd Y3 1.13f
+C39 bs m3_1018_8628# 0.43569f
+C40 inN m3_8157_734# 0.2072f
+C41 pnp_bjt$4_6/Emitter pnp_bjt$4_9/Emitter 1.49663f
+C42 m3_9013_9929# Y2 0.09737f
+C43 out w_1808_12087# 0.7857f
+C44 m3_8157_734# m2_9779_894# 1.1192f
+C45 Y1 w_9130_485# 0.54819f
+C46 pnp_bjt$4_6/Emitter m3_8157_734# 1.11594f
+C47 m3_9013_9929# w_9130_485# 0.83841f
+C48 vdd w_1808_12087# 12.02122f
+C49 m2_9779_894# Y2 1.23f
+C50 m3_8157_734# pnp_bjt$4_9/Emitter 0.40788f
+C51 inN w_9130_485# 0.01969f
+C52 vdd Y0 1.36378f
+C53 w_9130_485# m2_9779_894# 0.67234f
+C54 bs inN 3.00723f
+C55 Y3 m2_9779_894# 0.75323f
+C56 Y2 m3_8157_13103# 0.20386f
+C57 inP bs 1.18763f
+C58 Y0 Y1 0.01145f
+C59 bs pnp_bjt$4_6/Emitter 0.25825f
+C60 w_9130_485# pnp_bjt$4_9/Emitter 0.01247f
+C61 inN w_1808_12087# 0.75283f
+C62 w_9130_485# m3_8157_13103# 0.6283f
+C63 vdd out 4.86677f
+C64 inP w_1808_12087# 5.91598f
+C65 m3_8157_734# w_9130_485# 1.38033f
+C66 vdd m3_1018_8628# 0.06191f
+C67 Y0 m2_9779_894# 2.4003f
+C68 bs m3_8157_734# 0.05643f
 C69 inN vss -0.08579f
 C70 vdd vss -17.79775f
 C71 m3_8157_734# vss 1.33092f
-C72 pnp_bjt$4_9/Emitter vss 18.12358f
+C72 pnp_bjt$4_9/Emitter vss 18.12357f
 C73 pnp_bjt$4_5/Emitter vss 7.43141f
 C74 m3_1018_8628# vss -0.99708f
 C75 out vss -2.96398f
-C76 pnp_bjt$4_6/Emitter vss 3.01588f
-C77 bs vss -0.0288f
-C78 Y1 vss -0.72639f
-C79 Y2 vss -1.25262f
-C80 m3_9013_9929# vss -0.78091f
-C81 w_1808_12087# vss 15.87892f
-C82 m3_8157_13103# vss -2.26841f
-C83 Y3 vss -1.07746f
-C84 inP vss -13.1078f
-C85 m2_9779_894# vss -5.67853f
-C86 Y0 vss -0.49904f
-C87 w_9130_485# vss 30.561f
+C76 bs vss -0.0288f
+C77 Y1 vss -0.72639f
+C78 Y2 vss -1.25262f
+C79 m3_9013_9929# vss -0.78091f
+C80 w_1808_12087# vss 15.87892f
+C81 m3_8157_13103# vss -2.26841f
+C82 Y3 vss -1.07746f
+C83 inP vss -13.1078f
+C84 m2_9779_894# vss -5.67853f
+C85 Y0 vss -0.49904f
+C86 w_9130_485# vss 30.561f
+C87 pnp_bjt$4_6/Emitter vss 3.01588f
 .ends
 
-.subckt BGR_TOP S1 S0 out vdd vss
-XStartupCircuit_0 StartupCircuit_0/outP StartupCircuit_0/outN vdd StartupCircuit_0/w_598_1623#
-+ StartupCircuit_0/m1_1882_883# vss StartupCircuit
-XDmux1to4_2select_bit_0 Dmux1to4_2select_bit_0/out vss S0 S1 BGR_coreAndVrefBranch$3_0/Y0
+.subckt BGR_TOP S0 S1 out vdd vss S1_uq0
+XStartupCircuit_0 StartupCircuit_0/outP StartupCircuit_0/outN StartupCircuit_0/pfet$2_2/a_0_0#
++ StartupCircuit_0/w_598_1623# StartupCircuit_0/m1_1882_883# StartupCircuit_0/m1_1550_536#
++ vdd vss StartupCircuit
+Xbuffer$3_0 S1_uq0 S1 vdd buffer$3_0/m2_401_998# vss buffer$3
+XDmux1to4_2select_bit_0 Dmux1to4_2select_bit_0/out vss buffer$3$1_0/out S1 BGR_coreAndVrefBranch$3_0/Y0
 + BGR_coreAndVrefBranch$3_0/Y2 BGR_coreAndVrefBranch$3_0/Y3 Dmux1to4_2select_bit_0/C_uq0
-+ Dmux1to4_2select_bit_0/B_uq0 vdd Dmux1to4_2select_bit_0/a_3002_768# Dmux1to4_2select_bit_0/m3_3518_16#
-+ Dmux1to4_2select_bit_0/a_3002_2834# Dmux1to4_2select_bit_0/a_3002_1330# Dmux1to4_2select_bit_0/a_3002_3396#
++ Dmux1to4_2select_bit_0/B_uq0 vdd Dmux1to4_2select_bit_0/a_3002_768# Dmux1to4_2select_bit_0/a_2182_2834#
++ Dmux1to4_2select_bit_0/m3_3518_16# Dmux1to4_2select_bit_0/m3_2966_16# Dmux1to4_2select_bit_0/a_2182_1330#
++ Dmux1to4_2select_bit_0/a_2182_3396# Dmux1to4_2select_bit_0/m3_3240_16# Dmux1to4_2select_bit_0/a_3002_2834#
++ Dmux1to4_2select_bit_0/a_3002_1330# Dmux1to4_2select_bit_0/a_3002_3396# Dmux1to4_2select_bit_0/a_2182_768#
 + Dmux1to4_2select_bit
-XBGR_coreAndVrefBranch$3_0 BGR_coreAndVrefBranch$3_0/bs StartupCircuit_0/outP BGR_coreAndVrefBranch$3_0/m3_9013_9929#
-+ BGR_coreAndVrefBranch$3_0/m3_1018_8628# BGR_coreAndVrefBranch$3_0/w_9130_485# BGR_coreAndVrefBranch$3_0/m3_8157_13103#
-+ Dmux1to4_2select_bit_0/out BGR_coreAndVrefBranch$3_0/Y2 BGR_coreAndVrefBranch$3_0/w_1808_12087#
-+ BGR_coreAndVrefBranch$3_0/pnp_bjt$4_5/Emitter BGR_coreAndVrefBranch$3_0/m2_9779_894#
-+ BGR_coreAndVrefBranch$3_0/m3_8157_734# BGR_coreAndVrefBranch$3_0/Y3 StartupCircuit_0/outN
-+ BGR_coreAndVrefBranch$3_0/Y0 out BGR_coreAndVrefBranch$3_0/pnp_bjt$4_9/Emitter vdd
-+ vss BGR_coreAndVrefBranch$3
-C0 StartupCircuit_0/outP vdd 1.74193f
-C1 StartupCircuit_0/outN BGR_coreAndVrefBranch$3_0/w_9130_485# 0.07549f
-C2 StartupCircuit_0/outP out 0.26367f
-C3 StartupCircuit_0/outN BGR_coreAndVrefBranch$3_0/Y0 0.08112f
-C4 BGR_coreAndVrefBranch$3_0/Y2 vdd 0.84403f
-C5 BGR_coreAndVrefBranch$3_0/Y3 Dmux1to4_2select_bit_0/out 0.27761f
-C6 StartupCircuit_0/outP BGR_coreAndVrefBranch$3_0/Y2 0.07265f
-C7 vdd S0 0.29532f
-C8 vdd BGR_coreAndVrefBranch$3_0/w_9130_485# 6.04844f
-C9 vdd BGR_coreAndVrefBranch$3_0/Y0 6.12927f
-C10 StartupCircuit_0/outN BGR_coreAndVrefBranch$3_0/m2_9779_894# 0.17173f
-C11 vdd S1 1.02355f
-C12 vdd StartupCircuit_0/m1_1882_883# 0.04107f
-C13 StartupCircuit_0/outP BGR_coreAndVrefBranch$3_0/w_9130_485# 0.04891f
-C14 StartupCircuit_0/outP BGR_coreAndVrefBranch$3_0/Y0 0.07265f
-C15 StartupCircuit_0/outN BGR_coreAndVrefBranch$3_0/Y3 0.28719f
-C16 BGR_coreAndVrefBranch$3_0/Y2 BGR_coreAndVrefBranch$3_0/Y0 0.29731f
-C17 vdd BGR_coreAndVrefBranch$3_0/pnp_bjt$4_5/Emitter 0.50561f
-C18 Dmux1to4_2select_bit_0/m3_3518_16# vdd 0.01345f
-C19 vdd BGR_coreAndVrefBranch$3_0/m2_9779_894# 0.01611f
-C20 vdd BGR_coreAndVrefBranch$3_0/Y3 1.11434f
-C21 BGR_coreAndVrefBranch$3_0/Y3 out -0.01393f
-C22 StartupCircuit_0/w_598_1623# vdd 1.25944f
-C23 StartupCircuit_0/outN Dmux1to4_2select_bit_0/out 0.08112f
-C24 StartupCircuit_0/outP BGR_coreAndVrefBranch$3_0/m2_9779_894# 0.1285f
-C25 vdd BGR_coreAndVrefBranch$3_0/w_1808_12087# 3.15788f
-C26 vdd BGR_coreAndVrefBranch$3_0/pnp_bjt$4_9/Emitter 0.12165f
-C27 StartupCircuit_0/outP BGR_coreAndVrefBranch$3_0/Y3 0.57499f
-C28 BGR_coreAndVrefBranch$3_0/Y2 BGR_coreAndVrefBranch$3_0/Y3 4.14815f
-C29 vdd Dmux1to4_2select_bit_0/out 0.811f
-C30 BGR_coreAndVrefBranch$3_0/Y3 BGR_coreAndVrefBranch$3_0/w_9130_485# -0.03125f
-C31 StartupCircuit_0/outP Dmux1to4_2select_bit_0/out 0.07265f
-C32 BGR_coreAndVrefBranch$3_0/Y3 BGR_coreAndVrefBranch$3_0/Y0 0.27921f
-C33 BGR_coreAndVrefBranch$3_0/Y2 Dmux1to4_2select_bit_0/out 4.16569f
-C34 vdd Dmux1to4_2select_bit_0/C_uq0 0.18823f
-C35 StartupCircuit_0/outN vdd 0.92791f
-C36 StartupCircuit_0/outN out 0.33841f
-C37 BGR_coreAndVrefBranch$3_0/Y0 Dmux1to4_2select_bit_0/out 4.05889f
-C38 BGR_coreAndVrefBranch$3_0/Y3 BGR_coreAndVrefBranch$3_0/m2_9779_894# -0.03481f
-C39 StartupCircuit_0/outP StartupCircuit_0/outN 1.24122f
-C40 BGR_coreAndVrefBranch$3_0/Y2 StartupCircuit_0/outN 0.08112f
-C41 vdd Dmux1to4_2select_bit_0/B_uq0 1.0684f
-C42 vdd BGR_coreAndVrefBranch$3_0/m3_1018_8628# 0.02801f
-C43 vdd out 0.19046f
-C44 StartupCircuit_0/outN vss -18.60397f
-C45 vdd vss -36.27734f
-C46 BGR_coreAndVrefBranch$3_0/m3_8157_734# vss -7.47566f
-C47 BGR_coreAndVrefBranch$3_0/pnp_bjt$4_9/Emitter vss -15.00727f
-C48 BGR_coreAndVrefBranch$3_0/pnp_bjt$4_5/Emitter vss -9.98515f
-C49 BGR_coreAndVrefBranch$3_0/m3_1018_8628# vss -5.94215f
-C50 out vss -8.0102f
-C51 BGR_coreAndVrefBranch$3_0/pnp_bjt$4_6/Emitter vss -2.26035f
-C52 BGR_coreAndVrefBranch$3_0/bs vss -4.40737f
-C53 Dmux1to4_2select_bit_0/out vss -0.61923f
-C54 BGR_coreAndVrefBranch$3_0/Y2 vss -0.02411f
-C55 BGR_coreAndVrefBranch$3_0/m3_9013_9929# vss -4.89211f
-C56 BGR_coreAndVrefBranch$3_0/w_1808_12087# vss -80.3606f
-C57 BGR_coreAndVrefBranch$3_0/m3_8157_13103# vss -4.82668f
-C58 BGR_coreAndVrefBranch$3_0/Y3 vss 5.62103f
-C59 StartupCircuit_0/outP vss -20.21041f
-C60 BGR_coreAndVrefBranch$3_0/m2_9779_894# vss -10.77044f
-C61 BGR_coreAndVrefBranch$3_0/Y0 vss -1.98126f
-C62 BGR_coreAndVrefBranch$3_0/w_9130_485# vss -46.72295f
-C63 Dmux1to4_2select_bit_0/C_uq0 vss 0.74047f
-C64 Dmux1to4_2select_bit_0/B_uq0 vss 0.42793f
-C65 S1 vss -0.90392f
-C66 S0 vss 0.92972f
-C67 Dmux1to4_2select_bit_0/m3_3518_16# vss 0.08342f
-C68 Dmux1to4_2select_bit_0/m3_3240_16# vss 0.01831f ; **FLOATING
-C69 Dmux1to4_2select_bit_0/m3_2966_16# vss 0.01015f ; **FLOATING
-C70 Dmux1to4_2select_bit_0/a_3002_768# vss 0.03557f
-C71 Dmux1to4_2select_bit_0/a_3002_1330# vss 0.01739f
-C72 Dmux1to4_2select_bit_0/a_3002_2834# vss 0.01675f
-C73 Dmux1to4_2select_bit_0/a_3002_3396# vss 0.03213f
-C74 StartupCircuit_0/m1_1550_536# vss -0.50821f
-C75 StartupCircuit_0/m1_1882_883# vss -2.62596f
-C76 StartupCircuit_0/pfet$2_2/a_0_0# vss -0.37957f
-C77 StartupCircuit_0/w_598_1623# vss -4.30419f
+Xbuffer$3$1_0 S0 buffer$3$1_0/out vdd buffer$3$1_0/m2_401_998# vss buffer$3$1
+XBGR_coreAndVrefBranch$3_0 StartupCircuit_0/outP BGR_coreAndVrefBranch$3_0/w_9130_485#
++ BGR_coreAndVrefBranch$3_0/pnp_bjt$4_6/Emitter BGR_coreAndVrefBranch$3_0/bs Dmux1to4_2select_bit_0/out
++ BGR_coreAndVrefBranch$3_0/m3_9013_9929# BGR_coreAndVrefBranch$3_0/m2_9779_894# BGR_coreAndVrefBranch$3_0/Y2
++ BGR_coreAndVrefBranch$3_0/w_1808_12087# BGR_coreAndVrefBranch$3_0/m3_8157_734# BGR_coreAndVrefBranch$3_0/Y3
++ BGR_coreAndVrefBranch$3_0/pnp_bjt$4_5/Emitter BGR_coreAndVrefBranch$3_0/Y0 out BGR_coreAndVrefBranch$3_0/pnp_bjt$4_9/Emitter
++ BGR_coreAndVrefBranch$3_0/m3_1018_8628# vdd vss BGR_coreAndVrefBranch$3_0/m3_8157_13103#
++ StartupCircuit_0/outN BGR_coreAndVrefBranch$3
+C0 S0 buffer$3$1_0/out 0.0225f
+C1 StartupCircuit_0/outP Dmux1to4_2select_bit_0/out 0.07265f
+C2 Dmux1to4_2select_bit_0/C_uq0 S1 0.09074f
+C3 Dmux1to4_2select_bit_0/B_uq0 vdd 1.14894f
+C4 BGR_coreAndVrefBranch$3_0/Y0 BGR_coreAndVrefBranch$3_0/Y3 0.27921f
+C5 Dmux1to4_2select_bit_0/out S1 0.01302f
+C6 StartupCircuit_0/m1_1550_536# vdd 0.01853f
+C7 Dmux1to4_2select_bit_0/out BGR_coreAndVrefBranch$3_0/m2_9779_894# -0.15162f
+C8 Dmux1to4_2select_bit_0/m3_2966_16# vdd 0.14264f
+C9 Dmux1to4_2select_bit_0/a_2182_768# vdd 0.03785f
+C10 Dmux1to4_2select_bit_0/B_uq0 S1 0.33501f
+C11 Dmux1to4_2select_bit_0/out StartupCircuit_0/outN 0.08112f
+C12 vdd StartupCircuit_0/w_598_1623# 1.25323f
+C13 vdd buffer$3$1_0/out 2.08265f
+C14 BGR_coreAndVrefBranch$3_0/Y2 BGR_coreAndVrefBranch$3_0/m3_9013_9929# -0.08784f
+C15 vdd BGR_coreAndVrefBranch$3_0/m3_9013_9929# 2.03645f
+C16 vdd buffer$3_0/m2_401_998# 0.72602f
+C17 vdd BGR_coreAndVrefBranch$3_0/m3_8157_13103# 1.19595f
+C18 Dmux1to4_2select_bit_0/a_3002_1330# vdd 0.01732f
+C19 BGR_coreAndVrefBranch$3_0/Y2 BGR_coreAndVrefBranch$3_0/Y3 4.14815f
+C20 vdd BGR_coreAndVrefBranch$3_0/Y3 2.27764f
+C21 buffer$3$1_0/out S1 0.04612f
+C22 buffer$3$1_0/m2_401_998# vdd 0.74092f
+C23 BGR_coreAndVrefBranch$3_0/m2_9779_894# BGR_coreAndVrefBranch$3_0/m3_9013_9929# -0.1916f
+C24 BGR_coreAndVrefBranch$3_0/Y0 BGR_coreAndVrefBranch$3_0/Y2 0.29731f
+C25 BGR_coreAndVrefBranch$3_0/Y0 vdd 8.75121f
+C26 buffer$3_0/m2_401_998# S1 0.04874f
+C27 BGR_coreAndVrefBranch$3_0/m2_9779_894# BGR_coreAndVrefBranch$3_0/m3_8157_13103# -0.07432f
+C28 BGR_coreAndVrefBranch$3_0/w_9130_485# BGR_coreAndVrefBranch$3_0/m3_9013_9929# -0.16311f
+C29 StartupCircuit_0/outP BGR_coreAndVrefBranch$3_0/Y3 0.5515f
+C30 vdd S0 0.48756f
+C31 out BGR_coreAndVrefBranch$3_0/Y3 -0.0336f
+C32 Dmux1to4_2select_bit_0/m3_3518_16# vdd 0.18574f
+C33 buffer$3$1_0/m2_401_998# S1 0.01003f
+C34 BGR_coreAndVrefBranch$3_0/Y0 StartupCircuit_0/outP 0.07265f
+C35 BGR_coreAndVrefBranch$3_0/m2_9779_894# BGR_coreAndVrefBranch$3_0/Y3 -0.13473f
+C36 BGR_coreAndVrefBranch$3_0/Y0 S1 0.10824f
+C37 Dmux1to4_2select_bit_0/a_2182_3396# vdd 0.05537f
+C38 BGR_coreAndVrefBranch$3_0/w_9130_485# BGR_coreAndVrefBranch$3_0/Y3 -0.06256f
+C39 BGR_coreAndVrefBranch$3_0/Y0 BGR_coreAndVrefBranch$3_0/m2_9779_894# -0.35608f
+C40 Dmux1to4_2select_bit_0/a_3002_768# vdd 0.02302f
+C41 StartupCircuit_0/m1_1882_883# vdd 0.1678f
+C42 StartupCircuit_0/outN BGR_coreAndVrefBranch$3_0/Y3 0.25896f
+C43 Dmux1to4_2select_bit_0/a_3002_3396# vdd 0.03897f
+C44 BGR_coreAndVrefBranch$3_0/Y0 StartupCircuit_0/outN 0.08112f
+C45 vdd BGR_coreAndVrefBranch$3_0/Y2 2.21502f
+C46 BGR_coreAndVrefBranch$3_0/pnp_bjt$4_5/Emitter vdd 2.96033f
+C47 vdd Dmux1to4_2select_bit_0/a_2182_2834# 0.01819f
+C48 StartupCircuit_0/outP BGR_coreAndVrefBranch$3_0/Y2 0.07265f
+C49 StartupCircuit_0/outP vdd 8.75382f
+C50 vdd out 3.27817f
+C51 vdd S1 4.27355f
+C52 BGR_coreAndVrefBranch$3_0/m2_9779_894# BGR_coreAndVrefBranch$3_0/Y2 -0.16857f
+C53 vdd BGR_coreAndVrefBranch$3_0/m2_9779_894# 5.18174f
+C54 BGR_coreAndVrefBranch$3_0/w_9130_485# vdd 8.56911f
+C55 BGR_coreAndVrefBranch$3_0/pnp_bjt$4_6/Emitter vdd 1.01996f
+C56 BGR_coreAndVrefBranch$3_0/pnp_bjt$4_5/Emitter BGR_coreAndVrefBranch$3_0/pnp_bjt$4_6/Emitter -0.03578f
+C57 StartupCircuit_0/outP out 0.25546f
+C58 vdd BGR_coreAndVrefBranch$3_0/m3_1018_8628# 0.37877f
+C59 StartupCircuit_0/outP BGR_coreAndVrefBranch$3_0/m2_9779_894# 0.1285f
+C60 Dmux1to4_2select_bit_0/B_uq0 Dmux1to4_2select_bit_0/C_uq0 -0.01519f
+C61 BGR_coreAndVrefBranch$3_0/m2_9779_894# out -0.05413f
+C62 StartupCircuit_0/outN BGR_coreAndVrefBranch$3_0/Y2 0.08112f
+C63 vdd StartupCircuit_0/outN 5.69109f
+C64 BGR_coreAndVrefBranch$3_0/w_9130_485# StartupCircuit_0/outP 0.04891f
+C65 vdd BGR_coreAndVrefBranch$3_0/w_1808_12087# 4.01889f
+C66 BGR_coreAndVrefBranch$3_0/w_9130_485# BGR_coreAndVrefBranch$3_0/m2_9779_894# -0.5954f
+C67 StartupCircuit_0/outP StartupCircuit_0/outN 1.21777f
+C68 StartupCircuit_0/outN out 0.31902f
+C69 out BGR_coreAndVrefBranch$3_0/w_1808_12087# -0.17349f
+C70 BGR_coreAndVrefBranch$3_0/m2_9779_894# StartupCircuit_0/outN 0.17173f
+C71 BGR_coreAndVrefBranch$3_0/w_9130_485# StartupCircuit_0/outN 0.06676f
+C72 Dmux1to4_2select_bit_0/out BGR_coreAndVrefBranch$3_0/m3_9013_9929# -0.08301f
+C73 StartupCircuit_0/outN BGR_coreAndVrefBranch$3_0/m3_1018_8628# -0.02907f
+C74 vdd BGR_coreAndVrefBranch$3_0/bs 1.33749f
+C75 Dmux1to4_2select_bit_0/out BGR_coreAndVrefBranch$3_0/Y3 0.27761f
+C76 Dmux1to4_2select_bit_0/B_uq0 buffer$3$1_0/out -0.01596f
+C77 BGR_coreAndVrefBranch$3_0/m3_8157_734# vdd 2.70522f
+C78 BGR_coreAndVrefBranch$3_0/Y0 Dmux1to4_2select_bit_0/out 4.05889f
+C79 vdd Dmux1to4_2select_bit_0/a_3002_2834# 0.01284f
+C80 Dmux1to4_2select_bit_0/a_2182_1330# vdd 0.02734f
+C81 Dmux1to4_2select_bit_0/m3_3240_16# vdd 0.1427f
+C82 BGR_coreAndVrefBranch$3_0/m3_1018_8628# BGR_coreAndVrefBranch$3_0/bs -0.01387f
+C83 BGR_coreAndVrefBranch$3_0/Y0 Dmux1to4_2select_bit_0/B_uq0 -0.03031f
+C84 StartupCircuit_0/outN BGR_coreAndVrefBranch$3_0/bs -0.02867f
+C85 BGR_coreAndVrefBranch$3_0/m3_8157_734# BGR_coreAndVrefBranch$3_0/m2_9779_894# -0.14527f
+C86 BGR_coreAndVrefBranch$3_0/m3_9013_9929# BGR_coreAndVrefBranch$3_0/m3_8157_13103# -0.06191f
+C87 BGR_coreAndVrefBranch$3_0/pnp_bjt$4_9/Emitter vdd 4.85216f
+C88 BGR_coreAndVrefBranch$3_0/pnp_bjt$4_9/Emitter BGR_coreAndVrefBranch$3_0/pnp_bjt$4_5/Emitter -0.04141f
+C89 S1_uq0 vdd 0.45225f
+C90 buffer$3$1_0/out BGR_coreAndVrefBranch$3_0/Y3 0.01334f
+C91 buffer$3$1_0/m2_401_998# buffer$3$1_0/out 0.03612f
+C92 Dmux1to4_2select_bit_0/C_uq0 vdd 0.36685f
+C93 Dmux1to4_2select_bit_0/out BGR_coreAndVrefBranch$3_0/Y2 4.16569f
+C94 Dmux1to4_2select_bit_0/out vdd 2.17028f
+C95 StartupCircuit_0/outN vss -13.70926f
+C96 vdd vss -77.21173f
+C97 BGR_coreAndVrefBranch$3_0/m3_8157_734# vss -5.88689f
+C98 BGR_coreAndVrefBranch$3_0/pnp_bjt$4_9/Emitter vss -11.51786f
+C99 BGR_coreAndVrefBranch$3_0/pnp_bjt$4_5/Emitter vss -7.68979f
+C100 BGR_coreAndVrefBranch$3_0/m3_1018_8628# vss -4.95598f
+C101 out vss -4.88284f
+C102 BGR_coreAndVrefBranch$3_0/bs vss -3.53953f
+C103 Dmux1to4_2select_bit_0/out vss 0.7184f
+C104 BGR_coreAndVrefBranch$3_0/Y2 vss 1.4235f
+C105 BGR_coreAndVrefBranch$3_0/m3_9013_9929# vss -4.20211f
+C106 BGR_coreAndVrefBranch$3_0/w_1808_12087# vss -79.25635f
+C107 BGR_coreAndVrefBranch$3_0/m3_8157_13103# vss -4.0365f
+C108 BGR_coreAndVrefBranch$3_0/Y3 vss 7.84915f
+C109 StartupCircuit_0/outP vss -14.86021f
+C110 BGR_coreAndVrefBranch$3_0/m2_9779_894# vss -7.9812f
+C111 BGR_coreAndVrefBranch$3_0/Y0 vss 0.05754f
+C112 BGR_coreAndVrefBranch$3_0/w_9130_485# vss -46.54425f
+C113 BGR_coreAndVrefBranch$3_0/pnp_bjt$4_6/Emitter vss -1.53083f
+C114 buffer$3$1_0/m2_401_998# vss -7.96148f
+C115 S0 vss -1.98629f
+C116 buffer$3$1_0/out vss -2.16421f
+C117 Dmux1to4_2select_bit_0/C_uq0 vss 1.36547f
+C118 Dmux1to4_2select_bit_0/B_uq0 vss 1.01427f
+C119 Dmux1to4_2select_bit_0/m3_3518_16# vss 0.23553f
+C120 Dmux1to4_2select_bit_0/m3_3240_16# vss 0.14269f
+C121 Dmux1to4_2select_bit_0/m3_2966_16# vss 0.13166f
+C122 Dmux1to4_2select_bit_0/a_3002_768# vss 0.04646f
+C123 Dmux1to4_2select_bit_0/a_3002_1330# vss 0.02655f
+C124 Dmux1to4_2select_bit_0/a_3002_2834# vss 0.02761f
+C125 Dmux1to4_2select_bit_0/a_2182_2834# vss 0.01301f
+C126 Dmux1to4_2select_bit_0/a_3002_3396# vss 0.03659f
+C127 buffer$3_0/m2_401_998# vss -7.99884f
+C128 S1_uq0 vss -1.87914f
+C129 S1 vss -4.38677f
+C130 StartupCircuit_0/m1_1550_536# vss -0.48221f
+C131 StartupCircuit_0/m1_1882_883# vss -2.38765f
+C132 StartupCircuit_0/pfet$2_2/a_0_0# vss -0.36109f
+C133 StartupCircuit_0/w_598_1623# vss -4.19355f
 .ends
 

@@ -1,0 +1,63 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1621540707
+<< checkpaint >>
+rect -1260 -1261 2002 2454
+<< metal1 >>
+rect 58 782 122 1145
+rect 339 781 403 982
+rect 622 782 686 1145
+rect 290 650 421 696
+rect 207 25 271 425
+rect 314 383 414 650
+rect 464 234 528 435
+<< metal2 >>
+rect 371 1106 570 1146
+rect 0 836 742 936
+rect 0 296 742 396
+rect 282 55 474 95
+<< metal3 >>
+rect 290 93 390 995
+use nfet  nfet_0
+timestamp 1621540707
+transform 1 0 209 0 1 256
+box -26 -40 346 306
+use pfet  pfet_0
+timestamp 1621540707
+transform 1 0 61 0 1 746
+box -61 -144 681 276
+use vias_gen$4  vias_gen$4_0
+timestamp 1621540707
+transform 1 0 464 0 1 322
+box 0 0 64 52
+use vias_gen$4  vias_gen$4_1
+timestamp 1621540707
+transform 1 0 339 0 1 868
+box 0 0 64 52
+use vias_gen$6  vias_gen$6_0
+timestamp 1621540707
+transform 1 0 306 0 1 310
+box 0 0 74 66
+use vias_gen$6  vias_gen$6_1
+timestamp 1621540707
+transform 1 0 306 0 1 860
+box 0 0 74 66
+use vias_gen$7  vias_gen$7_0
+timestamp 1621540707
+transform 1 0 209 0 1 25
+box -26 -26 336 126
+use vias_gen  vias_gen_0
+timestamp 1621540707
+transform 1 0 36 0 1 1058
+box -36 -36 706 136
+<< labels >>
+flabel metal1 s 364 502 364 502 1 FreeSans 44 0 0 0 in
+port 1 nsew
+flabel metal2 s 474 1115 474 1115 1 FreeSans 44 0 0 0 vss
+port 2 nsew
+flabel metal2 s 410 75 410 75 1 FreeSans 44 0 0 0 vss
+port 2 nsew
+flabel metal2 s 536 874 536 874 1 FreeSans 44 0 0 0 out
+port 3 nsew
+<< end >>

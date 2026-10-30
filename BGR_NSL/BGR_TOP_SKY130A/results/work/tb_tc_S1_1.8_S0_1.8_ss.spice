@@ -1,0 +1,13 @@
+* PEX tc corner=ss S1=1.8 S0=1.8
+.lib /foss/pdks/sky130A/libs.tech/combined/sky130.lib.spice ss
+.include /headless/Desktop/BGR_Shayem/BGR_NSL_Final/BGR_NSL/BGR_TOP_SKY130A/BGR_TOP_pex.spice
+Vsup vdd 0 DC 1.8
+Vgnd vss 0 DC 0
+Vsel0 S0 0 DC 1.8
+Vsel1 S1 0 DC 1.8
+Xdut S0 S1 out vdd vss S1 BGR_TOP
+.control
+dc temp -40 125 5
+wrdata /headless/Desktop/BGR_Shayem/BGR_NSL_Final/BGR_NSL/BGR_TOP_SKY130A/results/work/tc_S1_1.8_S0_1.8_ss.txt v(out)
+.endc
+.end
